@@ -1,0 +1,33 @@
+# =============================================================================
+# Blueprint Render — publication de la documentation Zensical en site statique
+# Référence : https://render.com/docs/blueprint-spec
+#
+# Fonctionnement : une fois le dépôt relié à Render (New > Blueprint), Render
+# installe un webhook sur le dépôt Git. Chaque push / merge sur la branche
+# `main` déclenche alors un build Zensical puis la mise en ligne du dossier
+# `site/` sur le CDN Render. Un build en échec ne remplace pas la version en
+# ligne (déploiements atomiques).
+# =============================================================================
+
+services:
+  - type: web
+    runtime: static
+    name: doc-serveur
+
+    # Seule la branche main est publiée ; develop sert au travail en cours.
+    branch: main
+
+    # commit = déploiement automatique à chaque commit reçu sur `branch`.
+    # Passer à `off` si le déploiement doit être déclenché uniquement par un
+    # Deploy Hook (URL secrète appelée depuis une CI, voir README).
+    autoDeployTrigger: commit
+
+    # --strict : le build échoue sur avertissement (lien cassé, page absente
+    # de la nav…), ce qui empêche la mise en ligne d'une doc incohérente.
+    buildCommand: pip install -r requirements.txt && zensical build --clean --strict
+    staticPublishPath: ./site
+
+    envVars:
+      # Version Python du build (format complet x.y.z exigé par Render).
+      - key: PYTHON_VERSION
+        value: "3.12.10"

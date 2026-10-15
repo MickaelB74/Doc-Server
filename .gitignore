@@ -1,0 +1,19 @@
+# --- Sortie et cache Zensical (régénérés par `zensical build`, et par Render) ---
+site/
+.cache/
+
+# --- Environnement Python local ---
+.venv/
+__pycache__/
+*.py[cod]
+
+# --- Matière première non publiée (maquettes, assets bruts) ---
+# Les éléments réellement utilisés dans la doc sont à copier dans docs/assets/.
+Contexte/
+
+# --- Éditeurs / OS ---
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store
