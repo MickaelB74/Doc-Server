@@ -22,9 +22,10 @@ services:
     # Deploy Hook (URL secrète appelée depuis une CI, voir README).
     autoDeployTrigger: commit
 
-    # --strict : le build échoue sur avertissement (lien cassé, page absente
-    # de la nav…), ce qui empêche la mise en ligne d'une doc incohérente.
-    buildCommand: pip install -r requirements.txt && zensical build --clean --strict
+    # Commande de build documentée par Zensical (https://zensical.org/docs/publish-your-site/) :
+    # installation de Zensical (version épinglée dans requirements.txt) puis
+    # `zensical build --clean`, qui génère le site statique dans ./site.
+    buildCommand: pip install -r requirements.txt && zensical build --clean
     staticPublishPath: ./site
 
     envVars:

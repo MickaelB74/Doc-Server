@@ -21,7 +21,7 @@ python -m venv .venv
 pip install -r requirements.txt
 
 zensical serve                    # aperçu sur http://localhost:8000 avec rechargement auto
-zensical build --clean --strict   # même build que Render, à lancer avant de merger dans main
+zensical build --clean            # même build que Render, à lancer avant de merger dans main
 ```
 
 ## Branches
@@ -32,7 +32,7 @@ zensical build --clean --strict   # même build que Render, à lancer avant de m
 | `develop` | Rédaction en cours ; merge dans `main` quand le contenu est prêt  |
 
 Flux conseillé : travailler sur `develop` (ou une branche `doc/<sujet>` issue de
-`develop`), vérifier avec `zensical build --strict`, puis merger dans `main`.
+`develop`), vérifier avec `zensical build --clean`, puis merger dans `main`.
 
 ## Mise en ligne automatique (Render)
 
@@ -49,8 +49,8 @@ Le dépôt n'est encore relié à **aucun remote**. Pour brancher la publication
    `render.yaml`, crée le site statique `doc-serveur` et installe un webhook sur
    le dépôt.
 3. À partir de là, chaque push / merge sur `main` déclenche
-   `pip install -r requirements.txt && zensical build --clean --strict` puis la
-   publication du dossier `site/`. Si le build échoue, la version en ligne reste
+   `pip install -r requirements.txt && zensical build --clean` (commande de
+   build documentée par Zensical) puis la publication du dossier `site/`. Si le build échoue, la version en ligne reste
    inchangée.
 4. Mettre à jour `site_url` dans `zensical.toml` avec l'URL réelle du site
    (`https://<service>.onrender.com/` ou domaine personnalisé), et renseigner

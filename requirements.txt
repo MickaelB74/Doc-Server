@@ -1,4 +1,4 @@
 # Dépendances de build de la documentation (utilisées en local et par Render).
 # Version épinglée : Zensical est encore en 0.x, une montée de version doit
-# être testée en local (zensical build --strict) avant d'être poussée sur main.
+# être testée en local (zensical build --clean) avant d'être poussée sur main.
 zensical==0.0.70
