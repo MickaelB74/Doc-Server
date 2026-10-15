@@ -4,9 +4,9 @@
 # =============================================================================
 
 [project]
-# URL publique du site (Render : https://<nom-du-service>.onrender.com/).
-# À ajuster une fois le service Render créé ou le domaine personnalisé branché.
-site_url = "https://doc-serveur.onrender.com/"
+# URL publique du site, attribuée par Render au service static site.
+# À modifier si un domaine personnalisé est branché.
+site_url = "https://doc-server-pl8t.onrender.com/"
 site_name = "Documentation serveur"
 # site_description = "Description du serveur"
 # site_author = "Votre nom"
