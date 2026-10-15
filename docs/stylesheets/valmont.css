@@ -1,0 +1,1672 @@
+/* =============================================================================
+   Thème « Valmont » — documentation du serveur MyCivilisation
+   -----------------------------------------------------------------------------
+   Reprend l'interface des menus en jeu (pack de ressources « Valmont ») :
+   cadre en bois sombre, parchemin, plaques et rubans dorés, boutons en pixel
+   art. Deux ambiances :
+     - « parchemin » (jour)  : schéma Zensical `default`
+     - « veillée »   (nuit)  : schéma Zensical `slate`
+   Toutes les couleurs viennent des PNG du pack (voir outils/generer_assets.py).
+   Sommaire :
+     1. Polices et palette            9. Tableaux
+     2. Schémas jour / nuit          10. Encadrés (admonitions)
+     3. Fond et éléments généraux    11. Onglets de contenu
+     4. En-tête et onglets           12. Boutons et touches
+     5. Panneau de contenu           13. Cartes
+     6. Navigation latérale          14. Images
+     7. Typographie                  15. Composants Valmont
+     8. Code et commandes            16. Pied de page et divers
+   ========================================================================== */
+
+/* -----------------------------------------------------------------------------
+   1. Polices et palette
+   -------------------------------------------------------------------------- */
+
+:root {
+  /* Polices (chargées dans overrides/main.html) */
+  --vm-police-texte: "Alegreya", Georgia, "Times New Roman", serif;
+  --vm-police-titre: "Pixelify Sans", "Trebuchet MS", sans-serif;
+  --vm-police-pixel: "Silkscreen", "Pixelify Sans", monospace;
+  --vm-police-code: "VT323", "Consolas", monospace;
+  --md-text-font: "Alegreya";
+  --md-code-font: "VT323";
+
+  /* Bois du cadre des menus */
+  --vm-bois-contour: #1e120a;
+  --vm-bois-900: #2c1a0d;
+  --vm-bois-800: #3a2312;
+  --vm-bois-700: #55341b;
+  --vm-bois-600: #6e4524;
+  --vm-bois-500: #8b5a2f;
+
+  /* Parchemin des fonds d'écran */
+  --vm-parchemin-50: #fbf3df;
+  --vm-parchemin-100: #f6ebcd;
+  --vm-parchemin-200: #f0e1bc;
+  --vm-parchemin-300: #ebd9ae;
+  --vm-parchemin-400: #e2cd9b;
+  --vm-parchemin-500: #c9ae7c;
+  --vm-parchemin-600: #a88a5a;
+
+  /* Or des plaques et rubans */
+  --vm-or-contour: #4a3006;
+  --vm-or-900: #6a4510;
+  --vm-or-700: #9a6a14;
+  --vm-or-500: #c99a2a;
+  --vm-or-400: #efc452;
+  --vm-or-300: #f1cf5e;
+  --vm-or-100: #ffeda0;
+
+  /* Couleurs des boutons en jeu : contour / ombre / base / reflet */
+  --vm-vert-contour: #14330f;
+  --vm-vert-ombre: #2e6b22;
+  --vm-vert: #45922f;
+  --vm-vert-reflet: #a5e07a;
+  --vm-orange-contour: #3f1f06;
+  --vm-orange-ombre: #8a4a14;
+  --vm-orange: #b86a22;
+  --vm-orange-reflet: #f7c27a;
+  --vm-bleu-contour: #111f42;
+  --vm-bleu-ombre: #27458a;
+  --vm-bleu: #3866ba;
+  --vm-bleu-reflet: #9cc3f5;
+  --vm-violet-contour: #260f36;
+  --vm-violet-ombre: #55267a;
+  --vm-violet: #7840a6;
+  --vm-violet-reflet: #cda5ee;
+  --vm-turquoise-contour: #0b3030;
+  --vm-turquoise-ombre: #1e6a66;
+  --vm-turquoise: #2e948c;
+  --vm-turquoise-reflet: #98e6dc;
+  --vm-rouge-contour: #3d0b0b;
+  --vm-rouge-ombre: #861e1e;
+  --vm-rouge: #b43030;
+  --vm-rouge-reflet: #f59a9a;
+  --vm-gris-contour: #222227;
+  --vm-gris-ombre: #4a4a52;
+  --vm-gris: #6a6a74;
+  --vm-gris-reflet: #b8b8c2;
+
+  /* Textures (agrandies sans flou) */
+  --vm-tex-bois: url("../assets/textures/bois.png");
+  --vm-tex-bois-sombre: url("../assets/textures/bois-sombre.png");
+  --vm-tex-bois-nuit: url("../assets/textures/bois-nuit.png");
+  --vm-tex-parchemin: url("../assets/textures/parchemin.png");
+  --vm-tex-parchemin-nuit: url("../assets/textures/parchemin-nuit.png");
+  --vm-tex-pierre: url("../assets/textures/pierre.png");
+
+  /* Ombre portée « pixel » : décalée, sans flou */
+  --vm-ombre-pixel: 0.2rem 0.2rem 0 rgb(0 0 0 / 35%);
+}
+
+/* -----------------------------------------------------------------------------
+   2. Schémas jour (parchemin) et nuit (veillée)
+   -------------------------------------------------------------------------- */
+
+[data-md-color-scheme="default"] {
+  --md-default-bg-color: var(--vm-parchemin-200);
+  --md-default-fg-color: #2c1a0d;
+  --md-default-fg-color--light: #55341be0;
+  --md-default-fg-color--lighter: #55341b80;
+  --md-default-fg-color--lightest: #55341b24;
+  --md-primary-fg-color: var(--vm-bois-900);
+  --md-primary-fg-color--light: var(--vm-bois-800);
+  --md-primary-fg-color--dark: var(--vm-bois-contour);
+  --md-primary-bg-color: var(--vm-parchemin-100);
+  --md-primary-bg-color--light: #f6ebcdb3;
+  --md-accent-fg-color: var(--vm-or-700);
+  --md-accent-fg-color--transparent: #c99a2a26;
+  --md-accent-bg-color: var(--vm-bois-900);
+  --md-typeset-color: #2c1a0d;
+  --md-typeset-a-color: #8a2e12;
+  --md-typeset-mark-color: #f1cf5e99;
+  --md-typeset-table-color: var(--vm-parchemin-500);
+  --md-typeset-table-color--light: #fbf3df;
+  --md-code-bg-color: #1e120ae6;
+  --md-code-fg-color: var(--vm-parchemin-100);
+  --md-footer-bg-color: var(--vm-bois-900);
+  --md-footer-bg-color--dark: var(--vm-bois-contour);
+  --md-footer-fg-color: var(--vm-parchemin-100);
+  --md-admonition-bg-color: var(--vm-parchemin-50);
+
+  /* Variables propres au thème */
+  --vm-fond-page: var(--vm-bois-800);
+  --vm-tex-page: var(--vm-tex-bois);
+  --vm-panneau: var(--vm-parchemin-200);
+  --vm-tex-panneau: var(--vm-tex-parchemin);
+  --vm-encre: #2c1a0d;
+  --vm-encre-douce: #55341b;
+  --vm-titre-h2: var(--vm-bois-700);
+  --vm-titre-h3: var(--vm-bois-600);
+  --vm-filet: var(--vm-parchemin-500);
+  --vm-ligne-paire: #e9d8ad80;
+  --vm-carte: var(--vm-parchemin-100);
+  --vm-citation: #e7d4a6;
+}
+
+[data-md-color-scheme="slate"] {
+  color-scheme: dark;
+  --md-hue: 28;
+  --md-default-bg-color: #2b1f15;
+  --md-default-fg-color: #ead9b3;
+  --md-default-fg-color--light: #ead9b3cc;
+  --md-default-fg-color--lighter: #ead9b37a;
+  --md-default-fg-color--lightest: #ead9b31f;
+  --md-primary-fg-color: var(--vm-bois-contour);
+  --md-primary-fg-color--light: var(--vm-bois-900);
+  --md-primary-fg-color--dark: #120b06;
+  --md-primary-bg-color: var(--vm-parchemin-100);
+  --md-primary-bg-color--light: #f6ebcdb3;
+  --md-accent-fg-color: var(--vm-or-400);
+  --md-accent-fg-color--transparent: #efc4521f;
+  --md-accent-bg-color: var(--vm-bois-contour);
+  --md-typeset-color: #ead9b3;
+  --md-typeset-a-color: #f1b45a;
+  --md-typeset-mark-color: #c99a2a80;
+  --md-typeset-table-color: #55341b;
+  --md-typeset-table-color--light: #3a2a1d;
+  --md-code-bg-color: #120b06;
+  --md-code-fg-color: var(--vm-or-100);
+  --md-footer-bg-color: #160e08;
+  --md-footer-bg-color--dark: #0e0905;
+  --md-footer-fg-color: var(--vm-parchemin-300);
+  --md-admonition-bg-color: #251a11;
+  --md-admonition-fg-color: #ead9b3;
+
+  --vm-fond-page: #1f140c;
+  --vm-tex-page: var(--vm-tex-bois-nuit);
+  --vm-panneau: #2b1f15;
+  --vm-tex-panneau: var(--vm-tex-parchemin-nuit);
+  --vm-encre: #ead9b3;
+  --vm-encre-douce: #c9ae7c;
+  --vm-titre-h2: var(--vm-or-400);
+  --vm-titre-h3: #f0a35a;
+  --vm-filet: #55341b;
+  --vm-ligne-paire: #3326197a;
+  --vm-carte: #31241a;
+  --vm-citation: #34261a;
+}
+
+/* -----------------------------------------------------------------------------
+   3. Fond du site et éléments généraux
+   -------------------------------------------------------------------------- */
+
+body {
+  background: var(--vm-fond-page) var(--vm-tex-page) repeat 0 0 / 96px;
+  image-rendering: pixelated;
+}
+
+/* Le texte, lui, reste lissé : seuls les fonds et images sont pixelisés. */
+.md-container,
+.md-main {
+  background: transparent;
+}
+
+::selection {
+  color: var(--vm-bois-contour);
+  background: var(--vm-or-300);
+}
+
+html {
+  scrollbar-color: var(--vm-bois-600) var(--vm-bois-900);
+}
+
+:focus-visible {
+  outline: 2px solid var(--vm-or-400);
+  outline-offset: 2px;
+}
+
+/* Les arrondis n'existent pas dans un monde de cubes. */
+.md-typeset :is(.admonition, details, pre, code, kbd, table, .md-button, img,
+    .tabbed-set, .tabbed-labels > label),
+.md-search__form,
+.md-search__output,
+.md-top,
+.md-tooltip,
+.md-dialog {
+  border-radius: 0 !important;
+}
+
+/* -----------------------------------------------------------------------------
+   4. En-tête et onglets de navigation
+   -------------------------------------------------------------------------- */
+
+.md-header {
+  background: var(--md-primary-fg-color) var(--vm-tex-bois-sombre) repeat 0 0 / 96px;
+  border-bottom: 3px solid var(--vm-bois-contour);
+  box-shadow: inset 0 -3px 0 var(--vm-or-700), 0 3px 0 rgb(0 0 0 / 30%);
+}
+
+.md-header--shadow {
+  box-shadow: inset 0 -3px 0 var(--vm-or-700), 0 3px 0 rgb(0 0 0 / 30%);
+}
+
+.md-header__button.md-logo {
+  padding: 0.2rem;
+  margin: 0.1rem 0.2rem;
+}
+
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 2rem;
+  image-rendering: pixelated;
+}
+
+/* Titre du site : comme le bandeau doré en haut des menus en jeu. */
+.md-header__title {
+  font-family: var(--vm-police-pixel);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--vm-or-400);
+  text-shadow: 2px 2px 0 var(--vm-bois-contour);
+}
+
+.md-header__topic:first-child {
+  font-weight: 700;
+}
+
+/* Recherche : un champ de parchemin enchâssé dans le bois. */
+.md-search__form {
+  background-color: #f6ebcd1f;
+  box-shadow: inset 0 0 0 2px var(--vm-bois-contour), inset 0 0 0 3px var(--vm-bois-600);
+}
+
+.md-search__form:hover {
+  background-color: #f6ebcd33;
+}
+
+.md-search__input {
+  font-family: var(--vm-police-texte);
+  font-size: 0.85rem;
+}
+
+.md-search__input::placeholder {
+  color: var(--vm-parchemin-500);
+}
+
+[data-md-toggle="search"]:checked ~ .md-header .md-search__form {
+  background-color: var(--vm-parchemin-100);
+  box-shadow: inset 0 0 0 2px var(--vm-or-500);
+}
+
+.md-search__output {
+  border: 3px solid var(--vm-bois-800);
+}
+
+.md-search-result__meta {
+  font-family: var(--vm-police-pixel);
+  color: var(--vm-or-100);
+  background: var(--vm-bois-800);
+}
+
+.md-search-result__article h1,
+.md-search-result__article h2 {
+  font-family: var(--vm-police-titre);
+  font-weight: 600;
+}
+
+/* Onglets : une bande de bois, l'onglet actif est souligné d'or. */
+.md-tabs {
+  background: var(--vm-bois-900) var(--vm-tex-bois-sombre) repeat 0 0 / 96px;
+  border-bottom: 3px solid var(--vm-bois-contour);
+  color: var(--vm-parchemin-300);
+}
+
+.md-tabs__list {
+  contain: none;
+}
+
+.md-tabs__link {
+  margin-top: 0.55rem;
+  font-family: var(--vm-police-pixel);
+  font-size: 0.62rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  opacity: 1;
+  color: var(--vm-parchemin-300);
+  text-shadow: 1px 1px 0 var(--vm-bois-contour);
+}
+
+.md-tabs__item {
+  height: 2.5rem;
+  padding: 0 0.7rem;
+}
+
+.md-tabs__item--active .md-tabs__link {
+  color: var(--vm-or-400);
+}
+
+.md-tabs__item--active {
+  box-shadow: inset 0 -4px 0 var(--vm-or-500);
+}
+
+.md-tabs__link:hover,
+.md-tabs__link:focus {
+  color: var(--vm-or-100);
+}
+
+/* Bascule jour / nuit et autres boutons de l'en-tête */
+.md-header__button:hover {
+  opacity: 1;
+  color: var(--vm-or-400);
+}
+
+/* -----------------------------------------------------------------------------
+   5. Panneau de contenu : une feuille de parchemin dans un cadre de bois
+   -------------------------------------------------------------------------- */
+
+.md-main__inner {
+  margin-top: 1.4rem;
+}
+
+.md-content {
+  position: relative;
+  margin: 0 0 2.4rem;
+  background: var(--vm-panneau) var(--vm-tex-panneau) repeat 0 0 / 128px;
+  border: 5px solid var(--vm-bois-800);
+  box-shadow:
+    0 0 0 3px var(--vm-bois-contour),
+    inset 0 0 0 2px var(--vm-bois-600),
+    inset 0 0 0 4px rgb(0 0 0 / 12%),
+    0.45rem 0.45rem 0 3px rgb(0 0 0 / 35%);
+}
+
+/* Rivets dorés aux quatre coins du cadre, comme sur les menus. */
+.md-content::after {
+  position: absolute;
+  inset: -6px;
+  pointer-events: none;
+  content: "";
+  background:
+    linear-gradient(var(--vm-or-400), var(--vm-or-400)) 0 0 / 7px 7px no-repeat,
+    linear-gradient(var(--vm-or-400), var(--vm-or-400)) 100% 0 / 7px 7px no-repeat,
+    linear-gradient(var(--vm-or-400), var(--vm-or-400)) 0 100% / 7px 7px no-repeat,
+    linear-gradient(var(--vm-or-400), var(--vm-or-400)) 100% 100% / 7px 7px no-repeat;
+  filter: drop-shadow(1px 1px 0 var(--vm-or-contour));
+}
+
+.md-content__inner {
+  margin: 0;
+  padding: 0 1.6rem 1.8rem;
+}
+
+/* Bandeau de bois en haut de la feuille, où se pose le titre de la page. */
+.md-content__inner::before {
+  height: 2.5rem;
+  margin: 0 -1.6rem;
+  background: var(--vm-bois-800) var(--vm-tex-bois) repeat 0 0 / 96px;
+  box-shadow: 0 3px 0 var(--vm-bois-contour), inset 0 -2px 0 var(--vm-bois-600);
+}
+
+@media screen and (min-width: 76.25em) {
+  .md-content {
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+  }
+
+  .md-content__inner {
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
+  }
+
+  .md-content__inner::before {
+    margin-left: -2.2rem;
+    margin-right: -2.2rem;
+  }
+}
+
+@media screen and (max-width: 44.984375em) {
+  .md-content {
+    margin: 0 0.5rem 1.6rem;
+  }
+
+  .md-content__inner {
+    padding: 0 0.9rem 1.4rem;
+  }
+
+  .md-content__inner::before {
+    margin: 0 -0.9rem;
+  }
+}
+
+/* Fil d'Ariane (navigation.path) */
+.md-path {
+  margin: 0.9rem 0 0;
+  font-family: var(--vm-police-pixel);
+  font-size: 0.55rem;
+  text-transform: uppercase;
+  color: var(--vm-encre-douce);
+}
+
+/* Boutons d'action (édition, source) */
+.md-content__button {
+  margin-top: 0.4rem;
+  color: var(--vm-encre-douce);
+}
+
+/* -----------------------------------------------------------------------------
+   6. Navigation latérale : texte crème sur le bois du cadre
+   -------------------------------------------------------------------------- */
+
+.md-sidebar {
+  --md-default-fg-color: var(--vm-parchemin-300);
+  --md-default-fg-color--light: var(--vm-parchemin-400);
+  --md-default-fg-color--lighter: #e2cd9b80;
+  --md-default-fg-color--lightest: #e2cd9b26;
+  --md-typeset-a-color: var(--vm-or-400);
+  --md-accent-fg-color: var(--vm-or-100);
+}
+
+.md-nav {
+  font-family: var(--vm-police-texte);
+}
+
+.md-nav__link {
+  color: var(--vm-parchemin-300);
+  text-shadow: 1px 1px 0 rgb(0 0 0 / 55%);
+}
+
+.md-nav__link:is(:hover, :focus) {
+  color: var(--vm-or-100);
+}
+
+.md-nav__link--active,
+.md-nav__item--active > .md-nav__link {
+  color: var(--vm-or-400);
+}
+
+/* Lien de la page en cours : une flèche pixel dorée. */
+.md-nav__link--active:not(.md-nav__container > .md-nav__link)::before,
+.md-nav--primary .md-nav__item--active:not(.md-nav__item--nested) > .md-nav__link::before {
+  flex-shrink: 0;
+  width: 0;
+  height: 0;
+  margin-right: 0.35rem;
+  content: "";
+  border-top: 0.25rem solid transparent;
+  border-bottom: 0.25rem solid transparent;
+  border-left: 0.25rem solid var(--vm-or-400);
+  align-self: center;
+}
+
+/* Titres de sections : en lettres pixel, comme les rubans en jeu. */
+.md-nav__item--section > .md-nav__link,
+.md-nav__title {
+  font-family: var(--vm-police-pixel);
+  font-size: 0.6rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--vm-or-400) !important;
+}
+
+.md-nav__item--section > .md-nav__link {
+  padding-bottom: 0.2rem;
+  margin-bottom: 0.3rem;
+  border-bottom: 2px dashed #c99a2a66;
+}
+
+.md-nav--secondary .md-nav__title {
+  background: transparent;
+  box-shadow: none;
+}
+
+/* Titre de rubrique collant (navigation.tabs) : une plaque de bois sombre,
+   au lieu du fond de page clair qui le rendait illisible en mode parchemin. */
+.md-nav--lifted > .md-nav__list > .md-nav__item--active > .md-nav__link {
+  padding: 0.35rem 0.6rem;
+  background: var(--vm-bois-900);
+  border: 2px solid var(--vm-bois-contour);
+  box-shadow: inset 0 -2px 0 var(--vm-or-700);
+}
+
+/* Barre de défilement des colonnes */
+.md-sidebar__scrollwrap {
+  scrollbar-color: var(--vm-bois-500) transparent;
+}
+
+/* Tiroir de navigation sur mobile : même bois que le fond du site. */
+@media screen and (max-width: 76.234375em) {
+  .md-sidebar--primary {
+    background: var(--vm-fond-page) var(--vm-tex-page) repeat 0 0 / 96px;
+    border-right: 3px solid var(--vm-bois-contour);
+  }
+
+  .md-nav--primary .md-nav__title,
+  .md-nav--primary .md-nav__title ~ .md-nav__list {
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .md-nav--primary .md-nav__title[for="__drawer"] {
+    color: var(--vm-or-400);
+    background: var(--vm-bois-900) var(--vm-tex-bois-sombre) repeat 0 0 / 96px;
+    border-bottom: 3px solid var(--vm-bois-contour);
+  }
+
+  .md-nav--primary .md-nav__item {
+    border-top: 1px solid #e2cd9b1f;
+  }
+
+  .md-nav--primary .md-nav__title .md-logo img {
+    image-rendering: pixelated;
+  }
+}
+
+/* -----------------------------------------------------------------------------
+   7. Typographie
+   -------------------------------------------------------------------------- */
+
+.md-typeset {
+  font-family: var(--vm-police-texte);
+  font-size: 0.9rem;
+  line-height: 1.62;
+  color: var(--vm-encre);
+}
+
+/* Titre de page : la plaque dorée posée sur le bandeau de bois. */
+.md-typeset h1 {
+  position: relative;
+  display: table;
+  max-width: 100%;
+  padding: 0.38rem 1.5rem 0.32rem;
+  margin: -1.98rem auto 1.7rem;
+  font-family: var(--vm-police-pixel);
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.35;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--vm-or-400);
+  text-shadow: 2px 2px 0 var(--vm-bois-contour);
+  background: var(--vm-bois-900);
+  border: 2px solid var(--vm-or-500);
+  box-shadow:
+    0 0 0 2px var(--vm-bois-contour),
+    inset 0 0 0 1px var(--vm-or-contour),
+    inset 0 2px 0 1px #ffffff12;
+}
+
+/* Les petits points dorés de part et d'autre du titre. */
+.md-typeset h1::before,
+.md-typeset h1::after {
+  position: absolute;
+  top: 50%;
+  width: 4px;
+  height: 4px;
+  content: "";
+  background: var(--vm-or-400);
+  transform: translateY(-50%);
+}
+
+.md-typeset h1::before {
+  left: 0.55rem;
+}
+
+.md-typeset h1::after {
+  right: 0.55rem;
+}
+
+.md-typeset h1 .headerlink {
+  display: none;
+}
+
+/* Sous-titres : police pixel, filet doré pointillé. */
+.md-typeset h2 {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding-bottom: 0.3rem;
+  margin: 2em 0 0.8em;
+  font-family: var(--vm-police-titre);
+  font-size: 1.36em;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: 0;
+  color: var(--vm-titre-h2);
+  border-bottom: 4px solid transparent;
+  border-image: repeating-linear-gradient(90deg, var(--vm-or-500) 0 8px, transparent 8px 12px) 4;
+}
+
+/* Rivet doré devant chaque sous-titre. */
+.md-typeset h2::before {
+  flex-shrink: 0;
+  width: 0.42em;
+  height: 0.42em;
+  content: "";
+  background: var(--vm-or-400);
+  box-shadow: 0 0 0 2px var(--vm-or-contour), 2px 2px 0 2px rgb(0 0 0 / 25%);
+}
+
+.md-typeset h3 {
+  margin: 1.7em 0 0.6em;
+  font-family: var(--vm-police-titre);
+  font-size: 1.14em;
+  font-weight: 600;
+  letter-spacing: 0;
+  color: var(--vm-titre-h3);
+}
+
+.md-typeset h4 {
+  margin: 1.4em 0 0.5em;
+  font-family: var(--vm-police-pixel);
+  font-size: 0.78em;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--vm-encre-douce);
+}
+
+.md-typeset :is(h2, h3, h4) .headerlink {
+  font-family: var(--vm-police-pixel);
+  color: var(--vm-or-700);
+}
+
+.md-typeset strong {
+  font-weight: 700;
+}
+
+.md-typeset a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-style: dotted;
+  text-underline-offset: 0.18em;
+}
+
+.md-typeset a:is(:hover, :focus) {
+  color: var(--vm-or-700);
+  text-decoration-style: solid;
+}
+
+[data-md-color-scheme="slate"] .md-typeset a:is(:hover, :focus) {
+  color: var(--vm-or-100);
+}
+
+.md-typeset :is(h1, h2, h3, h4) a,
+.md-typeset .md-button,
+.md-typeset .headerlink {
+  text-decoration: none;
+}
+
+/* Puces des listes : un petit carré doré. */
+.md-typeset ul:not([class]) > li::marker {
+  color: var(--vm-or-700);
+  content: "▪  ";
+}
+
+.md-typeset ol > li::marker {
+  font-family: var(--vm-police-titre);
+  font-weight: 600;
+  color: var(--vm-or-700);
+}
+
+[data-md-color-scheme="slate"] .md-typeset :is(ul:not([class]), ol) > li::marker {
+  color: var(--vm-or-400);
+}
+
+/* Séparateur : une rangée de pierres taillées. */
+.md-typeset hr {
+  height: 6px;
+  margin: 2.2em 0;
+  border: 0;
+  background: repeating-linear-gradient(90deg,
+      var(--vm-or-500) 0 10px, transparent 10px 16px);
+  opacity: 0.8;
+}
+
+/* Lettrine : grande initiale dorée dans un cartouche de bois.
+   Usage : ajouter { .lettrine } à la fin d'un paragraphe. */
+.md-typeset p.lettrine::first-letter {
+  float: left;
+  padding: 0.18em 0.2em 0.06em;
+  margin: 0.12em 0.45rem 0 0;
+  font-family: var(--vm-police-titre);
+  font-size: 3.2em;
+  font-weight: 700;
+  line-height: 0.9;
+  color: var(--vm-or-400);
+  text-shadow: 3px 3px 0 var(--vm-bois-contour);
+  background: var(--vm-bois-800);
+  border: 2px solid var(--vm-or-500);
+  box-shadow: 0 0 0 2px var(--vm-bois-contour), 3px 3px 0 2px rgb(0 0 0 / 25%);
+}
+
+/* Chapeau d'introduction */
+.md-typeset .chapeau {
+  font-size: 1.08em;
+  font-style: italic;
+  color: var(--vm-encre-douce);
+}
+
+/* Citations (dialogues recopiés du jeu, textes anciens) */
+.md-typeset blockquote {
+  padding: 0.5rem 1rem;
+  margin: 1.2em 0;
+  font-style: italic;
+  color: var(--vm-encre);
+  background: var(--vm-citation);
+  border-left: 4px solid var(--vm-bois-600);
+  box-shadow: inset 0 0 0 1px #55341b22;
+}
+
+.md-typeset blockquote > :first-child {
+  margin-top: 0;
+}
+
+.md-typeset blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+.md-typeset mark {
+  padding: 0 0.15em;
+  color: inherit;
+  background: var(--md-typeset-mark-color);
+}
+
+.md-typeset abbr {
+  text-decoration: underline dotted var(--vm-or-700);
+}
+
+/* -----------------------------------------------------------------------------
+   8. Code et commandes : le style du chat de Minecraft
+   -------------------------------------------------------------------------- */
+
+.md-typeset code {
+  padding: 0.02em 0.36em 0.05em;
+  font-family: var(--vm-police-code);
+  font-size: 1.12em;
+  line-height: 1.2;
+  color: var(--md-code-fg-color);
+  background-color: var(--md-code-bg-color);
+  box-shadow: 1px 1px 0 rgb(0 0 0 / 25%);
+}
+
+.md-typeset pre > code {
+  padding: 0.9em 1.2em;
+  font-size: 1.05em;
+  line-height: 1.35;
+  box-shadow: none;
+}
+
+.md-typeset pre {
+  border: 3px solid var(--vm-bois-800);
+  box-shadow: 0 0 0 2px var(--vm-bois-contour), var(--vm-ombre-pixel);
+}
+
+.md-typeset .highlight {
+  --md-code-hl-comment-color: #a88a5a;
+  --md-code-hl-keyword-color: #efc452;
+  --md-code-hl-string-color: #a5e07a;
+  --md-code-hl-number-color: #f7c27a;
+  --md-code-hl-name-color: var(--vm-parchemin-100);
+}
+
+.md-clipboard {
+  color: var(--vm-parchemin-500);
+}
+
+.md-clipboard:is(:hover, :focus) {
+  color: var(--vm-or-400);
+}
+
+/* -----------------------------------------------------------------------------
+   9. Tableaux : en-tête en bois, lignes de parchemin
+   -------------------------------------------------------------------------- */
+
+.md-typeset table:not([class]) {
+  font-size: 0.8rem;
+  background-color: var(--md-admonition-bg-color);
+  border: 3px solid var(--vm-bois-800);
+  box-shadow: 0 0 0 2px var(--vm-bois-contour), var(--vm-ombre-pixel);
+}
+
+.md-typeset table:not([class]) th {
+  padding: 0.7em 1em;
+  font-family: var(--vm-police-pixel);
+  font-size: 0.82em;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--vm-or-400);
+  text-shadow: 1px 1px 0 var(--vm-bois-contour);
+  background: var(--vm-bois-800) var(--vm-tex-bois) repeat 0 0 / 96px;
+  border-bottom: 3px solid var(--vm-bois-contour);
+}
+
+.md-typeset table:not([class]) th:empty {
+  min-width: 0;
+  padding: 0;
+}
+
+.md-typeset table:not([class]) td {
+  padding: 0.65em 1em;
+  border-top: 1px solid var(--md-typeset-table-color);
+}
+
+.md-typeset table:not([class]) tbody tr:nth-child(even) {
+  background-color: var(--vm-ligne-paire);
+}
+
+.md-typeset table:not([class]) tbody tr:hover {
+  background-color: #f1cf5e33;
+  box-shadow: none;
+}
+
+/* Tableau sans en-tête (fiches « | | | ») : on masque la ligne vide. */
+.md-typeset table:not([class]) thead:has(th:empty:first-child + th:empty:last-child) {
+  display: none;
+}
+
+.md-typeset table:not([class]) td:first-child strong {
+  color: var(--vm-titre-h3);
+}
+
+/* -----------------------------------------------------------------------------
+   10. Encadrés (admonitions) : barre de titre façon bouton en jeu
+   -------------------------------------------------------------------------- */
+
+.md-typeset :is(.admonition, details)[class] {
+  --vm-a-contour: var(--vm-or-contour);
+  --vm-a-ombre: var(--vm-or-900);
+  --vm-a-base: var(--vm-or-500);
+  --vm-a-texte: var(--vm-parchemin-100);
+  --vm-a-icone: url("../assets/ui/icones/ic_story.png");
+  font-size: 0.84rem;
+  color: var(--md-admonition-fg-color, var(--vm-encre));
+  background-color: var(--md-admonition-bg-color);
+  border: 2px solid var(--vm-a-contour);
+  box-shadow: inset 0 0 0 1px #ffffff1a, var(--vm-ombre-pixel);
+}
+
+.md-typeset :is(.admonition, details)[class] > :is(.admonition-title, summary) {
+  padding: 0.45rem 0.8rem 0.45rem 2.3rem;
+  margin: 0 -0.6rem;
+  font-family: var(--vm-police-pixel);
+  font-size: 0.66rem;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--vm-a-texte);
+  text-shadow: 1px 1px 0 var(--vm-a-contour);
+  background-color: var(--vm-a-ombre);
+  border-bottom: 2px solid var(--vm-a-contour);
+  box-shadow: inset 0 2px 0 var(--vm-a-base);
+}
+
+/* Les icônes deviennent celles des menus en jeu (PNG en pixel art). */
+.md-typeset :is(.admonition, details)[class] > :is(.admonition-title, summary)::before {
+  top: 50%;
+  left: 0.55rem;
+  width: 1.15rem;
+  height: 1.15rem;
+  background: var(--vm-a-icone) center / contain no-repeat;
+  -webkit-mask-image: none;
+  mask-image: none;
+  image-rendering: pixelated;
+  transform: translateY(-50%);
+}
+
+.md-typeset details:not([open]) > summary {
+  border-bottom: 0;
+}
+
+.md-typeset summary::after {
+  top: 50%;
+  background-color: var(--vm-a-texte);
+  transform: translateY(-50%) rotate(0);
+}
+
+.md-typeset details[open] > summary::after {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.md-typeset :is(.admonition, details) > :last-child {
+  margin-bottom: 0.7rem;
+}
+
+/* Correspondance des types avec les couleurs des boutons en jeu */
+.md-typeset :is(.admonition, details):is(.info, .todo) {
+  --vm-a-contour: var(--vm-bleu-contour);
+  --vm-a-ombre: var(--vm-bleu-ombre);
+  --vm-a-base: var(--vm-bleu);
+  --vm-a-icone: url("../assets/ui/icones/ic_info.png");
+}
+
+.md-typeset :is(.admonition, details):is(.tip, .hint, .important) {
+  --vm-a-contour: var(--vm-vert-contour);
+  --vm-a-ombre: var(--vm-vert-ombre);
+  --vm-a-base: var(--vm-vert);
+  --vm-a-icone: url("../assets/ui/icones/ic_job.png");
+}
+
+.md-typeset :is(.admonition, details):is(.success, .check, .done) {
+  --vm-a-contour: var(--vm-vert-contour);
+  --vm-a-ombre: var(--vm-vert-ombre);
+  --vm-a-base: var(--vm-vert);
+  --vm-a-icone: url("../assets/ui/badges/badge_check.png");
+}
+
+.md-typeset :is(.admonition, details):is(.question, .help, .faq) {
+  --vm-a-contour: var(--vm-turquoise-contour);
+  --vm-a-ombre: var(--vm-turquoise-ombre);
+  --vm-a-base: var(--vm-turquoise);
+  --vm-a-icone: url("../assets/ui/icones/ic_info.png");
+}
+
+.md-typeset :is(.admonition, details):is(.warning, .caution, .attention) {
+  --vm-a-contour: var(--vm-orange-contour);
+  --vm-a-ombre: var(--vm-orange-ombre);
+  --vm-a-base: var(--vm-orange);
+  --vm-a-icone: url("../assets/ui/badges/badge_new.png");
+}
+
+.md-typeset :is(.admonition, details):is(.danger, .error, .failure, .fail, .missing, .bug) {
+  --vm-a-contour: var(--vm-rouge-contour);
+  --vm-a-ombre: var(--vm-rouge-ombre);
+  --vm-a-base: var(--vm-rouge);
+  --vm-a-icone: url("../assets/ui/icones/ic_follow_stop.png");
+}
+
+.md-typeset :is(.admonition, details):is(.example, .abstract, .summary, .tldr) {
+  --vm-a-contour: var(--vm-violet-contour);
+  --vm-a-ombre: var(--vm-violet-ombre);
+  --vm-a-base: var(--vm-violet);
+  --vm-a-icone: url("../assets/ui/icones/ic_purse.png");
+}
+
+.md-typeset :is(.admonition, details).quote {
+  --vm-a-contour: var(--vm-bois-contour);
+  --vm-a-ombre: var(--vm-bois-700);
+  --vm-a-base: var(--vm-bois-600);
+  --vm-a-icone: url("../assets/ui/icones/ic_story.png");
+}
+
+/* --- Types propres à Valmont --- */
+
+/* « spoiler » : ce que l'histoire réserve (à replier : ??? spoiler) */
+.md-typeset :is(.admonition, details).spoiler {
+  --vm-a-contour: var(--vm-violet-contour);
+  --vm-a-ombre: var(--vm-violet-ombre);
+  --vm-a-base: var(--vm-violet);
+  --vm-a-icone: url("../assets/ui/icones/lock.png");
+}
+
+/* « equipe » : information à compléter par l'équipe du serveur */
+.md-typeset :is(.admonition, details).equipe {
+  --vm-a-contour: var(--vm-rouge-contour);
+  --vm-a-ombre: var(--vm-rouge-ombre);
+  --vm-a-base: var(--vm-rouge);
+  --vm-a-icone: url("../assets/ui/icones/ic_job_quit.png");
+  border-style: dashed;
+}
+
+/* « nouveau » : fonctionnalité récente, encore susceptible d'évoluer */
+.md-typeset :is(.admonition, details).nouveau {
+  --vm-a-contour: var(--vm-turquoise-contour);
+  --vm-a-ombre: var(--vm-turquoise-ombre);
+  --vm-a-base: var(--vm-turquoise);
+  --vm-a-icone: url("../assets/ui/badges/badge_new.png");
+}
+
+/* « dialogue » : réplique d'un personnage, comme au-dessus de la barre
+   d'objets en jeu. Le titre de l'encadré porte le nom de qui parle. */
+.md-typeset .admonition.dialogue {
+  --vm-a-contour: var(--vm-bois-contour);
+  --vm-a-texte: var(--vm-or-400);
+  --vm-a-icone: url("../assets/ui/icones/silhouette.png");
+  color: var(--vm-parchemin-100);
+  background: #1e120aeb;
+  border: 2px solid var(--vm-bois-contour);
+  box-shadow: inset 0 0 0 2px var(--vm-bois-700), var(--vm-ombre-pixel);
+}
+
+.md-typeset .admonition.dialogue > .admonition-title {
+  background: transparent;
+  border-bottom: 1px dashed #efc45255;
+  box-shadow: none;
+}
+
+.md-typeset .admonition.dialogue > p:not(.admonition-title) {
+  font-style: italic;
+}
+
+/* « chronique » : une page de livre écrit (Chroniques de Valmont) */
+.md-typeset :is(.admonition, details).chronique {
+  --vm-a-contour: var(--vm-bois-contour);
+  --vm-a-ombre: var(--vm-bois-800);
+  --vm-a-base: var(--vm-bois-600);
+  --vm-a-texte: var(--vm-or-400);
+  --vm-a-icone: url("../assets/ui/icones/ic_story.png");
+  padding: 0 1.2rem;
+  font-size: 0.92rem;
+  background: var(--vm-parchemin-50) var(--vm-tex-parchemin) repeat 0 0 / 128px;
+  border: 4px double var(--vm-bois-700);
+  color: #2c1a0d;
+}
+
+.md-typeset :is(.admonition, details).chronique > :is(.admonition-title, summary) {
+  margin: 0 -1.2rem;
+}
+
+.md-typeset :is(.admonition, details).chronique p:not(.admonition-title) {
+  font-style: italic;
+  text-align: justify;
+  hyphens: auto;
+}
+
+/* -----------------------------------------------------------------------------
+   11. Onglets de contenu (=== "…") : les onglets du journal de quêtes
+   -------------------------------------------------------------------------- */
+
+.md-typeset .tabbed-set {
+  padding: 0;
+  border: 0;
+}
+
+.md-typeset .tabbed-labels {
+  gap: 0.25rem;
+  padding: 0 0.2rem;
+  box-shadow: inset 0 -3px 0 var(--vm-bois-800);
+}
+
+.md-typeset .tabbed-labels > label {
+  padding: 0.55rem 0.8rem 0.45rem;
+  margin-top: 0.2rem;
+  font-family: var(--vm-police-pixel);
+  font-size: 0.6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--vm-parchemin-300);
+  text-shadow: 1px 1px 0 var(--vm-bois-contour);
+  background: var(--vm-bois-700);
+  border: 2px solid var(--vm-bois-contour);
+  border-bottom: 0;
+  box-shadow: inset 0 2px 0 var(--vm-bois-500);
+}
+
+.md-typeset .tabbed-labels > label:hover {
+  color: var(--vm-or-100);
+}
+
+.md-typeset .tabbed-labels::before {
+  display: none;
+}
+
+.md-typeset .tabbed-set > input:nth-child(1):checked ~ .tabbed-labels > :nth-child(1),
+.md-typeset .tabbed-set > input:nth-child(2):checked ~ .tabbed-labels > :nth-child(2),
+.md-typeset .tabbed-set > input:nth-child(3):checked ~ .tabbed-labels > :nth-child(3),
+.md-typeset .tabbed-set > input:nth-child(4):checked ~ .tabbed-labels > :nth-child(4),
+.md-typeset .tabbed-set > input:nth-child(5):checked ~ .tabbed-labels > :nth-child(5),
+.md-typeset .tabbed-set > input:nth-child(6):checked ~ .tabbed-labels > :nth-child(6),
+.md-typeset .tabbed-set > input:nth-child(7):checked ~ .tabbed-labels > :nth-child(7),
+.md-typeset .tabbed-set > input:nth-child(8):checked ~ .tabbed-labels > :nth-child(8),
+.md-typeset .tabbed-set > input:nth-child(9):checked ~ .tabbed-labels > :nth-child(9),
+.md-typeset .tabbed-set > input:nth-child(10):checked ~ .tabbed-labels > :nth-child(10) {
+  color: var(--vm-bois-contour);
+  text-shadow: 1px 1px 0 var(--vm-or-100);
+  background: var(--vm-or-500);
+  box-shadow: inset 0 2px 0 var(--vm-or-100), inset 0 -3px 0 var(--vm-or-700);
+}
+
+.md-typeset .tabbed-content {
+  padding: 0.2rem 0.8rem 0.4rem;
+  background: #ffffff10;
+  border: 3px solid var(--vm-bois-800);
+  border-top: 0;
+}
+
+/* -----------------------------------------------------------------------------
+   12. Boutons et touches du clavier
+   -------------------------------------------------------------------------- */
+
+.md-typeset .md-button {
+  padding: 0.6em 1.3em 0.5em;
+  margin: 0.2rem 0.4rem 0.2rem 0;
+  font-family: var(--vm-police-pixel);
+  font-size: 0.72rem;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--vm-parchemin-100);
+  text-shadow: 1px 1px 0 var(--vm-bois-contour);
+  background: var(--vm-bois-700);
+  border: 2px solid var(--vm-bois-contour);
+  box-shadow:
+    inset 0 3px 0 var(--vm-bois-500),
+    inset 0 -3px 0 var(--vm-bois-800),
+    var(--vm-ombre-pixel);
+  transition: transform 80ms, filter 80ms;
+}
+
+.md-typeset .md-button--primary {
+  background: var(--vm-vert-ombre);
+  border-color: var(--vm-vert-contour);
+  box-shadow:
+    inset 0 3px 0 var(--vm-vert),
+    inset 0 -3px 0 var(--vm-vert-contour),
+    var(--vm-ombre-pixel);
+}
+
+.md-typeset .md-button:is(:hover, :focus) {
+  color: var(--vm-or-100);
+  background-color: var(--vm-bois-600);
+  border-color: var(--vm-bois-contour);
+  filter: brightness(1.12);
+  transform: translate(-1px, -1px);
+}
+
+.md-typeset .md-button--primary:is(:hover, :focus) {
+  background-color: var(--vm-vert);
+  border-color: var(--vm-vert-contour);
+}
+
+.md-typeset .md-button:active {
+  transform: translate(1px, 1px);
+}
+
+/* Touches du clavier (++l++) : les boutons de pierre de Minecraft. */
+.md-typeset kbd {
+  padding: 0.05em 0.5em 0;
+  font-family: var(--vm-police-pixel);
+  font-size: 0.72em;
+  color: var(--vm-parchemin-100);
+  text-shadow: 1px 1px 0 var(--vm-gris-contour);
+  vertical-align: 0.1em;
+  background: var(--vm-gris);
+  border: 2px solid var(--vm-gris-contour);
+  box-shadow: inset 2px 2px 0 var(--vm-gris-reflet), inset -2px -2px 0 var(--vm-gris-ombre);
+}
+
+/* -----------------------------------------------------------------------------
+   13. Cartes (grid cards)
+   -------------------------------------------------------------------------- */
+
+.md-typeset .grid.cards > :is(ul, ol) > li,
+.md-typeset .grid > .card {
+  padding: 0.9rem 1rem;
+  background: var(--vm-carte);
+  border: 3px solid var(--vm-bois-800);
+  box-shadow: 0 0 0 2px var(--vm-bois-contour), var(--vm-ombre-pixel);
+  transition: transform 100ms, box-shadow 100ms, border-color 100ms;
+}
+
+.md-typeset .grid.cards > :is(ul, ol) > li:hover,
+.md-typeset .grid > .card:hover {
+  border-color: var(--vm-or-500);
+  box-shadow: 0 0 0 2px var(--vm-bois-contour), 0.35rem 0.35rem 0 rgb(0 0 0 / 35%);
+  transform: translate(-2px, -2px);
+}
+
+.md-typeset .grid.cards > :is(ul, ol) > li > hr {
+  height: 4px;
+  margin: 0.6em 0;
+}
+
+.md-typeset .grid.cards > :is(ul, ol) > li > :first-child {
+  margin-top: 0;
+}
+
+.md-typeset .grid.cards > :is(ul, ol) > li > p:first-child strong {
+  font-family: var(--vm-police-titre);
+  font-size: 1.08em;
+  font-weight: 600;
+  color: var(--vm-titre-h2);
+}
+
+/* -----------------------------------------------------------------------------
+   14. Images : pixel art net, cadre de bois, légende en lettres pixel
+   -------------------------------------------------------------------------- */
+
+.md-typeset img {
+  image-rendering: pixelated;
+}
+
+.md-typeset figure {
+  margin: 1.6em auto;
+}
+
+.md-typeset figure img,
+.md-typeset img.cadre {
+  border: 3px solid var(--vm-bois-800);
+  box-shadow: 0 0 0 2px var(--vm-bois-contour), var(--vm-ombre-pixel);
+}
+
+.md-typeset figcaption {
+  max-width: 34rem;
+  margin-top: 0.7rem;
+  font-family: var(--vm-police-pixel);
+  font-size: 0.56rem;
+  font-style: normal;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--vm-encre-douce);
+}
+
+/* Petites images en ligne (icônes, anneaux, étoiles, boutons en jeu) */
+.md-typeset img:is(.vm-icone, .vm-anneau, .vm-badge-img) {
+  width: auto;
+  height: 1.35em;
+  vertical-align: -0.32em;
+}
+
+.md-typeset img.vm-etoiles {
+  width: auto;
+  height: 0.85em;
+  vertical-align: -0.05em;
+}
+
+.md-typeset img.vm-ui {
+  width: auto;
+  height: 1.9em;
+  vertical-align: middle;
+}
+
+.md-typeset img.vm-ui--grand {
+  height: 2.4em;
+}
+
+/* -----------------------------------------------------------------------------
+   15. Composants Valmont
+   -------------------------------------------------------------------------- */
+
+/* --- 15.1 Accueil : le panorama et le grand titre --- */
+
+.md-content__inner:has(.vm-hero)::before {
+  display: none;
+}
+
+.md-typeset .vm-hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 21rem;
+  padding: 2.2rem 1.2rem 1.6rem;
+  margin: 0 -1.6rem 2rem;
+  text-align: center;
+  background: #1a142e url("../assets/images/panorama-valmont.png") center bottom / cover no-repeat;
+  border-bottom: 4px solid var(--vm-bois-contour);
+  box-shadow: inset 0 -3px 0 var(--vm-bois-600);
+}
+
+@media screen and (min-width: 76.25em) {
+  .md-typeset .vm-hero {
+    margin-left: -2.2rem;
+    margin-right: -2.2rem;
+  }
+}
+
+@media screen and (max-width: 44.984375em) {
+  .md-typeset .vm-hero {
+    min-height: 17rem;
+    margin-left: -0.9rem;
+    margin-right: -0.9rem;
+  }
+}
+
+/* Voile sombre en bas pour la lisibilité du texte posé sur le panorama. */
+.md-typeset .vm-hero::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: linear-gradient(transparent 20%, rgb(14 9 5 / 55%) 70%, rgb(14 9 5 / 80%));
+}
+
+.md-typeset .vm-hero > * {
+  position: relative;
+}
+
+.md-typeset .vm-hero__surtitre {
+  margin: 0 0 0.3rem;
+  font-family: var(--vm-police-pixel);
+  font-size: 0.62rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--vm-or-100);
+  text-shadow: 2px 2px 0 var(--vm-bois-contour);
+}
+
+/* Le titre « VALMONT » : lettres pixel dorées en relief. */
+.md-typeset .vm-hero h1 {
+  display: block;
+  padding: 0;
+  margin: 0;
+  font-family: var(--vm-police-titre);
+  font-size: clamp(2.6rem, 9vw, 4.6rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  color: var(--vm-or-400);
+  text-shadow:
+    0 4px 0 var(--vm-or-700),
+    0 8px 0 var(--vm-or-contour),
+    6px 12px 0 rgb(0 0 0 / 50%);
+  background: none;
+  border: 0;
+  box-shadow: none;
+}
+
+.md-typeset .vm-hero h1::before,
+.md-typeset .vm-hero h1::after {
+  display: none;
+}
+
+.md-typeset .vm-hero__devise {
+  margin: 1rem 0 1.1rem;
+  font-family: var(--vm-police-texte);
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--vm-parchemin-100);
+  text-shadow: 2px 2px 0 var(--vm-bois-contour);
+}
+
+.md-typeset .vm-hero .md-button {
+  margin: 0.3rem;
+}
+
+/* --- 15.2 Fiche d'identité d'un personnage (en tête de sa page) --- */
+
+.md-typeset .vm-fiche {
+  display: grid;
+  grid-template-columns: minmax(7rem, 9.5rem) 1fr;
+  gap: 1.2rem;
+  align-items: start;
+  padding: 1rem;
+  margin: 0 0 1.8rem;
+  background: var(--vm-carte);
+  border: 3px solid var(--vm-bois-800);
+  box-shadow: 0 0 0 2px var(--vm-bois-contour), var(--vm-ombre-pixel);
+}
+
+.md-typeset .vm-fiche > p:first-child {
+  margin: 0;
+}
+
+.md-typeset .vm-fiche img.vm-fiche__decor {
+  display: block;
+  width: 100%;
+  border: 3px solid var(--vm-or-500);
+  box-shadow: 0 0 0 2px var(--vm-bois-contour);
+}
+
+.md-typeset .vm-fiche__infos > :first-child {
+  margin-top: 0;
+}
+
+.md-typeset .vm-fiche__infos table:not([class]) {
+  display: table;
+  width: 100%;
+  margin: 0;
+  font-size: 0.78rem;
+  box-shadow: none;
+}
+
+.md-typeset .vm-fiche__infos table:not([class]) td:first-child {
+  width: 34%;
+  font-family: var(--vm-police-pixel);
+  font-size: 0.85em;
+  text-transform: uppercase;
+  color: var(--vm-titre-h3);
+}
+
+.md-typeset .vm-fiche__titre {
+  margin: 0 0 0.6rem;
+  font-family: var(--vm-police-pixel);
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--vm-or-700);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .vm-fiche__titre {
+  color: var(--vm-or-400);
+}
+
+@media screen and (max-width: 44.984375em) {
+  .md-typeset .vm-fiche {
+    grid-template-columns: 1fr;
+  }
+
+  .md-typeset .vm-fiche img.vm-fiche__decor {
+    max-width: 9rem;
+  }
+}
+
+/* --- 15.3 Galerie des personnages (cartes avec décor) --- */
+
+/* La grille est portée par le bloc .grid (la liste y est en display: contents). */
+.md-typeset .grid.cards.vm-galerie {
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 7.5rem), 1fr));
+}
+
+.md-typeset .grid.cards.vm-galerie > ul > li {
+  padding: 0;
+  text-align: center;
+}
+
+.md-typeset .vm-galerie li > p:first-child {
+  margin: 0;
+  line-height: 0;
+}
+
+.md-typeset .vm-galerie li img {
+  display: block;
+  width: 100%;
+  border-bottom: 3px solid var(--vm-bois-800);
+}
+
+.md-typeset .vm-galerie li > p:not(:first-child) {
+  padding: 0 0.6rem;
+  margin: 0.55rem 0;
+  font-size: 0.78rem;
+  line-height: 1.35;
+}
+
+.md-typeset .vm-galerie li > p:nth-child(2) {
+  margin-top: 0.6rem;
+  font-family: var(--vm-police-titre);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.md-typeset .vm-galerie li > p:nth-child(2) a {
+  color: var(--vm-titre-h2);
+}
+
+.md-typeset .vm-galerie li > p:nth-child(2) a::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+}
+
+.md-typeset .grid.cards.vm-galerie > ul > li {
+  position: relative;
+}
+
+/* --- 15.4 Étiquettes (badges) aux couleurs des boutons --- */
+
+.md-typeset .vm-badge {
+  display: inline-block;
+  padding: 0.12em 0.5em 0.05em;
+  font-family: var(--vm-police-pixel);
+  font-size: 0.62em;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  vertical-align: 0.15em;
+  color: var(--vm-parchemin-100);
+  text-shadow: 1px 1px 0 rgb(0 0 0 / 60%);
+  background: var(--vm-b-ombre, var(--vm-bois-700));
+  border: 2px solid var(--vm-b-contour, var(--vm-bois-contour));
+  box-shadow: inset 0 2px 0 var(--vm-b-base, var(--vm-bois-500));
+}
+
+.md-typeset .vm-badge--vert { --vm-b-contour: var(--vm-vert-contour); --vm-b-ombre: var(--vm-vert-ombre); --vm-b-base: var(--vm-vert); }
+.md-typeset .vm-badge--bleu { --vm-b-contour: var(--vm-bleu-contour); --vm-b-ombre: var(--vm-bleu-ombre); --vm-b-base: var(--vm-bleu); }
+.md-typeset .vm-badge--violet { --vm-b-contour: var(--vm-violet-contour); --vm-b-ombre: var(--vm-violet-ombre); --vm-b-base: var(--vm-violet); }
+.md-typeset .vm-badge--orange { --vm-b-contour: var(--vm-orange-contour); --vm-b-ombre: var(--vm-orange-ombre); --vm-b-base: var(--vm-orange); }
+.md-typeset .vm-badge--rouge { --vm-b-contour: var(--vm-rouge-contour); --vm-b-ombre: var(--vm-rouge-ombre); --vm-b-base: var(--vm-rouge); }
+.md-typeset .vm-badge--turquoise { --vm-b-contour: var(--vm-turquoise-contour); --vm-b-ombre: var(--vm-turquoise-ombre); --vm-b-base: var(--vm-turquoise); }
+.md-typeset .vm-badge--gris { --vm-b-contour: var(--vm-gris-contour); --vm-b-ombre: var(--vm-gris-ombre); --vm-b-base: var(--vm-gris); }
+
+.md-typeset .vm-badge--or {
+  color: var(--vm-bois-contour);
+  text-shadow: 1px 1px 0 var(--vm-or-100);
+  --vm-b-contour: var(--vm-or-contour);
+  --vm-b-ombre: var(--vm-or-500);
+  --vm-b-base: var(--vm-or-100);
+}
+
+/* --- 15.5 Frise des chapitres (page de la trame) --- */
+
+.md-typeset ol.vm-frise {
+  padding: 0;
+  margin: 1.2em 0 1.6em;
+  list-style: none;
+  counter-reset: chapitre;
+}
+
+.md-typeset ol.vm-frise > li {
+  position: relative;
+  padding: 0.45rem 0.8rem 0.45rem 3.4rem;
+  margin: 0 0 0.5rem;
+  background: var(--vm-carte);
+  border: 2px solid var(--vm-bois-800);
+  counter-increment: chapitre;
+}
+
+.md-typeset ol.vm-frise > li::marker {
+  content: "";
+}
+
+.md-typeset ol.vm-frise > li::before {
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.6rem;
+  font-family: var(--vm-police-pixel);
+  font-size: 0.7rem;
+  color: var(--vm-bois-contour);
+  content: counter(chapitre, upper-roman);
+  background: var(--vm-or-500);
+  border: 2px solid var(--vm-or-contour);
+  box-shadow: inset 0 2px 0 var(--vm-or-100), inset 0 -2px 0 var(--vm-or-700);
+}
+
+/* --- 15.6 Sommaire de rubrique (liste de liens en cartouches) --- */
+
+.md-typeset .vm-rubrique {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 0.6rem;
+}
+
+/* -----------------------------------------------------------------------------
+   16. Pied de page et divers
+   -------------------------------------------------------------------------- */
+
+.md-footer {
+  background: #2a282e var(--vm-tex-pierre) repeat 0 0 / 96px;
+  border-top: 4px solid var(--vm-bois-contour);
+  box-shadow: inset 0 3px 0 var(--vm-or-700);
+}
+
+.md-footer__inner {
+  background: rgb(20 12 6 / 55%);
+}
+
+.md-footer__title {
+  font-family: var(--vm-police-titre);
+  font-weight: 600;
+  color: var(--vm-or-400);
+  text-shadow: 2px 2px 0 var(--vm-bois-contour);
+}
+
+.md-footer__direction {
+  font-family: var(--vm-police-pixel);
+  font-size: 0.55rem;
+  text-transform: uppercase;
+  color: var(--vm-parchemin-300);
+  opacity: 1;
+}
+
+.md-footer-meta {
+  background: rgb(14 9 5 / 85%);
+}
+
+.md-footer-meta,
+.md-footer-meta :is(a, .md-copyright) {
+  font-family: var(--vm-police-texte);
+  color: var(--vm-parchemin-400);
+}
+
+.md-footer-meta a:hover {
+  color: var(--vm-or-400);
+}
+
+.md-copyright {
+  font-size: 0.66rem;
+}
+
+/* Bouton « retour en haut » : un bouton en pixel art. */
+.md-top {
+  font-family: var(--vm-police-pixel);
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  color: var(--vm-parchemin-100);
+  background: var(--vm-bois-700);
+  border: 2px solid var(--vm-bois-contour);
+  box-shadow: inset 0 2px 0 var(--vm-bois-500), var(--vm-ombre-pixel);
+}
+
+.md-top:is(:hover, :focus) {
+  color: var(--vm-or-100);
+  background: var(--vm-bois-600);
+}
+
+/* Infobulles */
+.md-tooltip,
+.md-typeset .md-tooltip2__inner {
+  font-family: var(--vm-police-texte);
+  color: var(--vm-parchemin-100);
+  background: var(--vm-bois-900);
+  border: 2px solid var(--vm-or-500);
+}
+
+/* Bannière d'annonce */
+.md-banner {
+  font-family: var(--vm-police-texte);
+  color: var(--vm-bois-contour);
+  background: var(--vm-or-400);
+  border-bottom: 3px solid var(--vm-or-contour);
+}
+
+/* Notes de bas de page */
+.md-typeset .footnote {
+  font-size: 0.78rem;
+  color: var(--vm-encre-douce);
+}
+
+/* Définitions (lexique) */
+.md-typeset dl dt {
+  font-family: var(--vm-police-titre);
+  font-weight: 600;
+  color: var(--vm-titre-h3);
+}
+
+/* Cases à cocher des listes de tâches */
+.md-typeset .task-list-indicator::before {
+  background-color: var(--vm-bois-600);
+}
+
+.md-typeset [type="checkbox"]:checked + .task-list-indicator::before {
+  background-color: var(--vm-vert);
+}

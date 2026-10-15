@@ -1,5 +1,5 @@
 # =============================================================================
-# Configuration Zensical — Documentation du serveur
+# Configuration Zensical — Documentation du serveur MyCivilisation (Valmont)
 # Référence : https://zensical.org/docs/setup/basics/
 # =============================================================================
 
@@ -7,11 +7,12 @@
 # URL publique du site, attribuée par Render au service static site.
 # À modifier si un domaine personnalisé est branché.
 site_url = "https://doc-server-pl8t.onrender.com/"
-site_name = "Documentation serveur"
-# site_description = "Description du serveur"
+site_name = "MyCivilisation · Valmont"
+site_description = "Guide du joueur du serveur Minecraft médiéval et coopératif MyCivilisation : rebâtir ensemble la cité de Valmont."
 # site_author = "Votre nom"
 
-# copyright = "Copyright &copy; 2026 Votre nom"
+# Mention exigée par les conditions d'utilisation de la marque Minecraft.
+copyright = "MyCivilisation · Valmont — Serveur Minecraft non officiel, ni approuvé ni associé à Mojang ou Microsoft."
 
 # Dépôt Git : à renseigner quand le remote sera branché (affiche un lien "Voir
 # la source" et permet les boutons d'édition avec les features content.action.*).
@@ -24,18 +25,88 @@ site_name = "Documentation serveur"
 docs_dir = "docs"
 site_dir = "site"
 
-# Navigation : ajouter une entrée par page / section au fil de la rédaction.
+# Navigation : un onglet par grande rubrique (feature navigation.tabs). La
+# première page de chaque rubrique est son index (feature navigation.indexes).
 nav = [
   { "Accueil" = "index.md" },
+  { "Le serveur" = [
+    "serveur/index.md",
+    { "Mods et plugins" = "serveur/mods-et-plugins.md" },
+    { "Les règles d'or" = "serveur/regles.md" },
+  ] },
+  { "L'histoire" = [
+    "histoire/index.md",
+    { "Les Chroniques de Valmont" = "histoire/chroniques.md" },
+    { "Lieux et lexique" = "histoire/lexique.md" },
+  ] },
+  { "Guide du joueur" = [
+    "guide/index.md",
+    { "La trame principale" = "guide/trame.md" },
+    { "La ville" = [
+      { "Le territoire" = "guide/territoire.md" },
+      { "Les bâtiments" = "guide/batiments.md" },
+      { "Commerce et économie" = "guide/commerce.md" },
+    ] },
+    { "La vie de la cité" = [
+      { "Les habitants" = "guide/habitants.md" },
+      { "La garde" = "guide/garde.md" },
+      { "Les sièges" = "guide/sieges.md" },
+    ] },
+    { "À l'écran" = [
+      { "Les interfaces" = "guide/interfaces.md" },
+      { "Événements d'ambiance" = "guide/ambiances.md" },
+    ] },
+  ] },
+  { "Personnages" = [
+    "personnages/index.md",
+    { "Retrouver et installer" = "personnages/recrutement.md" },
+    { "Travailler avec les artisans" = "personnages/artisans.md" },
+    { "Aide-mémoire des ateliers" = "personnages/ateliers.md" },
+    { "Alderic, le maire" = "personnages/alderic.md" },
+    { "Les survivants" = [
+      { "Bastien" = "personnages/survivants/bastien.md" },
+      { "Hélène" = "personnages/survivants/helene.md" },
+      { "Brennan" = "personnages/survivants/brennan.md" },
+      { "Martin" = "personnages/survivants/martin.md" },
+      { "Godefroy" = "personnages/survivants/godefroy.md" },
+      { "Rosalie" = "personnages/survivants/rosalie.md" },
+      { "Thorvald" = "personnages/survivants/thorvald.md" },
+      { "Agathe" = "personnages/survivants/agathe.md" },
+      { "Edmond" = "personnages/survivants/edmond.md" },
+      { "Roland" = "personnages/survivants/roland.md" },
+      { "Frère Anselme" = "personnages/survivants/frere-anselme.md" },
+      { "Isabeau" = "personnages/survivants/isabeau.md" },
+      { "Léon" = "personnages/survivants/leon.md" },
+      { "Béatrice" = "personnages/survivants/beatrice.md" },
+    ] },
+    { "Les légendes ★" = [
+      { "Robin des Bois" = "personnages/legendes/robin-des-bois.md" },
+      { "Jack Sparrow" = "personnages/legendes/jack-sparrow.md" },
+      { "Indiana Jones" = "personnages/legendes/indiana-jones.md" },
+      { "Doc Brown" = "personnages/legendes/doc-brown.md" },
+      { "Gandalf" = "personnages/legendes/gandalf.md" },
+      { "Geralt de Riv" = "personnages/legendes/geralt-de-riv.md" },
+      { "Harold" = "personnages/legendes/harold.md" },
+    ] },
+  ] },
+  { "Aide-mémoire" = [
+    "aide/index.md",
+    { "Commandes" = "aide/commandes.md" },
+    { "Foire aux questions" = "aide/faq.md" },
+    { "Fonctionnalités à venir" = "aide/a-venir.md" },
+  ] },
 ]
 
-# extra_css = ["stylesheets/extra.css"]
-# extra_javascript = ["javascripts/extra.js"]
+# Thème médiéval « Valmont » (couleurs, cadres de bois, police pixel).
+extra_css = ["stylesheets/valmont.css"]
 
 [project.theme]
-# variant = "classic"
-# custom_dir = "overrides"
-# favicon = "assets/favicon.png"
+# Variante « classic » : en-tête et onglets pleins, plus simples à habiller.
+variant = "classic"
+# Surcharges du thème : chargement des polices (voir overrides/main.html).
+custom_dir = "overrides"
+logo = "assets/images/blason.png"
+favicon = "assets/images/favicon.png"
 language = "fr"
 features = [
   "announce.dismiss",
@@ -57,41 +128,39 @@ features = [
   "navigation.path",
   # "navigation.prune",
   "navigation.sections",
-  # "navigation.tabs",
+  "navigation.tabs",
   # "navigation.tabs.sticky",
   "navigation.top",
   "navigation.tracking",
   "search.highlight",
-  # "toc.follow",
+  "toc.follow",
   # "toc.integrate",
 ]
 
-# logo = "assets/logo.png"
-
-# [project.theme.icon]
-# logo = "lucide/server"
-
-# [project.theme.font]
-# text = "Inter"
-# code = "Jetbrains Mono"
-
-# Palette : suit la préférence système, avec bascule clair / sombre.
+# Palette : suit la préférence système, avec bascule « parchemin » (jour) /
+# « veillée » (nuit). Les couleurs elles-mêmes sont définies dans valmont.css.
 [[project.theme.palette]]
 media = "(prefers-color-scheme)"
+primary = "custom"
+accent = "custom"
 toggle.icon = "lucide/sun-moon"
-toggle.name = "Passer en mode clair"
+toggle.name = "Passer au parchemin (jour)"
 
 [[project.theme.palette]]
 media = "(prefers-color-scheme: light)"
 scheme = "default"
+primary = "custom"
+accent = "custom"
 toggle.icon = "lucide/sun"
-toggle.name = "Passer en mode sombre"
+toggle.name = "Passer à la veillée (nuit)"
 
 [[project.theme.palette]]
 media = "(prefers-color-scheme: dark)"
 scheme = "slate"
+primary = "custom"
+accent = "custom"
 toggle.icon = "lucide/moon"
-toggle.name = "Suivre la préférence système"
+toggle.name = "Suivre le jour et la nuit de l'appareil"
 
 # Extensions Markdown (reprises du gabarit officiel `zensical new`).
 [project.markdown_extensions]
