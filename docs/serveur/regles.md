@@ -28,7 +28,7 @@ Valmont est une ville **commune à tous les joueurs**. Ces quelques règles du j
 
     ---
 
-    Il sert à construire, à fabriquer et à livrer les chantiers de la ville, mais **ne se revend pas** et ne compte pas pour les quêtes des artisans.
+    Comme un objet pris dans un entrepôt, et tout ce qu'on fabrique avec : il sert à construire, à fabriquer et à livrer les chantiers de la ville, mais **ne se revend pas** et ne compte pas pour les quêtes des artisans.
 
 -   ![](../assets/ui/icones/ic_info.png){ .vm-icone } **Les menus se lisent au survol**
 
@@ -65,7 +65,8 @@ Sur toutes les parcelles de Valmont, du fond jusqu'au ciel, les monstres et les 
 3. **Ne videz pas tous en même temps vos coffres chez le même artisan.** Si trois joueurs vendent la même ressource le même soir, le prix s'effondre pour tout le monde (voir [Commerce et économie](../guide/commerce.md)).
 4. **Alimentez la caisse.** C'est elle qui paie les chartes, les parcelles et les réquisitions : chaque dépôt fait avancer toute la ville.
 5. **Pensez aux nouveaux venus.** Un joueur qui arrive découvre d'un coup tout ce que Valmont a déjà accompli : guidez-le vers Alderic.
-6. **Soyez au rendez-vous des sièges.** Le mercredi et le samedi soir, chaque défenseur compte (voir [Les sièges](../guide/sieges.md)).
+6. **Soyez au rendez-vous des sièges.** Chaque soir à 22 h, chaque défenseur compte (voir [Les sièges](../guide/sieges.md)).
+7. **Partez en raid ensemble.** Une expédition lancée chez Alderic emmène tous les joueurs réunis autour de lui : prévenez les autres avant de la lancer (voir [Les raids](../guide/raids.md)).
 
 !!! equipe "Règlement du serveur"
 

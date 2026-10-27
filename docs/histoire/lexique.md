@@ -24,11 +24,15 @@ Les mots de Valmont, des lieux de l'ancienne cité aux notions du jeu. Les entr�
 | **Coins** | La monnaie du serveur |
 | **Parcelle** | Un chunk (16 × 16 blocs) revendiqué par la ville |
 | **Emplacement** | Une place disponible pour revendiquer une parcelle |
-| **Objet marqué** | Un objet acheté à un artisan : utilisable, mais impossible à revendre |
+| **Objet marqué** | Un objet acheté à un artisan ou pris dans un entrepôt, et ce qu'on fabrique avec : utilisable, mais impossible à revendre |
 | **Récit** | Une quête personnelle d'un personnage, à faire une seule fois |
 | **Haut fait** | Un exploit de fin de jeu, au dernier chapitre |
-| **L'impôt de l'aube** | Les 2 coins que chaque habitant verse à la caisse à chaque nouveau jour de jeu |
+| **L'impôt de l'aube** | Les 2 coins que chaque habitant verse à la caisse à chaque nouveau jour de jeu (un peu plus ou un peu moins selon la satisfaction) |
 | **Le deuil** | Les 20 minutes pendant lesquelles le lit d'un habitant mort reste vide |
+| **Le raid** | Une expédition levée par Alderic contre une cible du monde des raids (voir [Les raids](../guide/raids.md)) |
+| **La défiance** | La volonté de résister de l'adversaire pendant un raid : à 0 %, il capitule |
+| **Le héraut** | Le Héraut de Valmont, qui tient le camp d'un raid : on rentre par lui |
+| **La renommée** | Le prestige gagné par les victoires à un niveau de raid : de meilleures récompenses… et des défenseurs plus coriaces |
 
 ## Les lieux de l'ancienne Valmont
 
@@ -66,7 +70,7 @@ Les mots de Valmont, des lieux de l'ancienne cité aux notions du jeu. Les entr�
 
 | Nom | Qui est-ce ? |
 |---|---|
-| **L'Ost du Corbeau** | Faction rivale aux couleurs noires, qui peut assiéger la ville |
+| **L'Ost du Corbeau** | Faction rivale aux couleurs noires, qui peut assiéger la ville. Comme les deux autres factions, elle tient aussi des places fortes que Valmont peut attaquer en raid |
 | **Les Lames de Grisval** | Faction rivale aux couleurs rouges |
 | **La Horde des Marais** | Faction rivale aux couleurs vertes |
 | **Morvan le Noir** | Champion qui mène la dernière vague d'une armée ennemie lors des sièges difficiles |

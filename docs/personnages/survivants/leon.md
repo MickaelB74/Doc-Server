@@ -75,7 +75,7 @@ Un bâtiment de type **Atelier**, libre ou réservé à Léon (nom proposé : `V
 
 ## Ce qu'il rachète
 
-Les prix sont ceux d'un **lot complet**, au prix plein (entrepôt rempli à moins de 40 %). Attention : la taille du lot change selon la ressource. Au menu **Entrepôt**, vous pouvez lui racheter son stock au double de ce prix.
+Les prix sont ceux d'un **lot complet**, au prix plein (entrepôt rempli à moins de 40 %). Attention : la taille du lot change selon la ressource. Au menu **Entrepôt**, vous vous servez **gratuitement** dans son stock, qui fait partie de la réserve de la ville (clic : un lot, ++shift++ + clic : une pile) ; ce que vous y prenez, et ce que vous en fabriquez, est marqué non revendable.
 
 | Ressource (nom affiché) | Lot | Prix plein du lot | Entrepôt de base |
 |---|---|---|---|
@@ -183,7 +183,7 @@ Le rang de Léon est **commun à toute la ville** : chaque vente, achat et quêt
 | Rang | XP totale | Ce qui se débloque |
 |---|---|---|
 | ★ Novice | 0 | Verre, vitres, briques, pots de fleurs, terre cuite ; récit « Les dunes » |
-| ★★ Apprenti | 200 | Verres teintés blanc, rouge, bleu, jaune et vert ; récit « Les terres cuites » ; grosses commandes d'argile dans sa quête spéciale |
+| ★★ Apprenti | 200 | Verres teintés blanc, rouge, bleu, jaune et vert ; récit « Les terres cuites » ; grosses quantités d'argile dans sa quête spéciale |
 | ★★★ Compagnon | 800 | Verres teintés violet, magenta et bleu clair, terre cuite rouge, pot décoré ; récit « Les morts du désert » ; éclats d'améthyste dans sa quête spéciale |
 | ★★★★ Expert | 2 500 | Terres cuites émaillées blanche et bleue, verre fumé (par 2) ; récit « La Rose de Valmont » |
 | ★★★★★ Maître | 6 000 | Verre fumé (par 16), Éclat de la Rose de Valmont ; récit « Le phare de la cité » |
@@ -195,6 +195,6 @@ Pour lui faire gagner de l'expérience : lui vendre du sable, de l'argile ou du 
 - **Au chapitre VIII**, la quête « Les vitraux de la cathédrale » demande de livrer 256 verres teintés, toutes couleurs (les vitres ne comptent pas). Les verres teintés de Léon, vendus par 16 dès le rang Apprenti, sont acceptés par le chantier.
 - **Ses couleurs viennent d'[Agathe](agathe.md)** : tous ses verres teintés et ses terres cuites colorées consomment des fleurs de son stock (muguet, coquelicot, bleuet, pissenlit, cactus, allium, orchidée bleue). Sans fleurs chez elle, pas de vitraux chez lui.
 - **Son verre fumé consomme l'améthyste de [Béatrice](beatrice.md)**, recrutée au même chapitre que lui.
-- À l'inverse, **son sable sert ailleurs** : TNT de [Doc Brown](../legendes/doc-brown.md), balise et cristaux de l'End de [Gandalf](../legendes/gandalf.md).
-- Son entrepôt se vide d'environ 8 % par heure tant qu'un joueur est connecté : la demande en sable et en argile revient toujours.
+- À l'inverse, **son sable sert ailleurs** : TNT de [Doc Brown](../legendes/doc-brown.md), balise et cristaux de l'End de [Gandalf](../legendes/gandalf.md) (sans le mod Iron's Spells).
+- Son entrepôt se vide d'environ 8 % de sa capacité par heure tant qu'un joueur est connecté, sans descendre sous le quart de celle-ci : la demande en sable et en argile revient toujours.
 - Vous pouvez **travailler pour Léon** : +10 % sur vos ventes chez lui, −15 % sur vos achats chez lui.

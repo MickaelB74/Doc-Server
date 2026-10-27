@@ -1,6 +1,6 @@
 ---
 title: Les personnages
-description: Alderic le maire, les quatorze survivants de Valmont et les sept légendes de passage — qui ils sont, quand les rencontrer et comment fonctionnent leurs fiches.
+description: Alderic le maire, les quatorze survivants de Valmont et les seize légendes de passage — qui ils sont, quand les rencontrer et comment fonctionnent leurs fiches.
 ---
 
 # Les personnages
@@ -12,9 +12,9 @@ Valmont ne se rebâtit pas seule : il lui faut ses **artisans**. Chaque personna
 
 | | Qui | Rôle |
 |---|---|---|
-| <span class="vm-badge vm-badge--or">Maire</span> | **Alderic** | Le guide de la ville. Il est là dès le départ et ne quitte jamais Valmont. Quêtes de la cité, charte, caisse, bâtiments, agrandissement |
+| <span class="vm-badge vm-badge--or">Maire</span> | **Alderic** | Le guide de la ville. Il est là dès le départ et ne quitte jamais Valmont. Quêtes de la cité, charte, caisse, bâtiments, agrandissement, événements (sièges et [raids](../guide/raids.md)) |
 | <span class="vm-badge vm-badge--vert">Survivants</span> | **Les survivants de Valmont** (14) | Les artisans de l'ancienne ville. Les retrouver fait partie de la **trame principale** : chaque chapitre vous en fait chercher un ou plusieurs |
-| <span class="vm-badge vm-badge--violet">Légendes ★</span> | **Les légendes de passage** (7) | Des voyageurs célèbres attirés par la renommée de Valmont. Leur recrutement est **facultatif** (quêtes bonus ★). Ils ouvrent des marchés que les survivants ne couvrent pas |
+| <span class="vm-badge vm-badge--violet">Légendes ★</span> | **Les légendes de passage** (16) | Des voyageurs célèbres attirés par la renommée de Valmont. Leur recrutement est **facultatif** (quêtes bonus ★). Ils ouvrent des marchés que les survivants ne couvrent pas ; onze d'entre eux sont liés à un mod du serveur |
 
 Chaque artisan correspond à **un métier médiéval** et à **un pan de Minecraft** : le bois, les cultures, la pierre, la mine, la forge, l'élevage… Il rachète les ressources de son domaine et vend ses propres fabrications.
 
@@ -162,53 +162,127 @@ Chaque artisan correspond à **un métier médiéval** et à **un pan de Minecra
 
 ## Les légendes de passage ★
 
-Leur recrutement est **facultatif** : leur quête ne bloque jamais la charte et reste proposée aux chapitres suivants.
+Leur recrutement est **facultatif** : leur quête ne bloque jamais la charte et reste proposée aux chapitres suivants. Onze d'entre elles sont liées à un mod du serveur (indiqué sous leur nom) : sans ce mod, elles se recrutent et s'installent, mais ne commercent pas et ne confient ni quêtes ni récits (voir [Mods et plugins](../serveur/mods-et-plugins.md#les-mods-de-contenu)). Robin des Bois, Indiana Jones et Gandalf fonctionnent sans mod, et gagnent du contenu quand le leur est installé.
 
-<div class="grid cards vm-galerie" markdown>
+=== "Acte I"
 
--   ![Décor nature](../assets/ui/decors/pf_nature.png)
+    <div class="grid cards vm-galerie" markdown>
 
-    [Robin des Bois](legendes/robin-des-bois.md)
+    -   ![Décor port](../assets/ui/decors/pf_port.png)
 
-    Hors-la-loi au grand cœur · Chapitre II
+        [Robinson Crusoé](legendes/robinson-crusoe.md)
 
--   ![Décor port](../assets/ui/decors/pf_port.png)
+        Naufragé · Chapitre I · mod Tough As Nails
 
-    [Jack Sparrow](legendes/jack-sparrow.md)
+    -   ![Décor nature](../assets/ui/decors/pf_nature.png)
 
-    Pirate des mers · Chapitre III
+        [Robin des Bois](legendes/robin-des-bois.md)
 
--   ![Décor route](../assets/ui/decors/pf_route.png)
+        Hors-la-loi au grand cœur · Chapitre II
 
-    [Indiana Jones](legendes/indiana-jones.md)
+    -   ![Décor port](../assets/ui/decors/pf_port.png)
 
-    Archéologue aventurier · Chapitre V
+        [Capitaine Achab](legendes/capitaine-achab.md)
 
--   ![Décor atelier](../assets/ui/decors/pf_atelier.png)
+        Chasseur du grand poisson · Chapitre II · mod Tide
 
-    [Doc Brown](legendes/doc-brown.md)
+    -   ![Décor port](../assets/ui/decors/pf_port.png)
 
-    Inventeur · Chapitre VII
+        [Jack Sparrow](legendes/jack-sparrow.md)
 
--   ![Décor chapelle](../assets/ui/decors/pf_chapelle.png)
+        Pirate des mers · Chapitre III · mod Tax' Ocean Villager
 
-    [Gandalf](legendes/gandalf.md)
+    </div>
 
-    Mage · Chapitre VIII
+=== "Acte II"
 
--   ![Décor route](../assets/ui/decors/pf_route.png)
+    <div class="grid cards vm-galerie" markdown>
 
-    [Geralt de Riv](legendes/geralt-de-riv.md)
+    -   ![Décor taverne](../assets/ui/decors/pf_taverne.png)
 
-    Sorceleur · Chapitre X
+        [Obélix](legendes/obelix.md)
 
--   ![Décor dragon](../assets/ui/decors/pf_dragon.png)
+        Livreur de menhirs · Chapitre IV · mods Wilder Nature et Farmer's Delight
 
-    [Harold](legendes/harold.md)
+    -   ![Décor route](../assets/ui/decors/pf_route.png)
 
-    Dresseur de dragons · Chapitre X
+        [Miyamoto Musashi](legendes/miyamoto-musashi.md)
 
-</div>
+        Rōnin · Chapitre IV · mod Epic Fight
+
+    -   ![Décor taverne](../assets/ui/decors/pf_taverne.png)
+
+        [Gambrinus](legendes/gambrinus.md)
+
+        Roi de la bière · Chapitre IV · mod Let's Do Brewery
+
+    -   ![Décor route](../assets/ui/decors/pf_route.png)
+
+        [Indiana Jones](legendes/indiana-jones.md)
+
+        Archéologue aventurier · Chapitre V
+
+    -   ![Décor atelier](../assets/ui/decors/pf_atelier.png)
+
+        [Geppetto](legendes/geppetto.md)
+
+        Maître ébéniste · Chapitre V · mods Handcrafted et Furniture
+
+    -   ![Décor chapelle](../assets/ui/decors/pf_chapelle.png)
+
+        [Gandalf](legendes/gandalf.md)
+
+        Mage · Chapitre VI
+
+    </div>
+
+=== "Acte III"
+
+    <div class="grid cards vm-galerie" markdown>
+
+    -   ![Décor atelier](../assets/ui/decors/pf_atelier.png)
+
+        [Doc Brown](legendes/doc-brown.md)
+
+        Inventeur · Chapitre VII
+
+    -   ![Décor port](../assets/ui/decors/pf_port.png)
+
+        [Ragnar](legendes/ragnar.md)
+
+        Roi des mers du Nord · Chapitre VII · mod Small Ships
+
+    -   ![Décor mairie](../assets/ui/decors/pf_mairie.png)
+
+        [Jeanne d'Arc](legendes/jeanne-d-arc.md)
+
+        Cheffe de guerre · Chapitre VIII · mod Valarian Conquest
+
+    </div>
+
+=== "Épilogue"
+
+    <div class="grid cards vm-galerie" markdown>
+
+    -   ![Décor route](../assets/ui/decors/pf_route.png)
+
+        [Geralt de Riv](legendes/geralt-de-riv.md)
+
+        Sorceleur · Chapitre X
+
+    -   ![Décor dragon](../assets/ui/decors/pf_dragon.png)
+
+        [Harold](legendes/harold.md)
+
+        Dresseur de dragons · Chapitre X · mod Dragon Mounts Remastered
+
+    -   ![Décor route](../assets/ui/decors/pf_route.png)
+
+        [Hercule](legendes/hercule.md)
+
+        Demi-dieu · Chapitre X · mod Mowzie's Mobs
+
+    </div>
 
 !!! info "Les portraits"
 

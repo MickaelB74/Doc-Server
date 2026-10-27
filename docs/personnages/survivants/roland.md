@@ -75,7 +75,7 @@ Un bâtiment de type **Atelier**, libre ou réservé à Roland (nom proposé : `
 
 ## Ce qu'il rachète
 
-Les prix sont ceux d'un **lot complet de 32 objets**, au prix plein (entrepôt rempli à moins de 40 %). Au menu **Entrepôt**, vous pouvez lui racheter son stock au double de ce prix.
+Les prix sont ceux d'un **lot complet de 32 objets**, au prix plein (entrepôt rempli à moins de 40 %). Au menu **Entrepôt**, vous vous servez **gratuitement** dans son stock, qui fait partie de la réserve de la ville (clic : un lot, ++shift++ + clic : une pile) ; ce que vous y prenez, et ce que vous en fabriquez, est marqué non revendable.
 
 | Ressource (nom affiché) | Prix plein du lot de 32 | Entrepôt de base |
 |---|---|---|
@@ -195,7 +195,7 @@ Pour lui faire gagner de l'expérience : lui vendre ses ressources (1 XP par lot
 
     La garde vient d'arriver sur le serveur et est encore en test : ses règles et ses chiffres sont susceptibles d'évoluer. Signalez tout comportement étrange à l'équipe.
 
-Roland est le seul artisan qui propose des **Actions** : il transforme les habitants de Valmont en **gardes** qui patrouillent et défendent la ville. La garde est **commune à tous les joueurs** : chacun voit la même liste, peut lancer une formation ou renvoyer un garde.
+Dans ses **Actions**, en plus des employés et de l'annexe de travail que propose chaque artisan (voir [Le travail des habitants](../../guide/habitants.md#le-travail-des-habitants)), Roland est le seul à former la **garde** : il transforme les habitants de Valmont en **gardes** qui patrouillent et défendent la ville. La garde est **commune à tous les joueurs** : chacun voit la même liste, peut lancer une formation ou renvoyer un garde.
 
 Pour l'ouvrir, parlez à Roland, cliquez sur son **portrait**, puis sur **🛡 Actions → 🛡 La garde**. Avec les menus classiques, utilisez les commandes `/city garde` (bilan), `/city garde former <habitant> <rôle>` et `/city garde renvoyer <nom>`.
 
@@ -238,7 +238,7 @@ Pour faire grandir la garde, il faut donc faire monter Roland en rang.
 - Ils repèrent les monstres à 16 blocs et les attaquent : soldats et sergents au contact, archers à l'arc jusqu'à 14 blocs. Ils ne poursuivent pas un monstre hors de la ville.
 - Ils ne blessent ni les joueurs, ni les habitants, ni les animaux, et les joueurs ne peuvent pas les blesser.
 - Un garde garde son lit d'habitant mais ne paie plus l'impôt de l'aube.
-- **Pendant un siège**, la garde se poste du côté attaqué (soldats et sergents en première ligne, archers derrière), puis reprend ses rondes. Par défaut, les sièges ont lieu le mercredi et le samedi à 21 h (heure de Paris), avec au moins 2 joueurs connectés <span class="vm-badge vm-badge--orange">à vérifier</span>.
+- **Pendant un siège**, la garde se poste du côté attaqué (soldats et sergents en première ligne, archers derrière), puis reprend ses rondes. Les sièges ont lieu tous les jours à 22 h (heure de Paris) à partir du chapitre IV, s'il y a au moins 2 joueurs connectés.
 - Pour rendre un garde ou une recrue à la vie civile : ++shift++ + clic droit dessus dans la liste de la garde.
 - **Un garde mort n'est pas remplacé automatiquement** : sa place se libère, et il faut former une nouvelle recrue.
 
@@ -250,7 +250,7 @@ Tout le détail (écran de la garde, combat, sièges) : [La garde de Valmont](..
 - **Il puise dans les stocks d'autres artisans** : la ficelle d'[Agathe](agathe.md) (arcs, arbalètes), les bûches de [Bastien](bastien.md), le fer de [Thorvald](thorvald.md) (arbalète) et la poudre lumineuse de [Frère Anselme](frere-anselme.md) (flèches spectrales). Un stock vide chez l'un d'eux met l'article en rupture.
 - **Son silex et ses plumes servent ailleurs** : briquet de [Thorvald](thorvald.md), livre et plume d'[Isabeau](isabeau.md) (qui demande aussi des plumes dans ses quêtes).
 - **Les habitants fournissent ses recrues** : plus la ville a de lits d'habitation conformes, plus la garde peut grandir.
-- Son entrepôt se vide d'environ 8 % par heure tant qu'un joueur est connecté : la demande en flèches et en preuves de chasse revient toujours.
+- Son entrepôt se vide d'environ 8 % de sa capacité par heure tant qu'un joueur est connecté, sans descendre sous le quart de celle-ci : la demande en flèches et en preuves de chasse revient toujours.
 - Vous pouvez **travailler pour Roland** : +10 % sur vos ventes chez lui, −15 % sur vos achats chez lui.
 
 ??? spoiler "Son rôle dans la suite de l'histoire"

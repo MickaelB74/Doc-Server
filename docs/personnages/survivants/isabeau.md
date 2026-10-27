@@ -39,8 +39,6 @@ Isabeau rachète **votre papier, vos livres et vos cartes vierges**. En échange
 
     Le tome III des *Chroniques*, vendu au rang Maître, révèle comment rouvrir cette Porte. Ses récits suivent la même piste : la forteresse enfouie (« L'Œil de l'Ender »), puis la Porte elle-même (« La Porte du Néant »).
 
-    À sa rencontre, [Gandalf](../legendes/gandalf.md) s'inquiète d'elle : « Votre archiviste fouille des registres dangereux. Il est temps que je veille sur votre cité. »
-
 ## La retrouver
 
 | | |
@@ -85,7 +83,7 @@ Un bâtiment de type **Atelier**, libre ou réservé à Isabeau (nom proposé : 
 
 ## Ce qu'elle rachète
 
-Les prix sont ceux d'un **lot complet**, au prix plein (entrepôt rempli à moins de 40 %). Attention : la taille du lot change selon la ressource. Au menu **Entrepôt**, vous pouvez lui racheter son stock au double de ce prix.
+Les prix sont ceux d'un **lot complet**, au prix plein (entrepôt rempli à moins de 40 %). Attention : la taille du lot change selon la ressource. Au menu **Entrepôt**, vous vous servez **gratuitement** dans son stock, qui fait partie de la réserve de la ville (clic : un lot, ++shift++ + clic : une pile) ; ce que vous y prenez, et ce que vous en fabriquez, est marqué non revendable.
 
 | Ressource (nom affiché) | Lot | Prix plein du lot | Entrepôt de base |
 |---|---|---|---|
@@ -191,7 +189,7 @@ Le rang d'Isabeau est **commun à toute la ville** : chaque vente, achat et quê
 | Rang | XP totale | Ce qui se débloque |
 |---|---|---|
 | ★ Novice | 0 | Chroniques tome I, livre et plume, pupitre, bibliothèque, table de cartographie ; récit « Les rayonnages » |
-| ★★ Apprenti | 500 | Boussole, carte vierge, bibliothèque sculptée ; récit « Cartographe » ; cartes vierges et grosses commandes d'encre dans ses quêtes |
+| ★★ Apprenti | 500 | Boussole, carte vierge, bibliothèque sculptée ; récit « Cartographe » ; cartes vierges et grosses quantités d'encre dans ses quêtes |
 | ★★★ Compagnon | 2 000 | Chroniques tome II, motif de bannière « globe », horloge ; récit « Les ruines oubliées » ; chasse aux pillards dans sa quête spéciale |
 | ★★★★ Expert | 5 500 | Livres enchantés Efficacité III et Protection III ; récit « L'Œil de l'Ender » |
 | ★★★★★ Maître | 12 000 | Chroniques tome III, livre enchanté Raccommodage ; récit « La Porte du Néant » |
@@ -202,7 +200,7 @@ Pour lui faire gagner de l'expérience : lui vendre du papier, des livres ou des
 
 - **Au chapitre VII**, la quête « La bibliothèque » demande de livrer 24 bibliothèques au chantier. Isabeau en vend dès le rang Novice, et le chantier accepte les objets achetés aux artisans. Chaque bibliothèque consomme 3 livres de son stock et 2 bûches de celui de [Bastien](bastien.md) : comptez 72 livres et 48 bûches pour les 24.
 - **Ses articles puisent dans les stocks d'autres artisans** : poches d'encre de [Martin](martin.md) et plumes de [Roland](roland.md) (livre et plume), bûches de [Bastien](bastien.md) (pupitre, bibliothèques, table de cartographie), fer de [Thorvald](thorvald.md) et redstone de [Godefroy](godefroy.md) (boussole, carte vierge), or de [Béatrice](beatrice.md) (horloge). Un stock vide chez l'un d'eux met l'article en rupture.
-- À l'inverse, **son papier et ses livres servent ailleurs** : motif de bannière « fleur » d'[Agathe](agathe.md), fusées de [Doc Brown](../legendes/doc-brown.md), table d'enchantement de [Gandalf](../legendes/gandalf.md).
+- À l'inverse, **son papier et ses livres servent ailleurs** : motif de bannière « fleur » d'[Agathe](agathe.md), fusées de [Doc Brown](../legendes/doc-brown.md), table d'enchantement de [Gandalf](../legendes/gandalf.md) (sans le mod Iron's Spells).
 - Elle arrive au même chapitre que [Frère Anselme](frere-anselme.md).
-- Son entrepôt se vide d'environ 8 % par heure tant qu'un joueur est connecté : la demande en papier et en livres revient toujours.
+- Son entrepôt se vide d'environ 8 % de sa capacité par heure tant qu'un joueur est connecté, sans descendre sous le quart de celle-ci : la demande en papier et en livres revient toujours.
 - Vous pouvez **travailler pour Isabeau** : +10 % sur vos ventes chez elle, −15 % sur vos achats chez elle.

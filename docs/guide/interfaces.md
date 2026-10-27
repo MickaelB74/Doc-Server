@@ -1,11 +1,11 @@
 ---
 title: Les interfaces
-description: Les menus illustrés et classiques de Valmont, le code couleur des écrans, le panneau de la touche Tab, le panneau Quêtes, le journal de quêtes, les dialogues et les notifications.
+description: Les menus illustrés et classiques de Valmont, le code couleur des écrans, le panneau de la touche Tab, le panneau Quêtes, le journal de quêtes, la carte des personnages, les dialogues et les notifications.
 ---
 
 # Les interfaces
 
-Les menus des personnages existent en deux styles, qui donnent accès **exactement aux mêmes actions**. Cette page vous apprend à les lire, ainsi que les panneaux affichés à l'écran.
+Les menus des personnages existent en deux styles, qui donnent accès **aux mêmes actions**, à quelques exceptions près (voir [Avec les menus classiques](#8-avec-les-menus-classiques)). Cette page vous apprend à les lire, ainsi que les panneaux affichés à l'écran.
 { .chapeau }
 
 ## 1. Menus illustrés ou classiques
@@ -73,7 +73,7 @@ Deux cartes : **Principale** (à gauche) et **Spéciale** (à droite), avec la r
 | ![Valider](../assets/ui/boutons/qb_valider.png){ .vm-ui } | Tout est prêt : cliquez pour toucher la récompense |
 | ![En repos](../assets/ui/boutons/qb_repos.png){ .vm-ui } | L'artisan prépare sa prochaine quête |
 
-Au centre, le bouton vertical ![Récits](../assets/ui/onglets/vb_recits.png){ .vm-ui .vm-ui--grand } ouvre les récits du personnage.
+Au centre, le bouton vertical ![Récits](../assets/ui/onglets/vb_recits.png){ .vm-ui .vm-ui--grand } ouvre les récits du personnage. Un personnage qui en a plus de cinq (Gambrinus, ainsi que Robin des Bois et Indiana Jones avec leurs mods facultatifs) les affiche quatre par page, avec des flèches pour passer d'une page à l'autre. C'est aussi depuis cet écran, ouvert dans le menu du personnage, que se remettent les objets des récits « Rapporter… ».
 
 <div class="grid" markdown>
 
@@ -95,7 +95,7 @@ En maintenant ++tab++, deux panneaux s'affichent au-dessus de la liste des joueu
 
 | Panneau | Contenu |
 |---|---|
-| **La cité** (à gauche) | Nom, palier et niveau, **habitants** (vivants / places), **trésor** (caisse), **parcelles** (revendiquées / emplacements) |
+| **La cité** (à gauche) | Nom, palier et niveau, **habitants** (vivants / places), **satisfaction** des habitants (barre et pourcentage), **trésor** (caisse), **parcelles** (revendiquées / emplacements) |
 | **Vous** (à droite) | Pseudo, **niveau**, **XP**, **bourse**, **métier** |
 
 <figure markdown>
@@ -117,7 +117,15 @@ Le **journal de quêtes**, onglet ![Suivi](../assets/ui/onglets/tab_suivi_on.png
 
 - choisir **les personnages suivis** (cadre vert = affiché, gris = masqué) ;
 - choisir **la position du panneau** selon votre écran ;
-- **afficher ou masquer** tout le panneau (aussi avec `/city quests toggle`), ou tout **suivre** d'un clic (![Tous](../assets/ui/onglets/track_all.png){ .vm-ui }).
+- choisir **l'affichage du suivi** (clic gauche : suivant, clic droit : précédent), ou tout **suivre** d'un clic (![Tous](../assets/ui/onglets/track_all.png){ .vm-ui }).
+
+| Affichage | Où se trouve le suivi |
+|---|---|
+| **Visible** (par défaut) | Le panneau à gauche de l'écran (sans le pack : le tableau à droite) |
+| **Accroché** | Avec la liste des joueurs : il n'apparaît qu'en maintenant ++tab++ |
+| **Masqué** | Nulle part |
+
+`/city quests toggle` fait défiler ces trois affichages ; `/city quests toggle visible` (ou `accroche`, `masque`) en choisit un directement.
 
 | Position | Pour quels écrans |
 |---|---|
@@ -155,7 +163,15 @@ Un clic sur un personnage installé ouvre ses récits. En bas, un compteur affic
 
 </div>
 
-## 5. Les dialogues
+## 5. Où sont-ils ? `/city locate`
+
+Une carte vue du ciel, dessinée par le plugin : à gauche, les personnages de Valmont (cadenas tant que personne ne les a rencontrés) ; à droite, la carte, avec les limites de la ville en or, les personnages en rouge, celui que vous avez choisi en jaune et vous en blanc.
+
+- Un clic sur un personnage centre la carte sur lui et affiche ses coordonnées. Un personnage rencontré mais pas encore venu en ville y figure aussi.
+- **Clic gauche** sur la carte : zoom avant. **Clic droit** : zoom arrière. Le bouton carte de l'en-tête revient à la vue d'ensemble de Valmont.
+- Sans le pack, les mêmes informations s'affichent dans le chat.
+
+## 6. Les dialogues
 
 Les personnages parlent **au-dessus de votre barre d'objets**, lettre par lettre, jamais dans le chat. Les longues répliques s'affichent en plusieurs morceaux. Un seul dialogue se joue à la fois.
 
@@ -165,7 +181,7 @@ Les personnages parlent **au-dessus de votre barre d'objets**, lettre par lettre
 
 Pour réentendre un personnage : ![Son histoire](../assets/ui/boutons/btn_histoire.png){ .vm-ui }. Pour réentendre Alderic : ![Récit](../assets/ui/boutons/fb_recit.png){ .vm-ui }
 
-## 6. Les notifications
+## 7. Les notifications
 
 | Événement | Ce que vous voyez |
 |---|---|
@@ -180,11 +196,14 @@ Pour réentendre un personnage : ![Son histoire](../assets/ui/boutons/btn_histoi
 | ![](../assets/ui/badges/badge_new.png){ .vm-icone } **!** rouge au-dessus d'un personnage | Une nouveauté vous attend auprès de lui (quête à valider, récit à accepter…) |
 | **/!\\** jaune au-dessus d'un artisan | Il ne parvient pas à rejoindre son poste : dégagez le passage |
 
-## 7. Avec les menus classiques
+## 8. Avec les menus classiques
 
-Sans le pack, tout reste accessible :
+Sans le pack, presque tout reste accessible :
 
 - les menus s'ouvrent dans des fenêtres de coffre ;
 - le choix du type d'un bâtiment se fait avec des boutons cliquables dans le chat ;
 - le suivi des quêtes est un tableau **« Quêtes actives »** à droite de l'écran ;
-- le panneau ++tab++ s'affiche en texte.
+- le panneau ++tab++ s'affiche en texte ;
+- chez Alderic, le bouton « 🗺 Agrandir la ville » reste sur l'accueil, et le bilan de la population s'affiche dans le chat ;
+- Roland n'a pas d'écran de la garde : formez et renvoyez les gardes avec `/city garde former` et `/city garde renvoyer` (voir [La garde](garde.md)) ;
+- l'embauche des employés et la création d'une annexe de travail ne sont pas proposées : passez aux menus illustrés (`/city ui valmont`) pour cela.

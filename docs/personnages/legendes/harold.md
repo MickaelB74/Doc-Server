@@ -110,7 +110,7 @@ Un bâtiment de type **Atelier**, libre ou réservé à Harold (nom proposé : `
 
 ## Ce qu'il rachète
 
-Les prix sont ceux d'un **lot complet**, au prix plein (entrepôt rempli à moins de 40 %). La taille du lot change d'un objet à l'autre. Au menu **Entrepôt**, vous pouvez lui racheter son stock au double de ce prix.
+Les prix sont ceux d'un **lot complet**, au prix plein (entrepôt rempli à moins de 40 %). La taille du lot change d'un objet à l'autre. Au menu **Entrepôt**, vous vous servez **gratuitement** dans son stock, qui fait partie de la réserve de la ville (clic : un lot, ++shift++ + clic : une pile) ; ce que vous y prenez, et ce que vous en fabriquez, est marqué non revendable.
 
 | Ressource (nom affiché) | Lot | Prix plein du lot | Entrepôt de base |
 |---|---|---|---|
@@ -213,13 +213,13 @@ Deux quêtes renouvelables par joueur, à accepter dans son menu **Quêtes** (un
     | Carapace de shulker | — | 3 | 4 | 5 | 6 | 12 coins |
     | Tuer des endermen | — | 9 | 12 | 15 | 18 | 4 coins |
     | Souffle du dragon | — | — | 4 | 5 | 6 | 4 coins |
-    | **Œuf de dragon** (objet du mod) | — | — | 2 | 2 ou 3 | 3 | 200 coins |
+    | **Œuf de dragon** (objet du mod) | — | — | 2 | 3 | 3 | 200 coins |
     | Tuer des shulkers | — | — | 8 | 10 | 12 | 8 coins |
     | Éclat d'écho | — | — | — | 5 | 6 | 10 coins |
 
     Exemple : au rang Novice, seuls le chorus et les phantoms sont possibles ; « 32 chorus + 8 phantoms » rapporte **60 coins**.
 
-    « 2 ou 3 » : la quantité de base multipliée par le coefficient du rang tombe sur une demie, et le jeu l'arrondit. Le sens de l'arrondi reste à confirmer <span class="vm-badge vm-badge--orange">à vérifier</span>.
+    Quantité de base × coefficient du rang (×1 ; ×1,5 ; ×2 ; ×2,5 ; ×3), arrondie à l'unité la plus proche (une demie est arrondie vers le haut).
 
 ## Ses récits
 
@@ -230,7 +230,7 @@ Cinq quêtes personnelles, une par rang, à faire **une seule fois** (menu **Qu�
 | ★ Novice | 🥚 Un œuf bien étrange | Trouver un œuf de dragon dans un coffre (temples, igloos, trésors enfouis, forteresses…) | 120 coins |
 | ★★ Apprenti | 🐣 Ce n'est pas un chien ! | Faire éclore un œuf de dragon : le poser, clic droit, puis patienter | 200 coins |
 | ★★★ Compagnon | 🐟 Pourquoi du poisson ? | Apprivoiser un dragon en le nourrissant de poisson | 300 coins |
-| ★★★★ Expert | ☁ Au-dessus des nuages | Voler à dos de dragon au-dessus de Y = 200, dans le monde normal | 450 coins |
+| ★★★★ Expert | ☁ Au-dessus des nuages | Voler à dos de dragon au-dessus de Y = 500, dans le monde normal | 450 coins |
 | ★★★★★ Maître | 🌌 Les îles du bout du monde | Survoler à dos de dragon les îles extérieures de l'End, au-delà de l'île centrale | 800 coins |
 
 Pour les récits « Au-dessus des nuages » et « Les îles du bout du monde », la reconnaissance du dragon comme monture reste à vérifier en jeu <span class="vm-badge vm-badge--orange">à vérifier</span>.
@@ -252,12 +252,12 @@ Pour lui faire gagner de l'expérience : lui vendre des ressources (1 XP par lot
 ## Bon à savoir
 
 - **Sans le mod Dragon Mounts Remastered**, ni commerce, ni quêtes, ni récits : voir l'encadré en haut de page et [Mods et plugins](../../serveur/mods-et-plugins.md#les-mods-de-contenu).
-- **Le parcours du dragonnier** suit ses récits : trouver un œuf, le faire éclore, l'apprivoiser au poisson, lui poser une selle, voler au-dessus de Y = 200, puis jusqu'aux îles extérieures de l'End.
+- **Le parcours du dragonnier** suit ses récits : trouver un œuf, le faire éclore, l'apprivoiser au poisson, lui poser une selle, voler au-dessus de Y = 500, puis jusqu'aux îles extérieures de l'End.
 - **Il paie le poisson au même prix que [Martin](../survivants/martin.md)**, le pêcheur : si l'un a l'entrepôt plein, vendez à l'autre.
 - **Ses potions** dépendent du stock de [Frère Anselme](../survivants/frere-anselme.md) (verrues du Nether, crème de magma).
 - **Les sifflets** (noir, rouge, bleu, vert) rappellent votre dragon de loin. Le manuel indique aussi qu'ils se fabriquent.
 - **L'œuf de dragon vierge** (rang Maître, 600 coins, un par jour au plus) évite de chercher un œuf dans les coffres. Son comportement exact à l'éclosion reste à vérifier en jeu <span class="vm-badge vm-badge--orange">à vérifier</span>.
 - **Un œuf de dragon trouvé** peut servir à sa quête spéciale (dès le rang Compagnon), qui le valorise à 200 coins avant la prime de 1,5.
-- **Au-dessus des nuages** : quand vous dépassez l'altitude Y = 500 (à dos de dragon ou en élytres), le message « 🐉 Vous planez au-dessus des nuages ! » s'affiche. Ce n'est pas une quête, mais un [événement d'ambiance](../../guide/ambiances.md) ; le déclenchement à dos de dragon reste à vérifier en jeu <span class="vm-badge vm-badge--orange">à vérifier</span>.
-- Son entrepôt se vide d'environ 8 % par heure tant qu'un joueur est connecté.
+- **Au-dessus des nuages** : quand vous dépassez l'altitude Y = 500 (à dos de dragon ou en élytres), le message « 🐉 Vous planez au-dessus des nuages ! » s'affiche. Ce n'est pas une quête, mais un [événement d'ambiance](../../guide/ambiances.md), réglé sur la même altitude que son récit « Au-dessus des nuages » ; le déclenchement à dos de dragon reste à vérifier en jeu <span class="vm-badge vm-badge--orange">à vérifier</span>.
+- Son entrepôt se vide d'environ 8 % de sa capacité par heure tant qu'un joueur est connecté, sans descendre sous le quart de celle-ci.
 - Vous pouvez **travailler pour Harold** : +10 % sur vos ventes, −15 % sur vos achats chez lui.

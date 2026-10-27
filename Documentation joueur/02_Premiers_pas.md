@@ -33,7 +33,7 @@
 
 <!-- 🖼️ Image suggérée : écran d'accueil d'Alderic -->
 
-> **Si Valmont n'existe pas encore**, la ville est fondée une seule fois pour tout le serveur avec `/city create` : le chunk où se tient le fondateur devient le cœur de la ville et Alderic apparaît devant lui. Le premier joueur qui lui parle reçoit pour la ville un **cadeau de bienvenue** : 6 parcelles offertes et 100 coins dans la caisse.
+> **Si Valmont n'existe pas encore**, la ville est fondée une seule fois pour tout le serveur avec `/city create` : le chunk où se tient le fondateur devient le cœur de la ville et Alderic apparaît devant lui. Le premier joueur qui lui parle reçoit pour la ville un **cadeau de bienvenue** : 10 parcelles offertes et 100 coins dans la caisse.
 
 ## 3. Comprendre votre écran
 

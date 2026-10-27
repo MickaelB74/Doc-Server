@@ -14,7 +14,7 @@ Vous venez d'arriver à Valmont ? Cette page vous guide pendant vos premières h
 
 <div class="vm-fiche" markdown>
 
-![Accueil d'Alderic dans les menus illustrés : palier, quêtes, bâtiments, trésor, agrandir et parcelles](../assets/ecrans/maire.png){ .vm-fiche__decor }
+![Accueil d'Alderic dans les menus illustrés : palier, quêtes, bâtiments, trésor et parcelles](../assets/ecrans/maire.png){ .vm-fiche__decor }
 
 <div class="vm-fiche__infos" markdown>
 
@@ -24,8 +24,9 @@ Vous venez d'arriver à Valmont ? Cette page vous guide pendant vos premières h
 |---|---|
 | ![Quêtes](../assets/ui/boutons/btn_quetes.png){ .vm-ui } | Les objectifs du chapitre en cours, le récit d'Alderic et la signature de la charte |
 | ![Bâtiments](../assets/ui/boutons/btn_batiments.png){ .vm-ui } | La liste des bâtiments de la ville ; en ajouter, en supprimer, en changer le type |
-| ![Trésor](../assets/ui/boutons/btn_tresor.png){ .vm-ui } | La caisse de la ville et votre bourse ; déposer des coins |
-| ![Agrandir](../assets/ui/boutons/btn_agrandir.png){ .vm-ui } | Acheter une parcelle supplémentaire (payée par la caisse) |
+| ![Trésor](../assets/ui/boutons/btn_tresor.png){ .vm-ui } | La caisse de la ville et votre bourse ; déposer des coins ; acheter un emplacement de parcelle (payé par la caisse) |
+| ![Événements](../assets/ui/boutons/btn_evenements.png){ .vm-ui } | Lancer un [raid](raids.md), consulter le calendrier des sièges |
+| Barre « Parcelles » | Revendiquer ou rendre la parcelle où vous êtes |
 
 </div>
 
@@ -33,7 +34,7 @@ Vous venez d'arriver à Valmont ? Cette page vous guide pendant vos premières h
 
 !!! note "Si Valmont n'existe pas encore"
 
-    La ville est fondée **une seule fois pour tout le serveur** avec `/city create` : le chunk où se tient le fondateur devient le cœur de la ville et Alderic apparaît devant lui. Le premier joueur qui lui parle reçoit pour la ville un **cadeau de bienvenue** : 6 emplacements de parcelles et 100 coins dans la caisse.
+    La ville est fondée **une seule fois pour tout le serveur**, par l'équipe du serveur, avec `/city create` : le chunk où se tient le fondateur devient le cœur de la ville et Alderic apparaît devant lui. Le premier joueur qui lui parle reçoit pour la ville un **cadeau de bienvenue** : 10 emplacements de parcelles et 100 coins dans la caisse.
 
 Tout savoir sur le maire : [Alderic](../personnages/alderic.md).
 
@@ -45,7 +46,7 @@ Tout savoir sur le maire : [Alderic](../personnages/alderic.md).
 
     ---
 
-    Au-dessus de la liste des joueurs : **à gauche, la cité** (palier et niveau, habitants, trésor, parcelles) ; **à droite, vous** (niveau, expérience, bourse et métier).
+    Au-dessus de la liste des joueurs : **à gauche, la cité** (palier et niveau, habitants, satisfaction, trésor, parcelles) ; **à droite, vous** (niveau, expérience, bourse et métier).
 
 -   ++l++ **La touche L**
 
@@ -79,15 +80,17 @@ En entrant dans la ville, vous lisez **« 🏰 Territoire de Valmont »** au-des
 <ol class="vm-frise" markdown>
 <li markdown>**Parlez à Alderic** et ouvrez **Quêtes de la cité** pour voir ce que la ville attend.</li>
 <li markdown>**Lancez la recherche du premier survivant** depuis ce menu : vous recevez une **piste** et une **barre** en haut de l'écran qui vous guide vers lui (voir [Retrouver un personnage](../personnages/recrutement.md)).</li>
-<li markdown>**Agrandissez la ville** en revendiquant des parcelles voisines avec `/city claim` (voir [Le territoire](territoire.md)).</li>
+<li markdown>**Agrandissez la ville** en revendiquant des parcelles voisines avec la barre **Parcelles** d'Alderic (voir [Le territoire](territoire.md)).</li>
 <li markdown>**Construisez et déclarez des bâtiments** : une maison pour accueillir des habitants, un atelier pour chaque artisan (voir [Les bâtiments](batiments.md)).</li>
 <li markdown>**Commercez** avec les artisans installés : vendez-leur vos ressources, faites leurs quêtes, gagnez des coins (voir [Commerce et économie](commerce.md)).</li>
-<li markdown>**Alimentez la caisse** avec `/city deposit <montant>` : c'est elle qui paie la charte pour passer au chapitre suivant (voir [La trame principale](trame.md)).</li>
+<li markdown>**Alimentez la caisse** chez Alderic, **Trésor** → **Déposer des coins** : c'est elle qui paie la charte pour passer au chapitre suivant (voir [La trame principale](trame.md)).</li>
 </ol>
+
+Plus tard, dès le chapitre II, Alderic peut lever des expéditions contre des places lointaines : les [raids](raids.md). À partir du chapitre IV, c'est Valmont qui est assiégée (voir [Les sièges](sieges.md)).
 
 !!! tip "Le premier chapitre, en bref"
 
-    Au chapitre I, la ville doit revendiquer **7 parcelles**, déclarer **2 bâtiments**, livrer **192 rondins** pour la palissade et installer **Bastien**, le charbonnier des bois. Puis il suffit de signer la charte : **150 coins** pris dans la caisse.
+    Au chapitre I, la ville doit revendiquer **12 parcelles**, déclarer **2 bâtiments**, livrer **192 rondins** pour la palissade et installer **Bastien**, le charbonnier des bois. Puis il suffit de signer la charte : **150 coins** pris dans la caisse.
 
 ## 4. Les règles d'or, en un coup d'œil
 

@@ -95,7 +95,7 @@ Un bâtiment de type **Atelier**, libre ou réservé à Jack Sparrow (nom propos
 
 ## Ce qu'il rachète
 
-Les prix sont ceux d'un **lot complet**, au prix plein (entrepôt rempli à moins de 40 %). Attention, **la taille du lot change d'un objet à l'autre**. Au menu **Entrepôt**, vous pouvez lui racheter son stock au double de ce prix.
+Les prix sont ceux d'un **lot complet**, au prix plein (entrepôt rempli à moins de 40 %). Attention, **la taille du lot change d'un objet à l'autre**. Au menu **Entrepôt**, vous vous servez **gratuitement** dans son stock, qui fait partie de la réserve de la ville (clic : un lot, ++shift++ + clic : une pile) ; ce que vous y prenez, et ce que vous en fabriquez, est marqué non revendable.
 
 | Ressource | Lot | Prix plein du lot | Entrepôt de base |
 |---|---|---|---|
@@ -200,7 +200,7 @@ Deux quêtes renouvelables par joueur, à accepter dans son menu **Quêtes** (se
 
 !!! note "Quantités par rang"
 
-    Les quantités ci-dessus sont calculées d'après la règle du jeu : quantité de base × coefficient du rang (×1 ; ×1,5 ; ×2 ; ×2,5 ; ×3), arrondie. Quand le calcul tombe sur une demie, la valeur en jeu peut différer d'une unité. <span class="vm-badge vm-badge--orange">à vérifier</span>
+    Quantité de base × coefficient du rang (×1 ; ×1,5 ; ×2 ; ×2,5 ; ×3), arrondie à l'unité la plus proche (une demie est arrondie vers le haut).
 
 ## Ses récits
 
@@ -238,5 +238,5 @@ Pour lui faire gagner de l'expérience : lui vendre des trésors de la mer (1 XP
 - **Ses articles fabriqués** viennent de ce que vous lui vendez (prismarine, écailles, nautiles, cœurs de la mer). La prismarine sombre demande aussi une poche d'encre du stock de [Martin](../survivants/martin.md).
 - Au rang Maître, Jack vend un **navire pirate entier** pour 2 500 coins, une fois par semaine au plus.
 - Clin d'œil : en barque, face à l'ouest au coucher du soleil, le message « ☀ L'horizon rougit sous vos yeux, capitaine ! » s'affiche. Ce n'est pas une quête.
-- Son entrepôt se vide d'environ 8 % par heure (au moins 1 objet toutes les 5 minutes) tant qu'un joueur est connecté.
+- Son entrepôt se vide d'environ 8 % de sa capacité par heure (au moins 1 objet toutes les 5 minutes) tant qu'un joueur est connecté, sans descendre sous le quart de celle-ci.
 - Vous pouvez **travailler pour Jack** (un seul employeur à la fois) : +10 % sur vos ventes, −15 % sur vos achats chez lui.

@@ -1,6 +1,6 @@
 ---
 title: Indiana Jones
-description: Indiana Jones, archéologue aventurier, légende de passage de Valmont (chapitre V, bonus) — où le trouver, son cabinet de curiosités, ce qu'il achète et vend, ses quêtes et ses récits.
+description: Indiana Jones, archéologue aventurier, légende de passage de Valmont (chapitre V, bonus, récits en plus avec les mods Mo' Structures et ATi Structures) — où le trouver, son cabinet de curiosités, ce qu'il achète et vend, ses quêtes et ses récits.
 ---
 
 # Indiana Jones
@@ -31,6 +31,10 @@ description: Indiana Jones, archéologue aventurier, légende de passage de Valm
 
 Indiana n'est pas un survivant de Valmont : c'est un chasseur de reliques qui rêve d'un musée sous vos remparts. Il rachète les **trouvailles de vos explorations** (fouilles archéologiques, chambres des épreuves, disques rares) et vous vend en échange les plantes et créatures rapportées de ses expéditions, jusqu'à l'œuf de renifleur et « le carnet du Graal ». Aucun artisan ne dépend de lui pour avancer dans l'histoire.
 
+!!! info "Récits en plus avec Mo' Structures et ATi Structures"
+
+    Indiana fonctionne sans aucun mod. Si les mods de structures **Mo' Structures** (Sphinx, pyramides) ou **ATi Structures** (temples, monument souterrain) sont installés sur le serveur, il propose des **récits supplémentaires** : explorer ces ruines, en plus de ses cinq récits habituels. Rien d'autre ne change. Le détail est dans [Ses récits](#ses-recits) ; pour savoir si ces mods sont présents : [Mods et plugins](../../serveur/mods-et-plugins.md#les-mods-de-contenu).
+
 ## Le retrouver
 
 | | |
@@ -44,7 +48,7 @@ Au chapitre V, Alderic le signale : « Un aventurier au chapeau de feutre fouill
 
 Lancez les recherches depuis **Alderic → Quêtes de la cité**, puis suivez la barre « 🗺 Indiana Jones » en haut de l'écran. Au-delà de 500 blocs, la barre reste vide : avancez vers les déserts, savanes ou jungles jusqu'à ce qu'elle commence à se remplir. Le déroulement complet est expliqué dans [Retrouver et installer un personnage](../recrutement.md).
 
-C'est une **quête bonus** : elle ne bloque jamais la signature de la charte. Si vous ne la terminez pas au chapitre V, elle reste proposée dans les quêtes de la cité aux chapitres suivants, jusqu'à ce qu'elle soit faite (voir [Les quêtes bonus](../../guide/trame.md#4-les-quetes-bonus)). Dans l'écran des progrès (touche ++l++), Indiana figure sur la ligne **Les légendes de passage**.
+C'est une **quête bonus** : elle ne bloque jamais la signature de la charte. Si vous ne la terminez pas au chapitre V, elle reste proposée dans les quêtes de la cité aux chapitres suivants, jusqu'à ce qu'elle soit faite (voir [Les quêtes bonus](../../guide/trame.md#4-les-quetes-bonus)). Dans l'écran des progrès (touche ++l++), Indiana figure sur la ligne **Les légendes de passage**, avec [Geppetto](geppetto.md), l'autre légende du chapitre V ; sa bulle signale les récits en plus avec les mods de structures.
 
 !!! tip "Préparez son cabinet pendant le voyage"
 
@@ -78,7 +82,7 @@ Un bâtiment de type **Atelier**, libre ou réservé à Indiana Jones (nom propo
 
 ## Ce qu'il rachète
 
-Les prix sont ceux d'un **lot complet**, au prix plein (entrepôt rempli à moins de 40 %). La plupart des objets se vendent **à l'unité** ; seuls les bâtons de brise et les froglights se vendent par 4. Au menu **Entrepôt**, vous pouvez lui racheter son stock au double de ce prix.
+Les prix sont ceux d'un **lot complet**, au prix plein (entrepôt rempli à moins de 40 %). La plupart des objets se vendent **à l'unité** ; seuls les bâtons de brise et les froglights se vendent par 4. Au menu **Entrepôt**, vous vous servez **gratuitement** dans son stock, qui fait partie de la réserve de la ville (clic : un lot, ++shift++ + clic : une pile) ; ce que vous y prenez est marqué non revendable.
 
 | Ressource | Lot | Prix plein du lot | Entrepôt de base |
 |---|---|---|---|
@@ -194,11 +198,11 @@ Deux quêtes renouvelables par joueur, à accepter dans son menu **Quêtes**. Le
 
 !!! note "Quantités par rang"
 
-    Les quantités ci-dessus sont calculées d'après la règle du jeu : quantité de base × coefficient du rang (×1 ; ×1,5 ; ×2 ; ×2,5 ; ×3), arrondie. Quand le calcul tombe sur une demie, la valeur en jeu peut différer d'une unité. <span class="vm-badge vm-badge--orange">à vérifier</span>
+    Quantité de base × coefficient du rang (×1 ; ×1,5 ; ×2 ; ×2,5 ; ×3), arrondie à l'unité la plus proche (une demie est arrondie vers le haut).
 
 ## Ses récits
 
-Cinq quêtes personnelles, une par rang, à faire **une seule fois** (menu **Quêtes → Récits**). Les biomes ne comptent qu'une fois le récit accepté ; un succès Minecraft déjà obtenu valide le récit dès l'acceptation.
+Cinq quêtes personnelles, une par rang, à faire **une seule fois** (menu **Quêtes → Récits**), et jusqu'à quatre de plus avec les mods de structures (voir plus bas). Les biomes ne comptent qu'une fois le récit accepté ; un succès Minecraft déjà obtenu valide le récit dès l'acceptation.
 
 | Rang | Récit | Objectif | Récompense |
 |---|---|---|---|
@@ -208,6 +212,19 @@ Cinq quêtes personnelles, une par rang, à faire **une seule fois** (menu **Qu�
 | ★★★★ Expert | 🗝 La chambre des épreuves | Entrer dans une chambre des épreuves (succès « Minecraft: Trial(s) Edition ») | 200 coins |
 | ★★★★★ Maître | 📖 Le carnet du Graal | Visiter tous les biomes de la surface (succès « Adventuring Time ») : le récit le plus long de sa liste | 1 000 coins |
 
+### Les récits des mods de structures
+
+Ces récits s'ajoutent à ceux du même rang, seulement si leur mod est installé. Il suffit d'entrer dans la structure (dans son volume) après avoir accepté le récit.
+
+| Rang | Récit | Mod | Objectif | Récompense |
+|---|---|---|---|---|
+| ★★ Apprenti | 🏜 L'énigme du Sphinx | Mo' Structures | Pénétrer dans le Sphinx des sables | 200 coins |
+| ★★★ Compagnon | 🔺 Les pyramides | Mo' Structures | Explorer la grande pyramide du désert ou la pyramide de la jungle | 300 coins |
+| ★★★★ Expert | 🛕 Les temples oubliés | ATi Structures | Explorer un temple ancien, un temple englouti ou un temple pourrissant (en surface ou souterrain) | 350 coins |
+| ★★★★★ Maître | 🗿 Le monument souterrain | ATi Structures | Descendre dans le monument souterrain | 500 coins |
+
+Avec ces récits, Indiana en compte six à neuf selon les mods présents : l'écran des récits les affiche alors quatre par page, avec des flèches pour passer d'une page à l'autre. L'emplacement de ces structures dans le monde dépend des mods <span class="vm-badge vm-badge--orange">à vérifier</span>.
+
 ## Ses rangs
 
 Le rang d'Indiana est **commun à toute la ville** : chaque vente, achat et quête de chaque joueur le fait progresser.
@@ -215,18 +232,19 @@ Le rang d'Indiana est **commun à toute la ville** : chaque vente, achat et quê
 | Rang | XP totale | Ce qui se débloque |
 |---|---|---|
 | ★ Novice | 0 | Bambou, cactus, fèves de cacao, cannes à sucre ; récit « Le temple perdu » |
-| ★★ Apprenti | 500 | Cornichons de mer, pétales roses, blocs de mousse, grandes feuilles tombantes ; récit « L'île aux champignons » ; baies lumineuses, éclats d'améthyste, bâtons de brise et corne de chèvre dans ses quêtes |
-| ★★★ Compagnon | 2 000 | Seaux de poisson tropical et d'axolotl, fleur sporifère, lichen lumineux ; récit « Les pics de glace » ; froglight ocre et tesson « archer » dans ses quêtes |
-| ★★★★ Expert | 5 500 | Œuf de renifleur, seau de têtard ; récit « La chambre des épreuves » |
-| ★★★★★ Maître | 12 000 | Carnet du Graal, toile du temple oublié ; récit « Le carnet du Graal » |
+| ★★ Apprenti | 500 | Cornichons de mer, pétales roses, blocs de mousse, grandes feuilles tombantes ; récit « L'île aux champignons » (et « L'énigme du Sphinx » avec Mo' Structures) ; baies lumineuses, éclats d'améthyste, bâtons de brise et corne de chèvre dans ses quêtes |
+| ★★★ Compagnon | 2 000 | Seaux de poisson tropical et d'axolotl, fleur sporifère, lichen lumineux ; récit « Les pics de glace » (et « Les pyramides » avec Mo' Structures) ; froglight ocre et tesson « archer » dans ses quêtes |
+| ★★★★ Expert | 5 500 | Œuf de renifleur, seau de têtard ; récit « La chambre des épreuves » (et « Les temples oubliés » avec ATi Structures) |
+| ★★★★★ Maître | 12 000 | Carnet du Graal, toile du temple oublié ; récit « Le carnet du Graal » (et « Le monument souterrain » avec ATi Structures) |
 
 Pour lui faire gagner de l'expérience : lui vendre vos trouvailles (1 XP par lot + 1 XP par coin reçu), lui acheter des articles (1 XP par coin dépensé), valider ses quêtes (25 XP × son rang pour la principale, 60 XP × son rang pour la spéciale).
 
 ## Bon à savoir
 
 - **Un marchand d'explorateur** : tout ce qu'il rachète vient de l'exploration (fouilles archéologiques, chambres des épreuves, disques rares, cornes de chèvre, froglights).
+- **Les mods de structures** n'ajoutent que des récits : sa boutique, son entrepôt et ses quêtes restent les mêmes avec ou sans eux.
 - **Indépendant** : aucun de ses articles ne dépend du stock d'un autre artisan, et aucun artisan ne dépend de lui.
 - **L'œuf de renifleur** (rang Expert, 200 coins, un par jour au plus) permet d'élever un renifleur sans fouiller les ruines.
 - **Le carnet du Graal** (rang Maître) est un livre écrit signé « Henry Jones ». Il porte le même nom que son dernier récit.
-- Son entrepôt se vide d'environ 8 % par heure (au moins 1 objet toutes les 5 minutes) tant qu'un joueur est connecté.
+- Son entrepôt se vide d'environ 8 % de sa capacité par heure (au moins 1 objet toutes les 5 minutes) tant qu'un joueur est connecté, sans descendre sous le quart de celle-ci.
 - Vous pouvez **travailler pour Indiana** (un seul employeur à la fois) : +10 % sur vos ventes, −15 % sur vos achats chez lui.

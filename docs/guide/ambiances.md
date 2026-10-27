@@ -33,7 +33,7 @@ Ces moments n'apportent ni coins ni objets : ils sont là pour le plaisir… et 
 
         Le relief naturel de Minecraft culmine en général bien en dessous de Y = 300. Selon le terrain du serveur, il faudra peut-être trouver une montagne exceptionnelle… ou bâtir pour atteindre cette altitude. <span class="vm-badge vm-badge--orange">à vérifier</span>
 
-    **Lien avec les récits** : deux récits demandent d'« Atteindre le sommet d'une montagne » : *Conquérant des sommets* ([Gandalf](../personnages/legendes/gandalf.md), rang Novice, 100 coins) et *Les pics d'émeraude* ([Béatrice](../personnages/survivants/beatrice.md), rang Compagnon, 150 coins). Acceptez d'abord le récit auprès du personnage, puis déclenchez l'événement : le récit est validé en même temps.
+    **Lien avec les récits** : deux récits demandent d'« Atteindre le sommet d'une montagne » : *Conquérant des sommets* ([Gandalf](../personnages/legendes/gandalf.md), rang Novice, 100 coins, sans le mod Iron's Spells) et *Les pics d'émeraude* ([Béatrice](../personnages/survivants/beatrice.md), rang Compagnon, 150 coins). Acceptez d'abord le récit auprès du personnage, puis déclenchez l'événement : le récit est validé en même temps.
 
 === "🐉 Au-dessus des nuages"
 
@@ -91,7 +91,7 @@ Ces moments n'apportent ni coins ni objets : ils sont là pour le plaisir… et 
 
     ---
 
-    Le jour, ils flânent autour de leurs maisons ; la nuit, ils dorment dans leur lit. Chez Roland, les recrues s'entraînent. Chaque matin, l'impôt de l'aube est annoncé.
+    Le jour, ils flânent autour de leurs maisons ou travaillent pour les artisans ; la nuit, ils dorment dans leur lit. Chez Roland, les recrues s'entraînent. Chaque matin, le chat annonce le bilan de l'aube (satisfaction, repas) puis l'impôt.
 
 -   ![](../assets/ui/icones/ic_follow_stop.png){ .vm-icone } **Les sièges**
 

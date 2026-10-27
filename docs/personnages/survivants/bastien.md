@@ -77,7 +77,7 @@ Un bâtiment de type **Atelier**, libre ou réservé à Bastien (nom proposé : 
 
 ## Ce qu'il rachète
 
-Les prix sont ceux d'un **lot complet de 16 bûches**, au prix plein (entrepôt rempli à moins de 40 %). Au menu **Entrepôt**, vous pouvez lui racheter son stock au double de ce prix.
+Les prix sont ceux d'un **lot complet de 16 bûches**, au prix plein (entrepôt rempli à moins de 40 %). Au menu **Entrepôt**, vous vous servez **gratuitement** dans son stock, qui fait partie de la réserve de la ville (clic : un lot, ++shift++ + clic : une pile) ; ce que vous y prenez, et ce que vous en fabriquez, est marqué non revendable.
 
 | Ressource (nom affiché) | Prix plein du lot de 16 | Entrepôt de base |
 |---|---|---|
@@ -203,8 +203,8 @@ Pour lui faire gagner de l'expérience : lui vendre du bois (1 XP par lot + 1 XP
 
 ## Bon à savoir
 
-- **Au chapitre I**, la quête « La palissade » demande de livrer 192 rondins au chantier. Depuis les quêtes d'Alderic, vous pouvez aussi les **réquisitionner** dans l'entrepôt de Bastien (++shift++ + clic droit) : la caisse de la ville les lui rachète.
+- **Au chapitre I**, la quête « La palissade » demande de livrer 192 rondins au chantier. Depuis les quêtes d'Alderic, vous pouvez aussi les **réquisitionner** dans l'entrepôt de Bastien (++shift++ + clic droit) : le chantier y puise gratuitement, puisque son stock est la réserve de la ville.
 - **Ses bûches sont l'ingrédient** de nombreux articles d'autres artisans : composteur d'[Hélène](helene.md), bateau de [Martin](martin.md), bouclier et table de forgeron de [Thorvald](thorvald.md), lits et bannières d'[Agathe](agathe.md), flèches et arcs de [Roland](roland.md), bibliothèques d'[Isabeau](isabeau.md)… Un entrepôt de Bastien vide met ces articles en rupture.
 - À l'inverse, sa **Hache du charbonnier** consomme les lingots de fer de [Thorvald](thorvald.md).
-- Son entrepôt se vide d'environ 8 % par heure tant qu'un joueur est connecté : la demande en bois revient toujours.
+- Son entrepôt se vide d'environ 8 % de sa capacité par heure tant qu'un joueur est connecté, sans descendre sous le quart de celle-ci : la demande en bois revient toujours.
 - Vous pouvez **travailler pour Bastien** : +10 % sur vos ventes de bois, −15 % sur vos achats chez lui.

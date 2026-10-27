@@ -75,15 +75,15 @@ La charte est payée par **la caisse de la ville**, jamais par votre bourse. Pen
 
 | Passage | Prix de la charte | Parcelles offertes |
 |---|---|---|
-| Campement → Hameau | 150 coins | +6 |
-| Hameau → Village | 400 coins | +6 |
-| Village → Bourg | 800 coins | +8 |
-| Bourg → Ville | 1 500 coins | +8 |
-| Ville → Ville franche | 2 500 coins | +10 |
-| Ville franche → Cité | 4 000 coins | +12 |
-| Cité → Grande cité | 6 000 coins | +14 |
-| Grande cité → Citadelle | 8 500 coins | +16 |
-| Citadelle → Capitale | 12 000 coins | +20 |
+| Campement → Hameau | 150 coins | +10 |
+| Hameau → Village | 400 coins | +12 |
+| Village → Bourg | 800 coins | +15 |
+| Bourg → Ville | 1 500 coins | +18 |
+| Ville → Ville franche | 2 500 coins | +20 |
+| Ville franche → Cité | 4 000 coins | +25 |
+| Cité → Grande cité | 6 000 coins | +28 |
+| Grande cité → Citadelle | 8 500 coins | +32 |
+| Citadelle → Capitale | 12 000 coins | +40 |
 
 Les parcelles offertes ne font **pas** monter le prix des parcelles que vous achetez ensuite chez Alderic.
 

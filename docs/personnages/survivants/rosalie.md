@@ -76,7 +76,7 @@ Un bâtiment de type **Atelier**, libre ou réservé à Rosalie (nom proposé : 
 
 ## Ce qu'elle rachète
 
-Les prix sont ceux d'un **lot complet de 16** (8 seulement pour le lapin), au prix plein (entrepôt rempli à moins de 40 %). Au menu **Entrepôt**, vous pouvez lui racheter son stock au double de ce prix.
+Les prix sont ceux d'un **lot complet de 16** (8 seulement pour le lapin), au prix plein (entrepôt rempli à moins de 40 %). Au menu **Entrepôt**, vous vous servez **gratuitement** dans son stock, qui fait partie de la réserve de la ville (clic : un lot, ++shift++ + clic : une pile) ; ce que vous y prenez, et ce que vous en fabriquez, est marqué non revendable.
 
 | Ressource (nom affiché) | Prix plein du lot de 16 | Entrepôt de base |
 |---|---|---|
@@ -201,7 +201,7 @@ Pour lui faire gagner de l'expérience : lui vendre viandes, œufs et champignon
 - **Deux recettes dépendent d'artisans qui arrivent plus tard** : les carottes dorées demandent l'or de [Béatrice](beatrice.md), l'Hydromel du Chaudron les fioles de miel de [Frère Anselme](frere-anselme.md). Tant qu'ils ne sont pas installés, ces articles restent en rupture.
 - **[Frère Anselme](frere-anselme.md) puise dans son stock** : ses champignons bruns servent à l'œil d'araignée fermenté.
 - [Godefroy](godefroy.md), recruté au même chapitre, réclame « du ragoût. Beaucoup de ragoût. » à son arrivée.
-- Son entrepôt se vide d'environ 8 % par heure tant qu'un joueur est connecté : la demande en viande revient toujours.
+- Son entrepôt se vide d'environ 3 % de sa capacité par heure tant qu'un joueur est connecté, sans descendre sous le quart de celle-ci, et les habitants de la ville y prennent leurs repas à chaque aube (voir [Les habitants](../../guide/habitants.md)) : la demande en viande revient toujours.
 - Vous pouvez **travailler pour Rosalie** : +10 % sur ce que vous lui vendez, −15 % sur vos achats chez elle.
 
 ??? spoiler "Son rôle dans la suite de l'histoire"

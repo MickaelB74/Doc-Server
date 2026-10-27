@@ -1,6 +1,6 @@
 ---
 title: Foire aux questions
-description: Les réponses aux questions les plus fréquentes des joueurs de Valmont — démarrage, personnages, quêtes, commerce, bâtiments, sièges et spoilers.
+description: Les réponses aux questions les plus fréquentes des joueurs de Valmont — démarrage, personnages, quêtes, commerce, bâtiments, habitants, sièges, raids et spoilers.
 ---
 
 # Foire aux questions
@@ -12,7 +12,7 @@ Les questions que se posent le plus souvent les habitants de Valmont. Cliquez su
 
 ??? question "Par où commencer ?"
 
-    Parlez à **Alderic** (clic droit) et ouvrez **Quêtes de la cité** : vous y verrez les objectifs du moment. Voir [Premiers pas](../guide/index.md).
+    Parlez à **Alderic** (clic droit) et ouvrez **Quêtes de la cité** : vous y verrez les objectifs du moment. Voir [Premiers pas](../guide/index.md). À Valmont, on agit par les personnages : les commandes `/city` servent surtout à consulter (voir [Commandes](commandes.md)).
 
 ??? question "Je ne vois pas les menus illustrés."
 
@@ -20,7 +20,7 @@ Les questions que se posent le plus souvent les habitants de Valmont. Cliquez su
 
 ??? question "Le panneau des quêtes déborde ou est mal placé."
 
-    Ouvrez `/city quests` et choisissez la position **BORD**, **MARGE** ou **PRÈS** selon votre écran. `/city quests toggle` le masque.
+    Ouvrez `/city quests` et choisissez la position **BORD**, **MARGE** ou **PRÈS** selon votre écran. `/city quests toggle` fait défiler les trois affichages : **visible**, **accroché** (le suivi passe dans la liste des joueurs, touche ++tab++) et **masqué**.
 
 ## Les personnages
 
@@ -52,9 +52,13 @@ Les questions que se posent le plus souvent les habitants de Valmont. Cliquez su
 
     Un **!** rouge : une nouveauté vous attend (quête à valider, récit à accepter…). Un **/!\\** jaune : l'artisan n'arrive pas à rejoindre son poste. Dégagez le passage.
 
-??? question "Jack Sparrow ou Harold ne commercent pas."
+??? question "Une légende installée ne commerce pas."
 
-    Ces deux légendes dépendent d'un mod (Tax' Ocean Villager pour Jack Sparrow, Dragon Mounts Remastered pour Harold). Si le mod est absent du serveur, elles s'installent mais n'ouvrent pas de commerce. Voir [Mods et plugins](../serveur/mods-et-plugins.md).
+    Onze légendes dépendent d'un mod : Robinson Crusoé (Tough As Nails), le capitaine Achab (Tide), Jack Sparrow (Tax' Ocean Villager), Obélix (Wilder Nature **et** Farmer's Delight), Miyamoto Musashi (Epic Fight), Gambrinus (Let's Do Brewery), Geppetto (Handcrafted **et** Furniture), Ragnar (Small Ships), Jeanne d'Arc (Valarian Conquest), Harold (Dragon Mounts Remastered) et Hercule (Mowzie's Mobs). Si leur mod est absent du serveur, elles s'installent mais n'ouvrent ni boutique ni quêtes : elles l'expliquent dans un dialogue, suivi d'une ligne grise qui nomme le mod. Voir [Mods et plugins](../serveur/mods-et-plugins.md#les-mods-de-contenu).
+
+??? question "Je n'arrive pas à remettre les objets d'un récit « Rapporter… »."
+
+    Ouvrez les récits **depuis le menu du personnage lui-même**, pas depuis le journal de quêtes, et cliquez sur le récit en cours quand vous avez tous les objets sur vous. Les objets achetés à un PNJ ou pris dans une réserve sont refusés.
 
 ## Les quêtes
 
@@ -79,13 +83,13 @@ Les questions que se posent le plus souvent les habitants de Valmont. Cliquez su
 
 ??? question "Il n'y a plus assez d'emplacements pour la quête de territoire."
 
-    Les chartes n'offrent pas tous les emplacements demandés : achetez la différence chez Alderic, bouton **Agrandir la ville** (payé par la caisse). Voir [Le territoire](../guide/territoire.md#obtenir-plus-demplacements).
+    Les chartes n'offrent pas tous les emplacements demandés : achetez la différence chez Alderic, **Trésor** → **Agrandir la ville** (payé par la caisse). Voir [Le territoire](../guide/territoire.md#obtenir-plus-demplacements).
 
 ## Le commerce
 
 ??? question "Pourquoi je ne peux pas revendre cet objet ?"
 
-    Il a été acheté à un artisan : il est **marqué** et ne se revend pas. Il reste utilisable pour construire, fabriquer et livrer les chantiers de la ville.
+    Il a été acheté à un artisan, pris dans la réserve d'un entrepôt, ou fabriqué avec un tel objet : il est **marqué** et ne se revend pas. Il reste utilisable pour construire, fabriquer et livrer les chantiers de la ville.
 
 ??? question "L'artisan n'achète plus ma ressource."
 
@@ -105,17 +109,29 @@ Les questions que se posent le plus souvent les habitants de Valmont. Cliquez su
 
 ## La ville et les bâtiments
 
+??? question "La commande /city claim est refusée. Comment revendiquer une parcelle ?"
+
+    Les parcelles passent par **Alderic**. Demandez-lui de vous suivre jusqu'à la limite de la ville, placez-vous sur le chunk voulu, parlez-lui, puis **clic gauche** sur la barre **Parcelles** de son menu. Voir [Le territoire](../guide/territoire.md#revendiquer-une-parcelle).
+
+??? question "Comment déposer des coins dans la caisse ?"
+
+    Chez Alderic : **Trésor** → **Déposer des coins**, puis tapez le montant dans le chat. La commande `/city deposit` est réservée à l'équipe du serveur.
+
 ??? question "Puis-je perdre mes constructions pendant un siège ?"
 
     Non. Aucun bloc n'est jamais endommagé dans la ville : ni explosion, ni incendie, ni porte enfoncée.
 
 ??? question "Un joueur a supprimé mon bâtiment !"
 
-    Tout joueur peut supprimer un bâtiment. Rassurez-vous, **les blocs restent en place** : il suffit de le redéclarer avec `/city build new`. Concertez-vous avant de réorganiser la ville.
+    Tout joueur peut supprimer un bâtiment. Rassurez-vous, **les blocs restent en place** : il suffit de le redéclarer chez Alderic (**Bâtiments** → **Ajouter un bâtiment**). Concertez-vous avant de réorganiser la ville.
 
 ??? question "Un habitant est parti."
 
-    Son lit a été cassé, ou sa maison a été supprimée ou a changé de type.
+    Son lit a été cassé, ou sa maison a été supprimée ou a changé de type. Un habitant mécontent, lui, ne part jamais.
+
+??? question "La satisfaction des habitants est basse. Est-ce grave ?"
+
+    Non : c'est un bonus. Basse, elle ralentit un peu les arrivées et réduit l'impôt ; haute, elle les accélère et l'augmente. Cliquez sur le portrait d'Alderic pour voir quel besoin manque. Voir [Les habitants](../guide/habitants.md#besoins-et-satisfaction).
 
 ??? question "Mon bâtiment n'atteint pas 60 % de toit."
 
@@ -125,7 +141,7 @@ Les questions que se posent le plus souvent les habitants de Valmont. Cliquez su
 
 ??? question "Quand ont lieu les sièges ?"
 
-    Par défaut le **mercredi** et le **samedi à 21 h** (heure de Paris), à partir du chapitre IV, s'il y a au moins **2 joueurs connectés**. `/city event` donne le prochain rendez-vous.
+    Par défaut **tous les jours à 22 h** (heure de Paris), à partir du chapitre IV, s'il y a au moins **2 joueurs connectés**. `/city event`, ou Alderic → Événements → Sièges, donne le prochain rendez-vous.
 
 ??? question "Puis-je mourir en ville pendant un siège ?"
 
@@ -134,6 +150,16 @@ Les questions que se posent le plus souvent les habitants de Valmont. Cliquez su
 ??? question "Qui reçoit la récompense d'un siège ?"
 
     La **caisse de la ville** : 150 coins + 50 par chapitre (350 coins au chapitre IV). Le capitaine de la garde gagne aussi de l'expérience.
+
+## Les raids
+
+??? question "Comment partir en raid ?"
+
+    Parlez à Alderic : **Événements** → **Raids**, choisissez la difficulté puis la cible, et sonnez le rassemblement. Les joueurs réunis autour d'Alderic partent ensemble. Les raids s'ouvrent au chapitre II. Tout est expliqué dans [Les raids](../guide/raids.md).
+
+??? question "Comment quitter un raid en cours ?"
+
+    Parlez au héraut du camp, ou tapez `/city raid quitter` : vous rentrez à Valmont et l'expédition continue sans vous.
 
 ## Spoilers
 

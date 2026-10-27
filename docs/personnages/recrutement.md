@@ -72,7 +72,7 @@ Seuls les ateliers **libres** ou **réservés à lui** sont proposés, chacun av
 >
 > « ✅ Thorvald assigné au bâtiment Forge ! »
 
-La commande `/city build assign <bâtiment> <artisan>` fait la même chose, pour un artisan déjà arrivé en ville.
+Avec les menus classiques, ce bouton s'appelle « Chercher un bâtiment ». La commande `/city build assign <bâtiment> <artisan>` est réservée à l'équipe du serveur : un joueur installe toujours l'artisan en lui parlant.
 
 ## 3. Ce que demande un atelier
 

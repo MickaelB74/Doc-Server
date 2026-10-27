@@ -37,7 +37,7 @@ Il y a vingt hivers, un dragon venu du Néant a réduit en cendres **Valmont**, 
 
     ---
 
-    Votre point de départ : il donne les **quêtes de la cité**, gère la **caisse** et vend les nouvelles **parcelles**. Un clic droit sur lui suffit.
+    Votre point de départ : il donne les **quêtes de la cité**, gère la **caisse**, vend les nouvelles **parcelles** et lève les **raids**. Un clic droit sur lui suffit.
 
 -   ![](assets/ui/icones/ic_job.png){ .vm-icone } **Des artisans à retrouver**
 
@@ -55,13 +55,13 @@ Il y a vingt hivers, un dragon venu du Néant a réduit en cendres **Valmont**, 
 
     ---
 
-    Pas de dégâts, pas d'explosion, pas d'incendie. **Une seule exception : les sièges**, le mercredi et le samedi soir.
+    Pas de dégâts, pas d'explosion, pas d'incendie. **Une seule exception : les sièges**, chaque soir à 22 h à partir du chapitre IV.
 
 -   ![](assets/ui/icones/ic_info.png){ .vm-icone } **Trois réflexes**
 
     ---
 
-    `/city` (ou `/c`) pour les commandes, ++l++ pour la progression de la ville, ++tab++ pour l'état de la ville et le vôtre.
+    Un clic droit sur les personnages pour agir, ++l++ pour la progression de la ville, ++tab++ pour l'état de la ville et le vôtre. `/city` (ou `/c`) sert aux consultations.
 
 </div>
 
@@ -79,11 +79,11 @@ Il y a vingt hivers, un dragon venu du Néant a réduit en cendres **Valmont**, 
 
 -   **[Guide du joueur](guide/index.md)**
 
-    Premiers pas, chapitres et charte, territoire, bâtiments, commerce, habitants, garde et sièges.
+    Premiers pas, chapitres et charte, territoire, bâtiments, commerce, habitants, garde, sièges et raids.
 
 -   **[Les personnages](personnages/index.md)**
 
-    Alderic, les quatorze survivants et les sept légendes de passage : où les trouver, ce qu'ils achètent et vendent.
+    Alderic, les quatorze survivants et les seize légendes de passage : où les trouver, ce qu'ils achètent et vendent.
 
 -   **[Commandes](aide/commandes.md)**
 

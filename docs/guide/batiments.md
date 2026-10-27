@@ -19,11 +19,13 @@ Une construction ne devient un **bâtiment** qu'une fois **déclarée** : vous l
 
 Un atelier peut être **réservé** à un artisan déjà rencontré, ou laissé **libre** : le premier artisan qui s'y installe le réserve. Tous les types comptent pour les quêtes de la cité qui demandent un nombre de bâtiments. Les exigences de chaque artisan sont regroupées dans l'[aide-mémoire des ateliers](../personnages/ateliers.md).
 
+Un cinquième type, l'**Annexe** de travail, est le lieu de travail des employés d'un artisan. Elle ne se choisit pas dans cette liste : elle se crée depuis les **Actions** de l'artisan (voir [Le travail des habitants](habitants.md#le-travail-des-habitants)).
+
 ## Créer un bâtiment, pas à pas
 
 <ol class="vm-frise" markdown>
-<li markdown>**Lancez la création** : `/city build new`, ou Alderic → Bâtiments → ![Ajouter](../assets/ui/boutons/fb_ajouter.png){ .vm-ui }</li>
-<li markdown>**Choisissez le type** (et, pour un atelier, l'artisan ou « Atelier libre »). La bulle de chaque choix affiche ses prérequis.</li>
+<li markdown>**Lancez la création** : Alderic → Bâtiments → ![Ajouter](../assets/ui/boutons/fb_ajouter.png){ .vm-ui }</li>
+<li markdown>**Choisissez le type** (et, pour un atelier, l'artisan ou « Atelier libre »). La bulle de chaque choix affiche ses prérequis. Avec les menus classiques, le choix se fait en cliquant sur des boutons dans le chat.</li>
 <li markdown>**Donnez un nom dans le chat** : un seul mot, 24 caractères au plus, unique. Un nom vous est proposé : cliquez dessus pour le reprendre. Tapez `annuler` pour abandonner.</li>
 <li markdown>**Délimitez la zone avec le bâton « 🏗 Sélection »** : **clic gauche** sur un bloc du sol pour le premier coin (colonne de flammes), **clic droit** sur le coin opposé (colonne d'étincelles).</li>
 <li markdown>**Placez le poste de l'artisan** avec le bâton de Blaze « 📍 Point NPC » : **clic gauche** sur le sol, dans la zone, là où l'artisan se tiendra. Pour une habitation, une mairie ou un bâtiment divers, tapez plutôt `/city build skip` **en gardant l'outil en main**.</li>
@@ -34,7 +36,7 @@ Un atelier peut être **réservé** à un artisan déjà rencontré, ou laissé 
 
     La zone est un rectangle **entièrement dans la ville**, qui ne doit pas chevaucher un autre bâtiment. Cliquez **au niveau du sol du rez-de-chaussée** : c'est à partir de là que le toit est mesuré. La hauteur est gérée automatiquement : tout ce qui est construit de **40 blocs sous le sol à 100 blocs au-dessus** compte, caves et tours comprises.
 
-Le raccourci en une commande existe aussi : `/city build new <type> [artisan|libre] [nom]`, par exemple `/city build new atelier thorvald Forge`.
+La commande `/city build new` est réservée à l'équipe du serveur : les joueurs passent par Alderic.
 
 ## L'inspection et les niveaux
 
@@ -85,18 +87,19 @@ Certains métiers en plein air demandent moins de toit, voire pas de porte : c'e
 
 ### À quoi sert le niveau ?
 
-- Une **habitation** doit être **conforme** (niveau 1 ou plus) pour accueillir des habitants.
+- Une **habitation** doit être **conforme** (niveau 1 ou plus) pour accueillir des habitants. Son niveau fait aussi leur **confort**, l'un de leurs besoins (voir [Les habitants](habitants.md#besoins-et-satisfaction)).
+- Une **annexe de travail** plus haute en niveau fait travailler les employés plus vite.
 - Pour un **atelier**, chaque niveau au-delà du premier agrandit **l'entrepôt de l'artisan de 25 %**. Au niveau 5, l'entrepôt est doublé : l'artisan peut stocker davantage et vous payer le prix plein plus longtemps.
 
 ## Gérer les bâtiments
 
-- **La liste** : Alderic → Bâtiments, ou `/city build`. Un clic gauche affiche les **bordures** du bâtiment (particules bleues, 5 secondes, visibles par vous seul).
-- **Changer le type** : clic droit sur le bâtiment dans la liste d'Alderic, ou `/city build type <nom> <type>`. Un bâtiment habité par un artisan reste son atelier.
-- **Supprimer** : Alderic → Bâtiments → ![Retirer](../assets/ui/boutons/fb_supprimer.png){ .vm-ui }, ou `/city build remove <nom>`. **Les blocs restent en place**, seule la déclaration disparaît. Les habitants s'en vont et l'artisan devient « sans logis ».
+- **La liste** : Alderic → Bâtiments. Un clic gauche affiche les **bordures** du bâtiment (particules bleues, 5 secondes, visibles par vous seul) ; ++shift++ + clic affiche l'inspection détaillée.
+- **Changer le type** : clic droit sur le bâtiment dans la liste d'Alderic. Un bâtiment habité par un artisan reste son atelier.
+- **Supprimer** : Alderic → Bâtiments → ![Retirer](../assets/ui/boutons/fb_supprimer.png){ .vm-ui }. **Les blocs restent en place**, seule la déclaration disparaît. Les habitants s'en vont et l'artisan devient « sans logis ».
 
 !!! danger "Tout joueur peut supprimer n'importe quel bâtiment"
 
-    Concertez-vous avant de réorganiser la ville. Un bâtiment supprimé par erreur se redéclare avec `/city build new` : les blocs, eux, n'ont pas bougé.
+    Concertez-vous avant de réorganiser la ville. Un bâtiment supprimé par erreur se redéclare chez Alderic (Bâtiments → Ajouter un bâtiment) : les blocs, eux, n'ont pas bougé.
 
 <figure markdown>
   ![La liste des bâtiments de la ville chez Alderic, rangée par type](../assets/ecrans/batiments.png){ width="320" loading="lazy" }
@@ -113,7 +116,9 @@ Certains métiers en plein air demandent moins de toit, voire pas de porte : c'e
 6. **Vérifiez avant d'installer un artisan** : `/city build inspect <nom>` liste ce qui manque.
 
 <details class="note" markdown>
-<summary>Avancé : régler la hauteur inspectée</summary>
+<summary>Pour l'équipe du serveur : régler la hauteur inspectée</summary>
+
+Ces réglages sont réservés à l'équipe du serveur. Pour un joueur, la zone en hauteur se règle seule à la création, et la hauteur construite se mesure à chaque inspection.
 
 | Commande | Effet |
 |---|---|

@@ -1,11 +1,11 @@
 ---
 title: Commerce et économie
-description: Les coins, la bourse et la caisse, le marché vivant des artisans de Valmont, l'offre et la demande, les objets marqués et les bons réflexes pour gagner sans casser les prix.
+description: Les coins, la bourse et la caisse, le marché vivant des artisans de Valmont, l'offre et la demande, la réserve de la ville, les objets marqués et les bons réflexes pour gagner sans casser les prix.
 ---
 
 # Commerce et économie
 
-À Valmont, l'argent circule entre les joueurs, les artisans et la caisse de la ville. Les artisans rachètent vos ressources, les stockent, les transforment et vous revendent leurs fabrications. Ce marché est **vivant** : il réagit à ce que tout le monde vend et achète.
+À Valmont, l'argent circule entre les joueurs, les artisans et la caisse de la ville. Les artisans rachètent vos ressources, les stockent, les transforment et vous vendent leurs fabrications. Leurs stocks forment la **réserve de la ville**, où chacun se sert gratuitement. Ce marché est **vivant** : il réagit à ce que tout le monde vend et achète.
 { .chapeau }
 
 ## 1. Les coins
@@ -17,7 +17,7 @@ description: Les coins, la bourse et la caisse, le marché vivant des artisans d
 | ![](../assets/ui/icones/ic_purse.png){ .vm-icone } **Votre bourse** | À vous seul | Panneau ++tab++, menus des artisans, Alderic → Trésor |
 | ![](../assets/ui/icones/ic_story.png){ .vm-icone } **La caisse de la ville** | À toute la ville | Panneau ++tab++, Alderic → Trésor, `/city info` |
 
-**Votre bourse se remplit** grâce aux ventes aux artisans, à leurs quêtes et à leurs récits. **La caisse se remplit** grâce à vos dépôts, à l'impôt des habitants et aux sièges remportés : c'est elle qui paie les chartes, les parcelles et les réquisitions.
+**Votre bourse se remplit** grâce aux ventes aux artisans, à leurs quêtes, à leurs récits et aux [raids](raids.md) réussis. **La caisse se remplit** grâce à vos dépôts, à l'impôt des habitants, aux sièges remportés et aux raids réussis : c'est elle qui paie les chartes et les parcelles.
 
 ## 2. Les trois façons de commercer
 
@@ -26,7 +26,7 @@ Un artisan ne commerce qu'une fois **installé dans son atelier**. Son écran d'
 | Menu | Ce que vous faites |
 |---|---|
 | ![Vendre](../assets/ui/boutons/btn_vendre.png){ .vm-ui } | Vous lui vendez les ressources de son domaine. **Clic gauche** : tout vendre. **Clic droit** : vendre un seul lot |
-| ![Entrepôt](../assets/ui/boutons/btn_entrepot.png){ .vm-ui } | Vous lui rachetez les matières qu'il a en stock, au **double** de son prix de rachat |
+| ![Entrepôt](../assets/ui/boutons/btn_entrepot.png){ .vm-ui } | Vous vous servez **gratuitement** dans son stock, la réserve de la ville. **Clic** : un lot. ++shift++ + **clic** : une pile. Ce que vous y prenez est marqué non revendable |
 | ![Boutique](../assets/ui/boutons/btn_boutique.png){ .vm-ui } | Vous achetez ses fabrications et ses raretés. De nouveaux articles se débloquent avec son rang |
 
 **Survolez toujours avant de vendre** : la bulle affiche le prix plein, le prix actuel, la demande et le remplissage de l'entrepôt, ainsi que ce que vous rapporterait « Tout vendre ».
@@ -53,6 +53,10 @@ Un artisan ne commerce qu'une fois **installé dans son atelier**. Son écran d'
 
 Tout ce que vous vendez entre **réellement** dans l'entrepôt de l'artisan, et cet entrepôt est **le même pour tous les joueurs**. Chaque ressource a, en principe, **un seul acheteur** en ville : le bois chez Bastien, le blé chez Hélène, les minerais chez Godefroy…
 
+### La réserve de la ville
+
+L'entrepôt d'un artisan est la **réserve de la ville** : y déposer (en vendant) est payé, s'y servir (menu Entrepôt) est **gratuit**. Les chantiers d'Alderic y puisent aussi gratuitement quand vous réquisitionnez. Les [employés](habitants.md#le-travail-des-habitants) de l'artisan la remplissent chaque jour, jusqu'à la moitié de sa capacité.
+
 ### L'offre et la demande
 
 | Remplissage de l'entrepôt | Prix payé | Demande affichée |
@@ -67,7 +71,7 @@ La vente se calcule **lot par lot** : si vous vendez une grosse quantité d'un c
 
 ### Les artisans consomment
 
-Chaque artisan écoule environ **8 % de son entrepôt par heure**, tant qu'au moins un joueur est connecté. **La demande revient toujours** : un marché saturé redevient intéressant après quelques heures.
+Chaque artisan écoule environ **8 % de son entrepôt par heure**, tant qu'au moins un joueur est connecté, sans descendre sous **25 % de sa capacité**. Hélène et Rosalie (3 % par heure) et frère Anselme (4 % par heure) en écoulent moins, car leurs entrepôts nourrissent et soignent aussi les habitants à chaque aube (voir [Les habitants](habitants.md#besoins-et-satisfaction)). **La demande revient toujours** : un marché saturé redevient intéressant après quelques heures.
 
 ### L'entrepôt grandit avec l'atelier
 
@@ -81,13 +85,15 @@ Certaines **raretés** n'ont pas d'ingrédient. Leur stock est limité et se rec
 
 ### Les objets marqués
 
-**Tout objet acheté à un artisan (en boutique ou à l'entrepôt) est marqué** *« Acheté chez … — non revendable »*. Un objet marqué :
+**Tout objet acheté en boutique ou pris dans l'entrepôt d'un artisan est marqué** : *« Acheté chez … — non revendable »* ou *« Réserve de … — non revendable »*. La marque **se transmet** : ce que vous fabriquez, cuisez, forgez ou taillez avec un objet marqué est marqué à son tour (*« Fait avec des réserves de la ville — non revendable »*), et un bloc marqué que vous posez redonne un objet marqué quand on le casse. Les plantations, elles, ne transmettent pas la marque : cultiver reste votre travail.
+
+Un objet marqué :
 
 - ❌ ne se revend à **aucun** artisan ;
 - ❌ ne compte **pas** pour les quêtes des artisans ;
 - ✅ s'utilise normalement pour **construire**, **fabriquer** et **livrer les chantiers** de la ville.
 
-Le marché est conçu pour qu'acheter, transformer puis revendre ne soit jamais rentable : inutile de chercher une combine.
+Le marché est conçu pour qu'acheter ou se servir, transformer puis revendre ne soit jamais rentable : inutile de chercher une combine.
 
 ## 4. Gagner plus
 
@@ -134,19 +140,20 @@ Prix plein, valeurs par défaut.
     | Plastron en fer | Thorvald | 28 coins |
     | Enclume (rang Compagnon) | Thorvald | **107 coins** |
     | Pioche en diamant (rang Expert) | Thorvald | **83 coins** |
-    | 16 bûches de chêne (entrepôt, rachat au double) | Bastien | 10 coins |
+    | 16 bûches de chêne prises à l'entrepôt | Bastien | **Gratuit** (non revendables) |
 
 === "Ce que paie la caisse"
 
     | Dépense de la ville | Prix |
     |---|---|
-    | Premier emplacement acheté | 150 coins (+8 % par emplacement, plafond 2 500) |
+    | Premier emplacement acheté | 50 coins (+3 % par emplacement, plafond 300) |
     | Toutes les chartes jusqu'à la Capitale | 35 850 coins au total |
 
     | Recette de la ville | Montant |
     |---|---|
     | Impôt de l'aube | 2 coins par habitant et par jour de jeu |
     | Siège remporté | 150 + 50 × chapitre (350 coins au chapitre IV) |
+    | Raid réussi | Selon son niveau (voir [Les raids](raids.md)) |
 
 ## 6. Votre niveau de joueur
 
@@ -162,3 +169,4 @@ Vous gagnez de l'expérience de joueur à chaque vente et à chaque achat. Votre
 6. **Approvisionnez les fournisseurs** : sans matières premières chez les uns, les boutiques des autres tombent en rupture.
 7. **Combinez chasse et sièges** : les monstres abattus pendant un siège comptent pour vos contrats de chasse.
 8. **Gardez vos objets marqués à part** : parfaits pour bâtir et livrer les chantiers d'Alderic.
+9. **Servez-vous dans la réserve** pour bâtir : c'est gratuit, et les employés des artisans la regarnissent.

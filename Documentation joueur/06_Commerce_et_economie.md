@@ -83,7 +83,7 @@ Le marché est conçu pour qu'acheter, transformer puis revendre ne soit jamais 
 
 | Dépense de la ville | Prix |
 |---|---|
-| Première parcelle achetée | 150 coins (+8 % par parcelle, plafond 2 500) |
+| Première parcelle achetée | 50 coins (+3 % par parcelle, plafond 300) |
 | Toutes les chartes jusqu'à la Capitale | 35 850 coins au total |
 
 ## 6. Votre niveau de joueur

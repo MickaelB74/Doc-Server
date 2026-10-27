@@ -19,25 +19,22 @@ description: Se connecter à MyCivilisation, serveur Minecraft 1.21.1 moddé, in
 | **Type de serveur** | Hybride : mods (NeoForge) et plugins (Paper / Bukkit) |
 | **Langue** | Français : menus, dialogues et quêtes |
 | **Monnaie** | Les **coins** : une bourse par joueur, une caisse commune pour la ville |
-| **Adresse** | <span class="vm-badge vm-badge--rouge">à compléter</span> |
+| **Adresse** | `92.159.232.157:25567` |
+| **Pack de ressources** | Activé : le serveur vous le propose à la connexion |
+| **Modpack** | [Télécharger l'archive des mods](https://mega.nz/file/a1p0BBSC#MVPOLpJXNfgisEHr8nsketEz0Y3jvv_eqjSwgzxvJuY) (voir [Installer le modpack](modpack.md)) |
 
 !!! equipe "À compléter par l'équipe du serveur"
 
-    Avant publication, merci de renseigner sur cette page :
+    Reste à préciser sur cette page la façon d'obtenir le **pack de musiques** d'ambiance (voir plus bas).
 
-    - l'**adresse** du serveur ;
-    - le **modpack** à installer et la façon de l'obtenir (launcher, CurseForge, Modrinth…) ;
-    - la **liste des mods requis** côté client, et celle des mods facultatifs conseillés ;
-    - la façon d'obtenir le **pack de musiques** d'ambiance (voir plus bas).
+## Se connecter, étape par étape { #se-connecter }
 
-## Se connecter, étape par étape
-
-1. **Installez le client moddé.** Le serveur charge des mods de contenu : sur un serveur hybride NeoForge, il faut en général se connecter avec **NeoForge 1.21.1** et les **mêmes mods** que le serveur. <span class="vm-badge vm-badge--orange">à confirmer</span>
-2. **Ajoutez le serveur** dans le menu *Multijoueur* de Minecraft, avec l'adresse indiquée ci-dessus.
+1. **Installez le modpack.** Votre jeu doit avoir **NeoForge 1.21.1** et les **mêmes mods** que le serveur : le modpack s'en charge, voir [Installer le modpack](modpack.md).
+2. **Ajoutez le serveur** dans le menu *Multijoueur* de Minecraft (*Ajouter un serveur*), avec l'adresse **`92.159.232.157:25567`**. Laissez l'option *Packs de ressources du serveur* sur **Activé** ou **Demander**.
 3. **Acceptez le pack de ressources** proposé à la connexion (voir ci-dessous) : c'est lui qui affiche les menus illustrés.
 4. **Parlez à Alderic**, le maire, au cœur de Valmont. La suite est expliquée dans les [premiers pas](../guide/index.md).
 
-Les mods de contenu ajoutent au monde des créatures, des objets et des structures absentes de Minecraft « vanilla ». Deux d'entre eux sont liés à des personnages de l'histoire : voir [Mods et plugins](mods-et-plugins.md).
+Les mods de contenu ajoutent au monde des créatures, des objets et des structures absentes de Minecraft « vanilla ». Plusieurs d'entre eux sont liés à des personnages de l'histoire, et leurs structures servent de cibles aux raids : voir [Mods et plugins](mods-et-plugins.md).
 
 ## Le pack de ressources « Valmont »
 
@@ -79,8 +76,9 @@ Le monde de Valmont joue de petites musiques lors de certains moments (atteindre
 
 - **Une seule ville pour tout le serveur.** La progression est collective : chapitres, caisse, stocks des marchands et progrès sont partagés.
 - **Le fil rouge suit Minecraft** : le bois, la nourriture, la pierre, la mine, la forge, puis les routes et la garde, le savoir… et des dangers toujours plus grands.
-- **Des personnages incarnés** : Alderic le maire, 14 survivants à retrouver et 7 « légendes de passage » facultatives.
-- **Une ville vivante** : des habitants s'installent dans vos maisons, paient l'impôt, peuvent être formés comme gardes, et la ville subit des **sièges** à heures fixes.
+- **Des personnages incarnés** : Alderic le maire, 14 survivants à retrouver et 16 « légendes de passage » facultatives.
+- **Une ville vivante** : des habitants s'installent dans vos maisons, paient l'impôt, peuvent être formés comme gardes, et la ville subit des **sièges** tous les soirs à 22 h.
+- **Des expéditions** : depuis le menu d'Alderic, partez en **raid** contre un camp, un fort, un château ou un navire, pour remplir la caisse de la ville.
 - **En ville, vous êtes protégé** : invulnérable (sauf pendant un siège), et aucun bloc n'y est endommagé par les monstres ni par les catastrophes.
 
 [Lire les règles d'or](regles.md){ .md-button .md-button--primary }

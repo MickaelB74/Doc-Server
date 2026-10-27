@@ -78,7 +78,7 @@ Un bâtiment de type **Atelier**, libre ou réservé à Edmond (nom proposé : `
 
 ## Ce qu'il rachète
 
-Les prix sont ceux d'un **lot complet** (8 ou 4 objets selon la ressource), au prix plein (entrepôt rempli à moins de 40 %). Au menu **Entrepôt**, vous pouvez lui racheter son stock au double de ce prix.
+Les prix sont ceux d'un **lot complet** (8 ou 4 objets selon la ressource), au prix plein (entrepôt rempli à moins de 40 %). Au menu **Entrepôt**, vous vous servez **gratuitement** dans son stock, qui fait partie de la réserve de la ville (clic : un lot, ++shift++ + clic : une pile) ; ce que vous y prenez, et ce que vous en fabriquez, est marqué non revendable.
 
 | Ressource (nom affiché) | Lot | Prix plein du lot | Entrepôt de base |
 |---|---|---|---|
@@ -172,7 +172,7 @@ Cinq quêtes personnelles, une par rang, à faire **une seule fois** (menu **Qu�
 | ★★★★ Expert | 🐺 Armure de loup | Fabriquer une armure pour loup à l'établi (6 écailles de tatou) | 150 coins |
 | ★★★★★ Maître | 🦒 Deux par deux | Obtenir le succès « Two by Two » : faire se reproduire chaque espèce qui peut l'être | 500 coins |
 
-Pour « Galop dans la savane », une autre monture de la même famille que le cheval compte peut-être aussi <span class="vm-badge vm-badge--orange">à vérifier</span>.
+Pour « Galop dans la savane », toute monture de la famille du cheval compte : cheval, âne, mule, lama, chameau, cheval squelette ou zombie.
 
 ## Ses rangs
 
@@ -181,7 +181,7 @@ Le rang d'Edmond est **commun à toute la ville** : chaque vente, achat et quêt
 | Rang | XP totale | Ce qui se débloque |
 |---|---|---|
 | ★ Novice | 0 | Laisses, armures de cuir, selle, cadre ; récit « Le cheval sauvage » |
-| ★★ Apprenti | 500 | Étiquette, armure en cuir pour cheval ; récit « Naissances à l'écurie » ; bottes de foin, grosses commandes de peaux de lapin et pillards dans ses quêtes |
+| ★★ Apprenti | 500 | Étiquette, armure en cuir pour cheval ; récit « Naissances à l'écurie » ; bottes de foin, grosses quantités de peaux de lapin et pillards dans ses quêtes |
 | ★★★ Compagnon | 2 000 | Armure en fer pour cheval, armure pour loup ; récit « Galop dans la savane » |
 | ★★★★ Expert | 5 500 | Armure en or pour cheval, Bottes de l'écuyer ; récit « Armure de loup » |
 | ★★★★★ Maître | 12 000 | Armure en diamant pour cheval ; récit « Deux par deux » |
@@ -193,5 +193,5 @@ Pour lui faire gagner de l'expérience : lui vendre ses ressources (1 XP par lot
 - **Au chapitre VI**, il est recruté en même temps que [Roland](roland.md), quand la ville chasse les pillards qui rançonnent ses marchands (quête de la cité « Les routes marchandes »). À partir de son rang Apprenti, ses quêtes spéciales demandent aussi d'abattre des pillards.
 - **Il puise dans les stocks d'autres artisans** : le fer de [Thorvald](thorvald.md) (selle, armure en fer pour cheval), l'or de [Béatrice](beatrice.md) (armure en or pour cheval), les diamants de [Godefroy](godefroy.md) (armure en diamant pour cheval) et les bûches de [Bastien](bastien.md) (cadre). Un stock vide chez l'un d'eux met l'article en rupture.
 - **Ses quêtes principales demandent du blé**, la récolte d'[Hélène](helene.md). À l'inverse, [Isabeau](isabeau.md) demande parfois du cuir dans ses quêtes spéciales.
-- Son entrepôt se vide d'environ 8 % par heure tant qu'un joueur est connecté : la demande en cuir et en foin revient toujours.
+- Son entrepôt se vide d'environ 8 % de sa capacité par heure tant qu'un joueur est connecté, sans descendre sous le quart de celle-ci : la demande en cuir et en foin revient toujours.
 - Vous pouvez **travailler pour Edmond** : +10 % sur vos ventes chez lui, −15 % sur vos achats chez lui.

@@ -107,6 +107,6 @@ Dans les sièges les plus durs, un **champion** peut mener la dernière vague. T
 
     ---
 
-    Alderic, les quatorze survivants et les sept légendes de passage.
+    Alderic, les quatorze survivants et les seize légendes de passage.
 
 </div>

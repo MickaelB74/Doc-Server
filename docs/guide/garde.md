@@ -26,7 +26,7 @@ Parmi les survivants à retrouver figure **[Roland](../personnages/survivants/ro
 
     ---
 
-    `/city garde former <habitant> <rôle>`, avec le rôle `soldat`, `archer` ou `sergent`. C'est la seule façon de faire avec les menus classiques.
+    `/city garde former <habitant> <rôle>`, avec le rôle `soldat`, `archer` ou `sergent`. Cette commande est réservée aux **menus classiques**, où Roland n'a pas d'écran de la garde. Avec les menus illustrés, elle vous renvoie chez Roland.
 
 </div>
 
@@ -71,11 +71,12 @@ Pour agrandir la garde, faites **monter Roland en rang** : commercez avec lui, f
 - Ils repèrent les monstres **dans la ville** jusqu'à 16 blocs. Soldats et sergents attaquent au contact ; les archers tirent jusqu'à 14 blocs. En temps normal, ils ne poursuivent pas un monstre hors de la ville.
 - Ils ne blessent jamais **un joueur, un habitant ni un animal**, même par une flèche perdue, et les joueurs ne peuvent pas les blesser.
 - Au repos, un garde regagne peu à peu sa vie.
-- Un garde **garde son lit** et ne paie pas l'impôt.
+- Un garde **garde son lit** et ne paie pas l'impôt. Un habitant employé chez un artisan quitte son emploi en entrant en formation.
+- La garde fait la **sécurité** des habitants, l'un de leurs besoins : 1 garde pour 5 habitants donne 100 % (voir [Les habitants](habitants.md#besoins-et-satisfaction)).
 
 ## Renvoyer un garde
 
-**Maj + clic droit** sur lui dans la liste de la garde, ou `/city garde renvoyer <nom>`. Il redevient un habitant ordinaire, retrouve son apparence et paie de nouveau l'impôt. Le même geste sur une recrue arrête sa formation.
+**Maj + clic droit** sur lui dans la liste de la garde, ou `/city garde renvoyer <nom>` avec les menus classiques. Il redevient un habitant ordinaire, retrouve son apparence et paie de nouveau l'impôt. Le même geste sur une recrue arrête sa formation.
 
 !!! danger "Un garde tombé n'est pas remplacé automatiquement"
 

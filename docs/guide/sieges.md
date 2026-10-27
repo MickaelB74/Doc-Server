@@ -16,12 +16,12 @@ Une ville prospère attire les convoitises. **À partir du chapitre IV**, Valmon
 
 | | Par défaut |
 |---|---|
-| **Jours et heure** | Le **mercredi** et le **samedi** à **21 h 00** (heure de Paris) |
+| **Jours et heure** | **Tous les jours** à **22 h 00** (heure de Paris) |
 | **Joueurs minimum** | **2 joueurs connectés** à l'heure dite, sinon le siège est annulé |
 | **Annonce** | Un coup de cloche et un message **5 minutes avant** |
 | **Premier siège** | Une fois la ville arrivée au chapitre IV (le Bourg) |
 
-`/city event` affiche le calendrier et le compte à rebours jusqu'au prochain siège. Aucun siège n'a lieu si le monde est en difficulté « paisible ».
+`/city event` affiche le calendrier et le compte à rebours jusqu'au prochain siège. Aucun siège n'a lieu si le monde est en difficulté « paisible ». Si une [expédition](raids.md) est en cours à l'heure dite, le siège est **reporté de 30 minutes**, avec une annonce.
 
 > « ⚔ Siège dans 5 minutes ! Préparez la défense de Valmont. »
 

@@ -1,6 +1,6 @@
 ---
 title: Alderic
-description: Alderic, intendant et maire de Valmont, présent dès la fondation — son rôle, ses menus (quêtes de la cité, bâtiments, trésor, agrandissement), son cadeau de bienvenue et ses récits de chapitre.
+description: Alderic, intendant et maire de Valmont, présent dès la fondation — son rôle, ses menus (quêtes de la cité, bâtiments, trésor, agrandissement, parcelles, population, événements), son cadeau de bienvenue et ses récits de chapitre.
 ---
 
 # Alderic
@@ -17,7 +17,7 @@ description: Alderic, intendant et maire de Valmont, présent dès la fondation 
 |---|---|
 | Statut | <span class="vm-badge vm-badge--or">Maire</span> |
 | Chapitre | Dès la fondation de la ville |
-| Rôle | Quêtes de la cité, charte, bâtiments, caisse de la ville, agrandissement |
+| Rôle | Quêtes de la cité, charte, bâtiments, parcelles, caisse de la ville, agrandissement, raids |
 | Où le trouver | En ville, qu'il ne quitte jamais |
 | Commerce | Aucun |
 
@@ -33,14 +33,17 @@ Vingt hivers après la Nuit Noire, Alderic fait renaître Valmont avec vous. C'e
 
 ## Son rôle
 
-Alderic apparaît à la fondation de la ville, devant le joueur qui la fonde (commande `/city create`, une seule fois pour tout le serveur). Le fondateur lit alors « 🏰 Valmont renaît de ses cendres ! », « 📍 Chunk de départ claim. » et « 👴 Le Maire est apparu devant vous. » La ville commence avec un seul emplacement de chunk : celui de la fondation.
+Alderic apparaît à la fondation de la ville, devant le joueur qui la fonde (commande `/city create`, réservée à l'équipe du serveur, une seule fois pour tout le serveur). Le fondateur lit alors « 🏰 Valmont renaît de ses cendres ! », « 📍 Chunk de départ claim. » et « 👴 Le Maire est apparu devant vous. » La ville commence avec un seul emplacement de chunk : celui de la fondation.
 
 Ensuite, tout passe par lui :
 
 - **L'histoire** : à chaque charte signée, il raconte le chapitre qui s'ouvre (voir plus bas, *Les récits d'Alderic*). La trame complète est décrite dans [La trame en dix chapitres](../guide/trame.md).
 - **Les quêtes de la cité** : c'est dans son menu que vous lancez la recherche des survivants (voir [Retrouver et installer un personnage](recrutement.md)), livrez les chantiers et signez la charte.
 - **Les bâtiments** : il tient la liste des bâtiments de la ville et permet d'en ajouter ou d'en supprimer.
+- **Les parcelles** : c'est auprès de lui qu'on revendique ou qu'on rend un chunk de la ville.
 - **La caisse** : il garde l'argent commun de la ville et vend des emplacements de chunk supplémentaires.
+- **Les habitants** : il présente la population de la ville, ses besoins et sa satisfaction.
+- **Les événements** : il lève les expéditions de la ville, les [raids](../guide/raids.md), et tient le calendrier des sièges.
 
 Alderic peut vous suivre, mais il ne quitte jamais la ville. S'il vous accompagne et que vous sortez du territoire, il s'arrête : « Je vous attends là, je dois surveiller la ville... » La barre d'action affiche alors « 🌲 Alderic ne peut pas quitter la ville. »
 
@@ -63,13 +66,42 @@ Un clic droit sur Alderic ouvre la mairie. Avec le pack de ressources « Valmont
 | En-tête (palier et niveau, par exemple « VILLAGE NIV. 3 ») | Au survol : le chapitre en cours et la taille de la ville |
 | Icône « 📜 Récit d'Alderic » | Réécouter le récit du chapitre en cours |
 | Icône « 👣 Demander de suivre » / « ⛔ Arrêter de suivre » | Alderic vous accompagne dans la ville ; il s'arrête à la frontière |
+| Portrait d'Alderic (classique : le tournesol « 😊 Satisfaction des habitants ») | Au survol : la satisfaction des habitants. Un clic ouvre l'écran **Population** (classique : le bilan s'affiche dans le chat) |
 | ![Bouton Quêtes](../assets/ui/boutons/btn_quetes.png){ .vm-ui }<br>« 📜 Quêtes de la cité » (classique : « 📖 Infos de la ville ») | Les quêtes du chapitre et la charte. La mention **[PRÊT]** s'affiche quand toutes les quêtes obligatoires sont faites |
 | ![Bouton Bâtiments](../assets/ui/boutons/btn_batiments.png){ .vm-ui }<br>« 🏗 Bâtiments » | Gérer les bâtiments de la ville |
-| ![Bouton Trésor](../assets/ui/boutons/btn_tresor.png){ .vm-ui }<br>« 💰 Trésor » (classique : « 💰 Économie ») | Voir la caisse de la ville et y déposer des coins |
-| ![Bouton Agrandir](../assets/ui/boutons/btn_agrandir.png){ .vm-ui }<br>« 🗺 Agrandir la ville » | Acheter +1 emplacement de chunk avec la caisse |
-| Barre « PARCELLES x / y » | Parcelles revendiquées sur emplacements disponibles |
+| ![Bouton Trésor](../assets/ui/boutons/btn_tresor.png){ .vm-ui }<br>« 💰 Trésor » | Voir la caisse de la ville, y déposer des coins et **agrandir la ville** |
+| ![Bouton Événements](../assets/ui/boutons/btn_evenements.png){ .vm-ui }<br>« 📅 Événements » | Les raids, le calendrier des sièges et les fêtes (voir plus bas). Un badge signale qu'un raid est prêt à partir |
+| Barre « PARCELLES x / y » (classique : la carte « 🗺 Parcelles de la ville ») | Parcelles revendiquées sur emplacements disponibles. Un clic revendique ou rend la parcelle où vous êtes (voir plus bas) |
 
-Quand la caisse ne suffit pas, le bouton d'agrandissement est grisé : ![Bouton Agrandir grisé](../assets/ui/boutons/btn_agrandir_off.png){ .vm-ui }. Le menu classique rappelle aussi que la vue d'ensemble de la progression se trouve dans l'écran des progrès de Minecraft (touche ++l++), onglet « La Renaissance de Valmont ».
+Dans le menu classique, le bouton « 🗺 Agrandir la ville » reste sur l'accueil, à côté d'« 📅 Événements ». Ce menu rappelle aussi que la vue d'ensemble de la progression se trouve dans l'écran des progrès de Minecraft (touche ++l++), onglet « La Renaissance de Valmont ».
+
+### Les parcelles
+
+La barre **PARCELLES** de l'accueil remplace les commandes `/city claim` et `/city unclaim`, réservées à l'équipe du serveur. Son geste dépend du clic, et il agit sur **la parcelle où vous vous tenez** :
+
+| Clic | Effet |
+|---|---|
+| **Clic gauche** | Revendiquer la parcelle (elle doit toucher la ville et il faut un emplacement libre) |
+| **Clic droit** | Voir les limites de la ville pendant 5 secondes |
+| ++shift++ + **clic droit** | Rendre la parcelle : elle ne fait plus partie de la ville. Impossible pour la dernière parcelle, ou si un bâtiment de la ville l'occupe |
+
+Au survol, la bulle indique l'état de la parcelle où vous êtes : « parcelle de la ville », « parcelle libre, voisine de la ville », « parcelle trop éloignée de la ville »… Pour revendiquer une parcelle voisine, demandez à Alderic de vous **suivre** jusqu'à la frontière, placez-vous sur le chunk voulu et parlez-lui. Les règles des parcelles sont détaillées dans [Le territoire](../guide/territoire.md).
+
+### Population
+
+Un clic sur le portrait d'Alderic ouvre l'écran **Population** : les quatre besoins des habitants (nourriture, sécurité, santé, confort), leur **satisfaction** et ses effets sur les arrivées et l'impôt, le nombre d'habitants, de places, de gardes, de recrues et de lits en deuil, et chaque habitation avec son niveau et son confort. Tout est expliqué dans [Les habitants](../guide/habitants.md#besoins-et-satisfaction).
+
+### Événements
+
+Le bouton ![Bouton Événements](../assets/ui/boutons/btn_evenements.png){ .vm-ui } « 📅 Événements » ouvre le registre des événements de la ville, en trois tuiles :
+
+| Tuile | Ce qu'elle fait |
+|---|---|
+| ![Bouton Raids](../assets/ui/boutons/btn_raids.png){ .vm-ui }<br>« ⚔ Raids » | Lever une expédition : choisir la **difficulté**, puis la **cible**, puis sonner le rassemblement autour d'Alderic. Tout est expliqué dans [Les raids](../guide/raids.md) |
+| ![Bouton Sièges](../assets/ui/boutons/btn_sieges.png){ .vm-ui }<br>« 🛡 Sièges » | Consultation seulement : le calendrier des sièges et le prochain rendez-vous (voir [Les sièges](../guide/sieges.md)) |
+| « 🎉 Fêtes » | Verrouillée : « Bientôt : fêtes et foires de Valmont. » |
+
+La barre du bas indique si une expédition est en cours.
 
 ### Quêtes de la cité
 
@@ -78,7 +110,7 @@ La liste montre les quêtes du chapitre en cours, plus les **quêtes bonus (★)
 | Type de quête | Ce que vous voyez | Ce que fait le clic |
 |---|---|---|
 | Recruter un personnage | Trois étapes : le trouver, le ramener en ville, l'installer dans un bâtiment | Lance les recherches, ou vous redonne la piste si elles sont déjà lancées. Une fois le personnage en ville, parlez-lui pour l'installer |
-| Livrer des matériaux | « Livré : x / y » et ce que vous avez sur vous | **Clic gauche** : livrer depuis votre sac, même des objets achetés à un artisan. ++shift++ + **clic droit** : réquisitionner dans les stocks des artisans ; la caisse paie le prix de revente (le double du prix de rachat), en commençant par l'offre la moins chère |
+| Livrer des matériaux | « Livré : x / y » et ce que vous avez sur vous | **Clic gauche** : livrer depuis votre sac, même des objets achetés à un artisan. ++shift++ + **clic droit** : réquisitionner dans les entrepôts des artisans, la réserve de la ville, gratuitement et en commençant par les plus gros stocks |
 | Réserve chez un artisan | « Stock de … : x / y » | Rien à cliquer : vendez cette ressource à l'artisan concerné |
 | Rang d'un artisan | Rang actuel et rang requis | Rien à cliquer : commercez avec l'artisan pour le faire monter |
 | Parcelles, bâtiments, chasse | Progression x / y | Rien à cliquer : la progression est commune à tous les joueurs |
@@ -94,23 +126,23 @@ En bas du menu, ![Bouton Récit](../assets/ui/boutons/fb_recit.png){ .vm-ui } pe
 
 | Charte signée au chapitre | Pour devenir | Prix (payé par la caisse) | Emplacements de chunk offerts |
 |---|---|---|---|
-| I — Les cendres et la charte | Hameau | 150 coins | +6 |
-| II — Du pain pour l'hiver | Village | 400 coins | +6 |
-| III — Les pierres et la rivière | Bourg | 800 coins | +8 |
-| IV — La Fosse et le Chaudron | Ville | 1 500 coins | +8 |
-| V — Le marteau et le métier | Ville franche | 2 500 coins | +10 |
-| VI — Les routes et la garde | Cité | 4 000 coins | +12 |
-| VII — La foi et le savoir | Grande cité | 6 000 coins | +14 |
-| VIII — L'or, le verre et le feu | Citadelle | 8 500 coins | +16 |
-| IX — La Porte du Néant | Capitale | 12 000 coins | +20 |
+| I — Les cendres et la charte | Hameau | 150 coins | +10 |
+| II — Du pain pour l'hiver | Village | 400 coins | +12 |
+| III — Les pierres et la rivière | Bourg | 800 coins | +15 |
+| IV — La Fosse et le Chaudron | Ville | 1 500 coins | +18 |
+| V — Le marteau et le métier | Ville franche | 2 500 coins | +20 |
+| VI — Les routes et la garde | Cité | 4 000 coins | +25 |
+| VII — La foi et le savoir | Grande cité | 6 000 coins | +28 |
+| VIII — L'or, le verre et le feu | Citadelle | 8 500 coins | +32 |
+| IX — La Porte du Néant | Capitale | 12 000 coins | +40 |
 
 Au total, les chartes coûtent **35 850 coins** jusqu'à la Capitale. Les emplacements offerts ne font pas monter le prix des agrandissements. Les objectifs de chaque chapitre sont détaillés dans [La trame en dix chapitres](../guide/trame.md).
 
 ### Bâtiments
 
-- La liste montre tous les bâtiments de la ville, rangés par type (habitations, ateliers, mairie, divers). Au survol : type, zone, hauteur, personnage installé, habitants d'une maison et état de l'inspection (niveau, ce qui manque).
+- La liste montre tous les bâtiments de la ville, rangés par type (habitations, ateliers, annexes, mairie, divers). Au survol : type, zone, hauteur, personnage installé, habitants d'une maison et état de l'inspection (niveau, ce qui manque).
 - Un **cercle doré** signale un bâtiment habité par un artisan, un **cercle rouge** un bâtiment incomplet.
-- **Clic gauche** sur un bâtiment : ses bordures s'affichent pendant 5 secondes. **Clic droit** (menu illustré) : changer son type.
+- **Clic gauche** sur un bâtiment : ses bordures s'affichent pendant 5 secondes. **Clic droit** : changer son type. ++shift++ + **clic** : l'inspection détaillée.
 - ![Bouton Ajouter](../assets/ui/boutons/fb_ajouter.png){ .vm-ui } « ➕ Ajouter un bâtiment » : choisissez le type, donnez un nom, puis délimitez la zone avec le bâton.
 - ![Bouton Retirer](../assets/ui/boutons/fb_supprimer.png){ .vm-ui } « ➖ Supprimer un bâtiment » : un clic sur un bâtiment le supprime.
 
@@ -122,9 +154,10 @@ La **mairie** est un type de bâtiment à part : « Siège d'Alderic et de la Ch
 
 ### Trésor
 
-- **CAISSE** : l'argent commun de la ville. Elle paie les chartes, les agrandissements et les réquisitions.
+- **CAISSE** : l'argent commun de la ville. Elle paie les chartes et les agrandissements (les réquisitions des chantiers, elles, sont gratuites).
 - **BOURSE** : votre argent personnel.
-- ![Bouton Déposer](../assets/ui/boutons/btn_deposer.png){ .vm-ui } « ⬆ Déposer des coins » : Alderic vous demande le montant dans le chat (« ⬆ Combien de coins voulez-vous déposer dans la caisse ? »). La somme passe de votre bourse à la caisse : « ✅ … coins déposés dans la caisse de la ville. » Vous pouvez aussi taper `/city deposit <montant>`.
+- ![Bouton Déposer](../assets/ui/boutons/btn_deposer.png){ .vm-ui } « ⬆ Déposer des coins » : Alderic vous demande le montant dans le chat (« ⬆ Combien de coins voulez-vous déposer dans la caisse ? »). La somme passe de votre bourse à la caisse : « ✅ … coins déposés dans la caisse de la ville. » C'est le seul moyen de déposer : la commande `/city deposit` est réservée à l'équipe du serveur.
+- ![Bouton Agrandir](../assets/ui/boutons/btn_agrandir.png){ .vm-ui } « 🗺 Agrandir la ville » : acheter +1 emplacement de chunk avec la caisse (voir ci-dessous). Quand la caisse ne suffit pas, le bouton est grisé : ![Bouton Agrandir grisé](../assets/ui/boutons/btn_agrandir_off.png){ .vm-ui }. Dans le menu classique, ce bouton se trouve sur l'accueil.
 - La barre du bas compare la caisse au prix de la prochaine parcelle.
 
 !!! warning "Pas de retrait"
@@ -133,21 +166,21 @@ La **mairie** est un type de bâtiment à part : « Siège d'Alderic et de la Ch
 
 ### Agrandir la ville
 
-Chaque achat ajoute **+1 emplacement de chunk**, c'est-à-dire le droit de revendiquer une parcelle de plus avec `/city claim`. Le prix est payé par la caisse. Il ne dépend que du nombre d'emplacements déjà **achetés** : ceux offerts par Alderic et par les chartes ne comptent pas. Le premier coûte 150 coins, chacun des suivants 8 % de plus, sans jamais dépasser 2 500 coins.
+Le bouton « 🗺 Agrandir la ville » se trouve dans le **Trésor** (menu classique : sur l'accueil). Chaque achat ajoute **+1 emplacement de chunk**, c'est-à-dire le droit de revendiquer une parcelle de plus avec la barre **PARCELLES**. Le prix est payé par la caisse. Il ne dépend que du nombre d'emplacements déjà **achetés** : ceux offerts par Alderic et par les chartes ne comptent pas. Le premier coûte 50 coins, chacun des suivants 3 % de plus, sans jamais dépasser 300 coins.
 
-| Emplacement acheté n° | 1 | 2 | 3 | 4 | 5 | 10 | 20 | 30 | 37 | 38 et suivants |
-|---|---|---|---|---|---|---|---|---|---|---|
-| Prix (coins) | 150 | 162 | 175 | 189 | 204 | 300 | 647 | 1 398 | 2 395 | 2 500 |
+| Emplacement acheté n° | 1 | 2 | 3 | 4 | 5 | 10 | 20 | 30 | 40 | 50 | 62 et suivants |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Prix (coins) | 50 | 52 | 53 | 55 | 56 | 65 | 88 | 118 | 158 | 213 | 300 |
 
-En cas de réussite : « ✅ Capacité étendue ! Max : … », puis « Caisse restante : … coins ». Si la caisse ne suffit pas : « ❌ Fonds insuffisants. Il manque … coins. », avec le rappel « 💡 /city deposit <montant> ». Les parcelles et leurs règles sont expliquées dans [Le territoire](../guide/territoire.md).
+En cas de réussite : « ✅ Capacité étendue ! Max : … », puis « Caisse restante : … coins ». Si la caisse ne suffit pas : « ❌ Fonds insuffisants. Il manque … coins. », avec le rappel « 💡 Déposez des coins dans la caisse : Alderic → « Trésor ». ». Les parcelles et leurs règles sont expliquées dans [Le territoire](../guide/territoire.md).
 
 ## Le cadeau de bienvenue
 
-La première fois qu'un joueur lui parle, Alderic se présente (voir ci-dessous). À la fin de cette présentation, **une seule fois pour toute la ville** (au premier joueur qui l'écoute), il fait un cadeau. Il dit « Voici de quoi commencer... », puis le chat annonce « ✅ La ville a gagné +6 emplacements de chunk et +100 coins. »
+La première fois qu'un joueur lui parle, Alderic se présente (voir ci-dessous). À la fin de cette présentation, **une seule fois pour toute la ville** (au premier joueur qui l'écoute), il fait un cadeau. Il dit « Voici de quoi commencer... », puis le chat annonce « ✅ La ville a gagné +10 emplacements de chunk et +100 coins. »
 
-- Les 6 emplacements sont offerts : ils ne font pas monter le prix des agrandissements.
+- Les 10 emplacements sont offerts : ils ne font pas monter le prix des agrandissements.
 - Les 100 coins vont dans la caisse de la ville.
-- Avec le chunk de départ, la ville dispose ainsi de 7 emplacements : exactement ce que demande la première quête, « Planter les jalons » (7 chunks).
+- Avec le chunk de départ, la ville dispose ainsi de 11 emplacements. La première quête, « Planter les jalons », en demande 12 : il reste un emplacement à acheter (50 coins), payé avec les coins du cadeau.
 - Les joueurs suivants entendent la même présentation, mais ne déclenchent plus le cadeau.
 
 ## À la première rencontre
@@ -182,6 +215,8 @@ Tous les récits sont recopiés ci-dessous. À partir du chapitre II, ils dévoi
 
     On dit qu'un vieux charbonnier vit seul dans les bois. Il nous faut son bois et son savoir.
 
+    Des pêcheurs parlent d'un homme vêtu de peaux, sur la plage. Il compte les jours en entailles sur un poteau...
+
 ??? spoiler "Chapitre II — Du pain pour l'hiver"
 
     Le camp tient bon. Mais un toit ne nourrit personne, et l'hiver approche.
@@ -191,6 +226,8 @@ Tous les récits sont recopiés ci-dessous. À partir du chapitre II, ils dévoi
     Avec du grain en réserve, nous serons un vrai hameau.
 
     Et méfiez-vous des bois : un archer y détrousse les pillards... mais il paraît qu'il a bon cœur.
+
+    Un vieil homme fixe la rivière depuis trois jours. Il jure qu'« il » est là, quelque part.
 
 ??? spoiler "Chapitre III — Les pierres et la rivière"
 
@@ -212,6 +249,12 @@ Tous les récits sont recopiés ci-dessous. À partir du chapitre II, ils dévoi
 
     Les nuits sont dangereuses : sécurisons les abords avant tout.
 
+    Un colosse traverse les forêts avec un menhir sur le dos. Il dit qu'il n'est pas gros.
+
+    Et un étranger en robe de voyage a désarmé trois brigands avec un sabre de bois.
+
+    On parle aussi d'un roi sans couronne qui cueille le houblon des taïgas. Il dit avoir inventé la bière.
+
 ??? spoiler "Chapitre V — Le marteau et le métier"
 
     Nous voici ville ! Le seigneur des Marches nous accorde le droit de marché... si nos ateliers produisent.
@@ -224,6 +267,8 @@ Tous les récits sont recopiés ci-dessous. À partir du chapitre II, ils dévoi
 
     Un aventurier au chapeau de feutre fouille les ruines du monde. Il paraît qu'il cherche un marché...
 
+    Un vieil artisan sculpte des pantins au coin du feu, sur la route du sud. Il paraît que l'un d'eux s'est enfui.
+
 ??? spoiler "Chapitre VI — Les routes et la garde"
 
     Nous voici ville franche ! Nos échevins sont élus, et l'impôt nous revient.
@@ -233,6 +278,8 @@ Tous les récits sont recopiés ci-dessous. À partir du chapitre II, ils dévoi
     Roland, sergent de la garde, a perdu toute sa compagnie cette nuit-là. Offrons-lui une milice, et une raison de rester.
 
     Les pillards rançonnent nos marchands sur les routes. Il est temps de les chasser.
+
+    Un vieillard au grand chapeau pointu a été vu sur la route marchande. Les gardes disent qu'il fait des feux d'artifice.
 
 ??? spoiler "Chapitre VII — La foi et le savoir"
 
@@ -244,6 +291,8 @@ Tous les récits sont recopiés ci-dessous. À partir du chapitre II, ils dévoi
 
     Un inventeur tombé du ciel dans un éclair cherche un laboratoire... génie ou fou ?
 
+    Un navire à tête de dragon a été vu sur la côte. Son capitaine a demandé où se trouvait l'abbaye... Je n'aime pas ça.
+
 ??? spoiler "Chapitre VIII — L'or, le verre et le feu"
 
     Isabeau a déchiffré les registres : la Nuit Noire est venue d'une Porte, ouverte avec des yeux de feu et de néant.
@@ -252,7 +301,7 @@ Tous les récits sont recopiés ci-dessous. À partir du chapitre II, ils dévoi
 
     Et la cathédrale renaîtra : Léon porte au cou le dernier éclat de la rosace, Béatrice connaît les secrets du trésor.
 
-    Un vieux magicien gris rôde autour de nos murs. Il semble en savoir long sur cette Porte...
+    Une bannière blanche approche de la ville. À sa tête... une jeune fille en armure ? Les gardes n'en reviennent pas.
 
 ??? spoiler "Chapitre IX — La Porte du Néant"
 
@@ -275,3 +324,5 @@ Tous les récits sont recopiés ci-dessous. À partir du chapitre II, ils dévoi
     Un chasseur de monstres aux cheveux blancs propose ses services... contre rémunération.
 
     Et l'on parle d'un jeune Viking qui apprivoise les dragons. Après la Nuit Noire... j'ai peine à y croire.
+
+    Un géant en peau de lion a étranglé un ours à mains nues près des sommets. Il demande où sont les vrais monstres.

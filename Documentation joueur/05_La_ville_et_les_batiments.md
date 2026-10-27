@@ -27,14 +27,15 @@ Placez-vous dans le chunk voulu et tapez `/city claim`. Il faut que :
 
 | Emplacement acheté n° | Prix |
 |---|---|
-| 1 | 150 coins |
-| 5 | 204 coins |
-| 10 | 300 coins |
-| 20 | 647 coins |
-| 30 | 1 398 coins |
-| 38 et suivants | 2 500 coins (plafond) |
+| 1 | 50 coins |
+| 10 | 65 coins |
+| 20 | 88 coins |
+| 30 | 118 coins |
+| 40 | 158 coins |
+| 50 | 213 coins |
+| 62 et suivants | 300 coins (plafond) |
 
-Chaque emplacement acheté coûte **8 % de plus** que le précédent, sans jamais dépasser 2 500 coins. Les emplacements offerts ne font pas monter le prix.
+Chaque emplacement acheté coûte **3 % de plus** que le précédent, sans jamais dépasser 300 coins. Les emplacements offerts ne font pas monter le prix.
 
 ### Voir les limites
 

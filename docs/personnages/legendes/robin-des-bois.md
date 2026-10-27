@@ -1,6 +1,6 @@
 ---
 title: Robin des Bois
-description: Robin des Bois, hors-la-loi au grand cœur, légende de passage de Valmont (chapitre II, bonus) — où le trouver, son repaire, ce qu'il achète et vend, ses quêtes et ses récits.
+description: Robin des Bois, hors-la-loi au grand cœur, légende de passage de Valmont (chapitre II, bonus, contenu en plus avec le mod Wilder Nature) — où le trouver, son repaire, ce qu'il achète et vend, ses quêtes et ses récits.
 ---
 
 # Robin des Bois
@@ -31,6 +31,16 @@ description: Robin des Bois, hors-la-loi au grand cœur, légende de passage de 
 
 Robin n'est pas un survivant de Valmont : c'est une figure de légende, attirée par une ville qui renaît et accueille ses sans-logis. Il revend à Valmont le **butin des pillards** : ses articles coûtent en général **moins cher** que ceux des artisans, mais chacun n'existe qu'en **petite quantité** et se reconstitue avec le temps. Personne ne dépend de lui pour avancer dans l'histoire.
 
+!!! info "Contenu en plus avec le mod Wilder Nature"
+
+    Robin fonctionne sans aucun mod. Si le mod **Wilder Nature** (cerfs, bisons, sangliers et leurs trophées) est installé sur le serveur, il gagne du contenu, sans rien perdre du reste :
+
+    - deux articles en boutique : le **tableau des primes** (rang Compagnon) et la **cape de fourrure** (rang Expert) ;
+    - deux objectifs dans sa quête spéciale : tuer les **cerfs du roi** (dès le rang Novice) et rapporter de la **venaison** (dès le rang Apprenti) ;
+    - un sixième récit, « 🦌 Les cerfs du roi », au rang Compagnon.
+
+    Ces ajouts sont signalés « avec Wilder Nature » dans les tableaux ci-dessous. Pour savoir si le mod est présent : [Mods et plugins](../../serveur/mods-et-plugins.md#les-mods-de-contenu).
+
 ## Le retrouver
 
 | | |
@@ -44,7 +54,7 @@ Au chapitre II, Alderic vous met sur sa piste : « Et méfiez-vous des bois : un
 
 Lancez les recherches depuis **Alderic → Quêtes de la cité**, puis suivez la barre « 🗺 Robin des Bois » en haut de l'écran. Le déroulement complet est expliqué dans [Retrouver et installer un personnage](../recrutement.md).
 
-C'est une **quête bonus** : elle ne bloque jamais la signature de la charte. Si vous ne la terminez pas au chapitre II, elle reste proposée dans les quêtes de la cité aux chapitres suivants, jusqu'à ce qu'elle soit faite (voir [Les quêtes bonus](../../guide/trame.md#4-les-quetes-bonus)). Dans l'écran des progrès (touche ++l++), Robin figure sur la ligne **Les légendes de passage**.
+C'est une **quête bonus** : elle ne bloque jamais la signature de la charte. Si vous ne la terminez pas au chapitre II, elle reste proposée dans les quêtes de la cité aux chapitres suivants, jusqu'à ce qu'elle soit faite (voir [Les quêtes bonus](../../guide/trame.md#4-les-quetes-bonus)). Dans l'écran des progrès (touche ++l++), Robin figure sur la ligne **Les légendes de passage**, avec le [capitaine Achab](capitaine-achab.md), l'autre légende du chapitre II ; sa bulle signale le contenu en plus avec Wilder Nature.
 
 !!! tip "Préparez son repaire pendant le voyage"
 
@@ -78,7 +88,7 @@ Un bâtiment de type **Atelier**, libre ou réservé à Robin des Bois (nom prop
 
 ## Ce qu'il rachète
 
-Robin ne rachète **qu'un seul objet** : la fiole inquiétante, que laissent tomber les capitaines de pillards. Le prix est celui d'un lot complet, au prix plein (entrepôt rempli à moins de 40 %). Au menu **Entrepôt**, vous pouvez lui racheter son stock au double de ce prix, soit 20 coins la fiole.
+Robin ne rachète **qu'un seul objet** : la fiole inquiétante, que laissent tomber les capitaines de pillards. Le prix est celui d'un lot complet, au prix plein (entrepôt rempli à moins de 40 %). Au menu **Entrepôt**, vous vous servez **gratuitement** dans son stock, qui fait partie de la réserve de la ville (clic : une fiole, ++shift++ + clic : une pile) ; ce que vous y prenez, et ce que vous en fabriquez, est marqué non revendable.
 
 | Ressource | Lot | Prix plein du lot | Entrepôt de base |
 |---|---|---|---|
@@ -112,6 +122,7 @@ Le prix est celui **d'un achat**, qui donne la quantité indiquée. Robin ne fab
     | Pomme dorée | 30 coins | 1 | Limité : 1, +1 toutes les 12 h |
     | Armure en fer pour cheval | 22 coins | 1 | Limité : 1, +1 toutes les 12 h |
     | Selle | 12 coins | 1 | Limité : 1, +1 toutes les 12 h |
+    | Tableau des primes (objet de Wilder Nature, **avec Wilder Nature**) | 80 coins | 1 | Limité : 1, +1 toutes les 24 h |
 
 === "★★★★ Expert"
 
@@ -119,6 +130,7 @@ Le prix est celui **d'un achat**, qui donne la quantité indiquée. Robin ne fab
     |---|---|---|---|
     | Arc (Puissance II, Solidité I) | 12 coins | 1 | Limité : 1, +1 toutes les 6 h |
     | Arbalète (Perforation III) | 25 coins | 1 | Limité : 1, +1 toutes les 6 h |
+    | Cape de fourrure (objet de Wilder Nature, **avec Wilder Nature**) | 90 coins | 1 | Limité : 1, +1 toutes les 12 h |
 
 === "★★★★★ Maître"
 
@@ -126,7 +138,7 @@ Le prix est celui **d'un achat**, qui donne la quantité indiquée. Robin ne fab
     |---|---|---|---|
     | **Arc de Sherwood** (arc, Puissance IV, Frappe I, Solidité III) | 120 coins | 1 | Limité : 1, +1 toutes les 24 h |
 
-Tout ce que vous lui achetez porte la mention « Acheté chez Robin des Bois — non revendable » : l'objet s'utilise normalement, mais ne se revend pas à un PNJ et ne compte pas pour les quêtes des PNJ.
+Tout ce que vous lui achetez porte la mention « Acheté chez Robin des Bois — non revendable » : l'objet s'utilise normalement, mais ne se revend pas à un PNJ et ne compte pas pour les quêtes des PNJ. Les objets de Wilder Nature s'affichent sous leur nom français.
 
 ## Ses quêtes
 
@@ -146,33 +158,38 @@ Deux quêtes renouvelables par joueur, à accepter dans son menu **Quêtes**. Le
 
 === "✦ Quête spéciale"
 
-    Le butin des pillards. Deux objectifs tirés au hasard, objets ou créatures (un seul au rang Novice, où seuls les pillards sont proposés). Récompense : valeur × 1,5. Délai de 60 minutes avant la suivante.
+    Le butin des pillards. Deux objectifs tirés au hasard, objets ou créatures. Sans Wilder Nature, un seul objectif au rang Novice, où seuls les pillards sont proposés. Récompense : valeur × 1,5. Délai de 60 minutes avant la suivante.
 
-    | Objectif | Novice | Apprenti | Compagnon | Expert | Maître |
-    |---|---|---|---|---|---|
-    | Tuer des pillards | 8 | 12 | 16 | 20 | 24 |
-    | Tuer des vindicateurs | — | 5 | 6 | 8 | 9 |
-    | Fiole inquiétante | — | 2 | 2 | 3 | 3 |
-    | Tuer des évocateurs | — | — | — | 3 | 3 |
-    | Tuer des ravageurs | — | — | — | — | 3 |
+    | Objectif | Novice | Apprenti | Compagnon | Expert | Maître | Valeur unitaire |
+    |---|---|---|---|---|---|---|
+    | Tuer des pillards | 8 | 12 | 16 | 20 | 24 | 4 coins |
+    | Tuer des vindicateurs | — | 5 | 6 | 8 | 9 | 8 coins |
+    | Fiole inquiétante | — | 2 | 2 | 3 | 3 | 10 coins |
+    | Tuer des évocateurs | — | — | — | 3 | 3 | 20 coins |
+    | Tuer des ravageurs | — | — | — | — | 3 | 25 coins |
+    | Tuer des cerfs, « les cerfs du roi » (**avec Wilder Nature**) | 5 | 8 | 10 | 13 | 15 | 3 coins |
+    | Venaison (**avec Wilder Nature**) | — | 12 | 16 | 20 | 24 | 0,75 coin |
 
-    Exemple : au rang Novice, tuer 8 pillards rapporte **48 coins**.
+    Exemple : au rang Novice, tuer 8 pillards rapporte **48 coins** ; avec Wilder Nature, « 8 pillards + 5 cerfs du roi » rapporte **71 coins**.
 
 !!! note "Quantités par rang"
 
-    Les quantités ci-dessus sont calculées d'après la règle du jeu : quantité de base × coefficient du rang (×1 ; ×1,5 ; ×2 ; ×2,5 ; ×3), arrondie. Quand le calcul tombe sur une demie, la valeur en jeu peut différer d'une unité. <span class="vm-badge vm-badge--orange">à vérifier</span>
+    Quantité de base × coefficient du rang (×1 ; ×1,5 ; ×2 ; ×2,5 ; ×3), arrondie à l'unité la plus proche (une demie est arrondie vers le haut).
 
 ## Ses récits
 
-Cinq quêtes personnelles, une par rang, à faire **une seule fois** (menu **Quêtes → Récits**). Un récit ne compte qu'une fois accepté ; un succès Minecraft déjà obtenu le valide dès l'acceptation.
+Cinq quêtes personnelles, une par rang, à faire **une seule fois** (menu **Quêtes → Récits**), et une sixième avec Wilder Nature. Un récit ne compte qu'une fois accepté ; un succès Minecraft déjà obtenu le valide dès l'acceptation.
 
 | Rang | Récit | Objectif | Récompense |
 |---|---|---|---|
 | ★ Novice | 🏹 Le prince des voleurs | Tuer 5 pillards vous-même, après avoir accepté le récit | 50 coins |
 | ★★ Apprenti | 🎯 Dans le mille | Toucher de loin le centre d'une cible avec un projectile (succès « Bullseye », à au moins 30 blocs) | 80 coins |
 | ★★★ Compagnon | 🚩 Le capitaine des pillards | Tuer un capitaine de raid, le pillard qui porte une bannière (succès « Voluntary Exile ») | 150 coins |
+| ★★★ Compagnon | 🦌 Les cerfs du roi (**avec Wilder Nature**) | **Rapporter** un trophée de cerf : le gibier du shérif nourrira les pauvres | 200 coins |
 | ★★★★ Expert | 🐦 Deux oiseaux, une flèche | Tuer deux phantoms d'une seule flèche, avec une arbalète enchantée Perforation (succès « Two Birds, One Arrow ») | 250 coins |
 | ★★★★★ Maître | ⚔ Qui est le pillard ? | Tuer un pillard avec une arbalète (succès « Who's the Pillager Now? ») | 300 coins |
+
+**Les cerfs du roi** se remet en personne : ouvrez ses récits depuis **son** menu (pas depuis le journal de quêtes) et cliquez sur le récit en cours quand vous avez le trophée sur vous ; si vous l'avez déjà en acceptant le récit, il est remis aussitôt. Un trophée acheté à un PNJ ou pris dans une réserve est refusé. La façon d'obtenir un trophée de cerf dépend du mod Wilder Nature <span class="vm-badge vm-badge--orange">à vérifier</span>. Avec ce sixième récit, l'écran des récits les affiche quatre par page, avec des flèches pour passer d'une page à l'autre.
 
 ## Ses rangs
 
@@ -180,10 +197,10 @@ Le rang de Robin est **commun à toute la ville** : chaque vente, achat et quêt
 
 | Rang | XP totale | Ce qui se débloque |
 |---|---|---|
-| ★ Novice | 0 | Pain, steak, tunique en cuir, arc ; récit « Le prince des voleurs » |
-| ★★ Apprenti | 400 | Épée en fer, plastron en fer, flèches ; récit « Dans le mille » ; vindicateurs et fioles inquiétantes dans ses quêtes |
-| ★★★ Compagnon | 1 500 | Pomme dorée, armure en fer pour cheval, selle ; récit « Le capitaine des pillards » |
-| ★★★★ Expert | 4 500 | Arc enchanté, arbalète enchantée ; récit « Deux oiseaux, une flèche » ; évocateurs dans ses quêtes |
+| ★ Novice | 0 | Pain, steak, tunique en cuir, arc ; récit « Le prince des voleurs » ; avec Wilder Nature, cerfs du roi dans ses quêtes |
+| ★★ Apprenti | 400 | Épée en fer, plastron en fer, flèches ; récit « Dans le mille » ; vindicateurs et fioles inquiétantes dans ses quêtes ; avec Wilder Nature, venaison dans ses quêtes |
+| ★★★ Compagnon | 1 500 | Pomme dorée, armure en fer pour cheval, selle ; récit « Le capitaine des pillards » ; avec Wilder Nature, tableau des primes et récit « Les cerfs du roi » |
+| ★★★★ Expert | 4 500 | Arc enchanté, arbalète enchantée ; récit « Deux oiseaux, une flèche » ; évocateurs dans ses quêtes ; avec Wilder Nature, cape de fourrure |
 | ★★★★★ Maître | 10 000 | Arc de Sherwood ; récit « Qui est le pillard ? » ; ravageurs dans ses quêtes |
 
 Pour lui faire gagner de l'expérience : lui vendre des fioles inquiétantes (1 XP par lot + 1 XP par coin reçu), lui acheter des articles (1 XP par coin dépensé), valider ses quêtes (25 XP × son rang pour la principale, 60 XP × son rang pour la spéciale).
@@ -192,7 +209,8 @@ Pour lui faire gagner de l'expérience : lui vendre des fioles inquiétantes (1 
 
 - **Moins cher que les artisans, pour la plupart de ses articles** : l'épée en fer coûte 5 coins chez Robin contre 7 chez [Thorvald](../survivants/thorvald.md), le plastron en fer 17 contre 28, la selle 12 contre 20 chez [Edmond](../survivants/edmond.md), la pomme dorée 30 contre 49 chez [Béatrice](../survivants/beatrice.md). Ce n'est pas vrai pour tout : comparez avant d'acheter.
 - **Indépendant** : aucun de ses articles ne dépend du stock d'un autre artisan, et aucun artisan ne dépend de lui.
+- **Avec Wilder Nature**, il chasse aussi les cerfs, comme [Obélix](obelix.md) pour ses festins (une légende qui exige Wilder Nature **et** Farmer's Delight).
 - **Un chasseur de pillards** : ses quêtes spéciales et plusieurs de ses récits vous envoient contre les pillards, vindicateurs, évocateurs et ravageurs.
 - Sa quête de recrutement et son premier récit portent le même nom : « Le prince des voleurs ».
-- Son entrepôt se vide d'environ 8 % par heure (au moins 1 fiole toutes les 5 minutes) tant qu'un joueur est connecté.
+- Son entrepôt se vide d'environ 8 % de sa capacité par heure (au moins 1 fiole toutes les 5 minutes) tant qu'un joueur est connecté, sans descendre sous le quart de celle-ci.
 - Vous pouvez **travailler pour Robin** (un seul employeur à la fois) : +10 % sur vos ventes, −15 % sur vos achats chez lui.

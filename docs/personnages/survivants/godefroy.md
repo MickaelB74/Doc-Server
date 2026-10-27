@@ -76,7 +76,7 @@ Un bâtiment de type **Atelier**, libre ou réservé à Godefroy (nom proposé :
 
 ## Ce qu'il rachète
 
-Les prix sont ceux d'un **lot complet**, au prix plein (entrepôt rempli à moins de 40 %). La taille du lot **varie selon le minerai**, de 4 pour les diamants à 32 pour le cuivre brut et la redstone. Au menu **Entrepôt**, vous pouvez lui racheter son stock au double de ce prix.
+Les prix sont ceux d'un **lot complet**, au prix plein (entrepôt rempli à moins de 40 %). La taille du lot **varie selon le minerai**, de 4 pour les diamants à 32 pour le cuivre brut et la redstone. Au menu **Entrepôt**, vous vous servez **gratuitement** dans son stock, qui fait partie de la réserve de la ville (clic : un lot, ++shift++ + clic : une pile) ; ce que vous y prenez, et ce que vous en fabriquez, est marqué non revendable.
 
 | Ressource (nom affiché) | Lot | Prix plein du lot | Entrepôt de base |
 |---|---|---|---|
@@ -188,9 +188,9 @@ Pour lui faire gagner de l'expérience : lui vendre vos minerais (1 XP par lot +
 
 ## Bon à savoir
 
-- **Au chapitre IV**, la quête « Réserve de charbon » demande : « Constituez une réserve de 256 charbon chez Godefroy. » Il faut donc lui vendre du charbon. Ses propres torches, lanternes et blocs de charbon, ainsi que la citrouille-lanterne d'[Hélène](helene.md), puisent dans cette réserve, et son entrepôt se vide d'environ 8 % par heure tant qu'un joueur est connecté. La quête est acquise dès que le seuil est atteint, même si le stock baisse ensuite.
-- **Il fournit les diamants** : [Thorvald](thorvald.md) (outils et armures en diamant, Lame de Valmont), [Brennan](brennan.md) (Pic du maître maçon), [Edmond](edmond.md) (armure de cheval en diamant) et [Gandalf](../legendes/gandalf.md) (table d'enchantement) les prennent dans son stock. Son entrepôt ne contient que 64 diamants (capacité de base) : vendez-lui-en régulièrement pour alimenter la forge.
-- **Il fournit la redstone** : [Isabeau](isabeau.md) (boussole, carte, horloge), [Béatrice](beatrice.md) (horloge), [Doc Brown](../legendes/doc-brown.md) (torches de redstone, répéteurs, pistons, comparateurs, lampes…) et [Gandalf](../legendes/gandalf.md) (boussole de récupération) puisent dans son stock.
+- **Au chapitre IV**, la quête « Réserve de charbon » demande : « Constituez une réserve de 256 charbon chez Godefroy. » Il faut donc lui vendre du charbon. Ses propres torches, lanternes et blocs de charbon, ainsi que la citrouille-lanterne d'[Hélène](helene.md), puisent dans cette réserve, et son entrepôt se vide d'environ 8 % de sa capacité par heure tant qu'un joueur est connecté, sans descendre sous le quart de celle-ci. La quête est acquise dès que le seuil est atteint, même si le stock baisse ensuite.
+- **Il fournit les diamants** : [Thorvald](thorvald.md) (outils et armures en diamant, Lame de Valmont), [Brennan](brennan.md) (Pic du maître maçon), [Edmond](edmond.md) (armure de cheval en diamant) et [Gandalf](../legendes/gandalf.md) (table d'enchantement, sans le mod Iron's Spells) les prennent dans son stock. Son entrepôt ne contient que 64 diamants (capacité de base) : vendez-lui-en régulièrement pour alimenter la forge.
+- **Il fournit la redstone** : [Isabeau](isabeau.md) (boussole, carte, horloge), [Béatrice](beatrice.md) (horloge), [Doc Brown](../legendes/doc-brown.md) (torches de redstone, répéteurs, pistons, comparateurs, lampes…) et [Gandalf](../legendes/gandalf.md) (boussole de récupération, sans le mod Iron's Spells) puisent dans son stock.
 - À son arrivée en ville, il réclame « du ragoût. Beaucoup de ragoût. » : [Rosalie](rosalie.md), recrutée au même chapitre, en sert à la taverne.
 - Vous pouvez **travailler pour Godefroy** : +10 % sur ce que vous lui vendez, −15 % sur vos achats chez lui.
 

@@ -78,7 +78,7 @@ Un bâtiment de type **Atelier**, libre ou réservé à Béatrice (nom proposé 
 
 ## Ce qu'elle rachète
 
-Les prix sont ceux d'un **lot complet**, au prix plein (entrepôt rempli à moins de 40 %). Attention : la taille du lot change selon la ressource. Au menu **Entrepôt**, vous pouvez lui racheter son stock au double de ce prix.
+Les prix sont ceux d'un **lot complet**, au prix plein (entrepôt rempli à moins de 40 %). Attention : la taille du lot change selon la ressource. Au menu **Entrepôt**, vous vous servez **gratuitement** dans son stock, qui fait partie de la réserve de la ville (clic : un lot, ++shift++ + clic : une pile) ; ce que vous y prenez, et ce que vous en fabriquez, est marqué non revendable.
 
 | Ressource (nom affiché) | Lot | Prix plein du lot | Entrepôt de base |
 |---|---|---|---|
@@ -159,6 +159,8 @@ Deux quêtes renouvelables par joueur, à accepter dans son menu **Quêtes**. Le
     | Tuer des évocateurs | — | — | 2 | 3 | 3 |
     | Tuer des piglins barbares | — | — | — | 5 | 6 |
 
+    L'éclat d'écho compte toujours pour une valeur fixe de 10 coins pièce, même quand plus personne ne le rachète ([Gandalf](../legendes/gandalf.md) cesse de l'acheter avec le mod Iron's Spells) : 3 éclats rapportent donc 45 coins (10 × 3 × 1,5). Le diamant est compté au prix de rachat de [Godefroy](godefroy.md) (12 coins pièce).
+
 ## Ses récits
 
 Cinq quêtes personnelles, une par rang, à faire **une seule fois** (menu **Quêtes → Récits**). Pour les récits liés à un succès Minecraft, un succès déjà obtenu valide le récit dès que vous l'acceptez.
@@ -180,7 +182,7 @@ Le rang de Béatrice est **commun à toute la ville** : chaque vente, achat et q
 | Rang | XP totale | Ce qui se débloque |
 |---|---|---|
 | ★ Novice | 0 | Pomme dorée, horloge, tranche de pastèque scintillante, longue-vue ; récit « L'art du marchand » |
-| ★★ Apprenti | 800 | Carottes dorées, blocs d'améthyste ; récit « Ça brille ! » ; grosses commandes d'émeraudes et diamants dans sa quête spéciale |
+| ★★ Apprenti | 800 | Carottes dorées, blocs d'améthyste ; récit « Ça brille ! » ; grosses quantités d'émeraudes et diamants dans sa quête spéciale |
 | ★★★ Compagnon | 3 000 | Couronne de Valmont, modèles Wild et Coast ; récit « Les pics d'émeraude » ; évocateurs dans sa quête spéciale |
 | ★★★★ Expert | 8 000 | Pomme dorée enchantée, modèles Sentry et Dune ; récit « Le trésor des piglins » ; éclats d'écho et piglins barbares dans sa quête spéciale |
 | ★★★★★ Maître | 18 000 | Modèle Silence ; récit « Le chemin du retour » |
@@ -193,5 +195,5 @@ Pour lui faire gagner de l'expérience : lui vendre de l'or, des émeraudes ou d
 - **Son or est l'ingrédient** de nombreux articles d'autres artisans : carottes dorées de [Rosalie](rosalie.md), cloche et lingot de netherite de [Thorvald](thorvald.md), armure en or pour cheval d'[Edmond](edmond.md), horloge d'[Isabeau](isabeau.md). Ses éclats d'améthyste donnent le verre fumé de [Léon](leon.md). Un entrepôt de Béatrice vide met ces articles en rupture : pensez-y si vous comptez acheter à Thorvald la cloche de la quête « La cloche de la cathédrale ».
 - À l'inverse, **elle puise dans d'autres stocks** : pommes, tranches de pastèque et carottes d'[Hélène](helene.md), redstone de [Godefroy](godefroy.md), cuivre de [Thorvald](thorvald.md).
 - Elle arrive au même chapitre que [Léon](leon.md) : Alderic les associe pour la renaissance de la cathédrale.
-- Son entrepôt se vide d'environ 8 % par heure tant qu'un joueur est connecté : la demande en or revient toujours.
+- Son entrepôt se vide d'environ 8 % de sa capacité par heure tant qu'un joueur est connecté, sans descendre sous le quart de celle-ci : la demande en or revient toujours.
 - Vous pouvez **travailler pour Béatrice** : +10 % sur vos ventes chez elle, −15 % sur vos achats chez elle.

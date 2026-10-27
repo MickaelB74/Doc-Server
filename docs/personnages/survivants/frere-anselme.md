@@ -75,7 +75,7 @@ Un bâtiment de type **Atelier**, libre ou réservé à Frère Anselme (nom prop
 
 ## Ce qu'il rachète
 
-Les prix sont ceux d'un **lot complet**, dont la taille varie de 1 à 32 objets selon la ressource, au prix plein (entrepôt rempli à moins de 40 %). Au menu **Entrepôt**, vous pouvez lui racheter son stock au double de ce prix.
+Les prix sont ceux d'un **lot complet**, dont la taille varie de 1 à 32 objets selon la ressource, au prix plein (entrepôt rempli à moins de 40 %). Au menu **Entrepôt**, vous vous servez **gratuitement** dans son stock, qui fait partie de la réserve de la ville (clic : un lot, ++shift++ + clic : une pile) ; ce que vous y prenez, et ce que vous en fabriquez, est marqué non revendable.
 
 | Ressource (nom affiché) | Lot | Prix plein du lot | Entrepôt de base |
 |---|---|---|---|
@@ -203,9 +203,9 @@ Pour lui faire gagner de l'expérience : lui vendre ses ressources (1 XP par lot
 ## Bon à savoir
 
 - **Il puise dans les stocks de toute la ville** : la ficelle d'[Agathe](agathe.md) (bougies), les bûches de [Bastien](bastien.md) (ruches), les tranches de pastèque, cannes à sucre et carottes d'[Hélène](helene.md), les poissons-globes de [Martin](martin.md), la pierre taillée de [Brennan](brennan.md) (alambic) et les champignons bruns de [Rosalie](rosalie.md). Un stock vide chez l'un d'eux met la potion ou l'article en rupture.
-- **Et la ville puise dans le sien** : ses fioles de miel donnent l'*Hydromel du Chaudron* de [Rosalie](rosalie.md) ; sa poudre lumineuse, les flèches spectrales de [Roland](roland.md) et les lampes de [Doc Brown](../legendes/doc-brown.md) ; ses bâtons de blaze et ses larmes de ghast, les yeux et coffres de l'Ender et les cristaux de l'End de [Gandalf](../legendes/gandalf.md) ; ses verrues et sa crème de magma, les potions d'[Harold](../legendes/harold.md).
+- **Et la ville puise dans le sien** : ses fioles de miel donnent l'*Hydromel du Chaudron* de [Rosalie](rosalie.md) ; sa poudre lumineuse, les flèches spectrales de [Roland](roland.md) et les lampes de [Doc Brown](../legendes/doc-brown.md) ; ses bâtons de blaze et ses larmes de ghast, les yeux et coffres de l'Ender et les cristaux de l'End de [Gandalf](../legendes/gandalf.md) (sans le mod Iron's Spells) ; ses verrues et sa crème de magma, les potions d'[Harold](../legendes/harold.md).
 - **Au chapitre VII**, il est recruté en même temps qu'[Isabeau](isabeau.md) ; tous deux partagent le même décor de portrait, la chapelle.
-- Son entrepôt se vide d'environ 8 % par heure tant qu'un joueur est connecté : la demande en miel et en ingrédients revient toujours.
+- Son entrepôt se vide d'environ 4 % de sa capacité par heure tant qu'un joueur est connecté, sans descendre sous le quart de celle-ci, et les habitants de la ville s'y soignent à chaque aube (voir [Les habitants](../../guide/habitants.md)) : la demande en miel et en ingrédients revient toujours.
 - Vous pouvez **travailler pour Frère Anselme** : +10 % sur vos ventes chez lui, −15 % sur vos achats chez lui.
 
 ??? spoiler "Son rôle dans la suite de l'histoire"

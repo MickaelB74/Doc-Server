@@ -20,7 +20,7 @@ et publiée en site statique sur [Render](https://render.com/).
 
 | Dossier de `docs/` | Rubrique (onglet) |
 | ------------------ | ----------------- |
-| `serveur/`         | Le serveur : connexion, pack de ressources, mods et plugins, règles d'or |
+| `serveur/`         | Le serveur : connexion, modpack, pack de ressources, mods et plugins, liste des mods, règles d'or |
 | `histoire/`        | L'histoire : récit sans spoiler, Chroniques de Valmont, lexique |
 | `guide/`           | Guide du joueur : premiers pas, trame, territoire, bâtiments, commerce, habitants, garde, sièges, interfaces, ambiances |
 | `personnages/`     | Galerie, recrutement, artisans, ateliers, puis une fiche par personnage (`survivants/`, `legendes/`, `alderic.md`) |

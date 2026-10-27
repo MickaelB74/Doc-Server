@@ -87,7 +87,7 @@ Un bâtiment de type **Atelier**, libre ou réservé à Geralt de Riv (nom propo
 
 ## Ce qu'il rachète
 
-Les prix sont ceux d'un **lot complet**, au prix plein (entrepôt rempli à moins de 40 %). Chez Geralt, un lot = **une tête**. Au menu **Entrepôt**, vous pouvez lui racheter son stock au double de ce prix.
+Les prix sont ceux d'un **lot complet**, au prix plein (entrepôt rempli à moins de 40 %). Chez Geralt, un lot = **une tête**. Au menu **Entrepôt**, vous vous servez **gratuitement** dans son stock, qui fait partie de la réserve de la ville (clic : un lot, ++shift++ + clic : une pile) ; ce que vous y prenez, et ce que vous en fabriquez, est marqué non revendable.
 
 | Trophée (nom affiché) | Prix plein de la tête | Entrepôt de base |
 |---|---|---|
@@ -166,16 +166,16 @@ Deux quêtes renouvelables par joueur, à accepter dans son menu **Quêtes**. Le
     |---|---|---|---|---|---|---|
     | Tuer des wither squelettes | 6 | 9 | 12 | 15 | 18 | 8 coins |
     | Tuer des blazes | 8 | 12 | 16 | 20 | 24 | 5 coins |
-    | Crâne de wither squelette | — | 1 ou 2 | 2 | 2 ou 3 | 3 | 60 coins |
-    | Tuer des ghasts | — | 4 ou 5 | 6 | 7 ou 8 | 9 | 10 coins |
-    | Tête de zombie | — | — | 2 | 2 ou 3 | 3 | 20 coins |
+    | Crâne de wither squelette | — | 2 | 2 | 3 | 3 | 60 coins |
+    | Tuer des ghasts | — | 5 | 6 | 8 | 9 | 10 coins |
+    | Tête de zombie | — | — | 2 | 3 | 3 | 20 coins |
     | Tuer des brutes piglins | — | — | 4 | 5 | 6 | 12 coins |
     | Tuer des évocateurs | — | — | — | 5 | 6 | 20 coins |
-    | Tuer des ravageurs | — | — | — | 2 ou 3 | 3 | 25 coins |
+    | Tuer des ravageurs | — | — | — | 3 | 3 | 25 coins |
 
     Exemple : au rang Novice, « 6 wither squelettes + 8 blazes » rapporte **132 coins**.
 
-    « 1 ou 2 » : la quantité de base multipliée par le coefficient du rang tombe sur une demie, et le jeu l'arrondit. Le sens de l'arrondi reste à confirmer <span class="vm-badge vm-badge--orange">à vérifier</span>.
+    Quantité de base × coefficient du rang (×1 ; ×1,5 ; ×2 ; ×2,5 ; ×3), arrondie à l'unité la plus proche (une demie est arrondie vers le haut).
 
 ## Ses récits
 
@@ -206,7 +206,7 @@ Pour lui faire gagner de l'expérience : lui vendre des trophées (1 XP par lot 
 ## Bon à savoir
 
 - **Ses contrats rejoignent les hauts faits du chapitre X.** La ville a ses propres hauts faits bonus : « ★ Le Fléau noir » (le Wither), « ★ Le gardien des profondeurs » (un Warden), « ★ Les gardiens des abysses » (3 grands gardiens). Pour la ville, toutes les victoires comptent ; pour les récits de Geralt, seul compte le joueur qui porte le coup fatal.
-- **Invoquer un dragon** pour son dernier contrat : placez 4 cristaux de l'End sur le portail de sortie de l'End. [Gandalf](gandalf.md) en vend 4 pour 106 coins au rang Maître.
+- **Invoquer un dragon** pour son dernier contrat : placez 4 cristaux de l'End sur le portail de sortie de l'End. [Gandalf](gandalf.md) en vend 4 pour 106 coins au rang Maître, quand le mod Iron's Spells n'est pas installé.
 - **Des trophées qui se revendent bien** : les têtes de zombie, de squelette, de creeper et de piglin s'obtiennent en tuant ces créatures par l'explosion d'un creeper chargé ; les crânes de wither squelette tombent parfois des wither squelettes ; la tête de dragon orne la proue des navires des cités de l'End.
-- Son stock diminue d'au moins 1 tête toutes les 5 minutes par sorte, tant qu'un joueur est connecté : la demande revient vite.
+- Son stock diminue d'au moins 1 tête toutes les 5 minutes par sorte, tant qu'un joueur est connecté, sans descendre sous le quart de sa capacité : la demande revient vite.
 - Vous pouvez **travailler pour Geralt** : +10 % sur vos ventes de trophées, −15 % sur vos achats chez lui.

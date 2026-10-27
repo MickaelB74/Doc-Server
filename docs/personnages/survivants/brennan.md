@@ -75,7 +75,7 @@ Un bâtiment de type **Atelier**, libre ou réservé à Brennan (nom proposé : 
 
 ## Ce qu'il rachète
 
-Les prix sont ceux d'un **lot complet de 64 blocs** (8 seulement pour l'obsidienne), au prix plein (entrepôt rempli à moins de 40 %). Au menu **Entrepôt**, vous pouvez lui racheter son stock au double de ce prix.
+Les prix sont ceux d'un **lot complet de 64 blocs** (8 seulement pour l'obsidienne), au prix plein (entrepôt rempli à moins de 40 %). Au menu **Entrepôt**, vous vous servez **gratuitement** dans son stock, qui fait partie de la réserve de la ville (clic : un lot, ++shift++ + clic : une pile) ; ce que vous y prenez, et ce que vous en fabriquez, est marqué non revendable.
 
 | Ressource (nom affiché) | Prix plein du lot de 64 | Entrepôt de base |
 |---|---|---|
@@ -206,10 +206,10 @@ Pour lui faire gagner de l'expérience : lui vendre de la pierre (2 XP par lot +
 
 ## Bon à savoir
 
-- **Au chapitre III**, la quête « Les fondations » demande : « Livrez 320 pierres (cobblestone) pour des fondations dignes de Brennan. » Depuis les quêtes d'Alderic, vous pouvez aussi les **réquisitionner** dans l'entrepôt de Brennan (++shift++ + clic droit) : la caisse de la ville les lui rachète.
+- **Au chapitre III**, la quête « Les fondations » demande : « Livrez 320 pierres (cobblestone) pour des fondations dignes de Brennan. » Depuis les quêtes d'Alderic, vous pouvez aussi les **réquisitionner** dans l'entrepôt de Brennan (++shift++ + clic droit) : le chantier y puise gratuitement, puisque son stock est la réserve de la ville.
 - **Il dépend** de [Thorvald](thorvald.md) (fer du tailleur de pierre) et de [Godefroy](godefroy.md) (diamants du Pic du maître maçon).
-- **D'autres artisans puisent dans son stock** : [Frère Anselme](frere-anselme.md) (pierres taillées de l'alambic), [Doc Brown](../legendes/doc-brown.md) (pierres taillées et roche pour leviers, répéteurs, pistons, distributeurs, observateurs, comparateurs…), [Gandalf](../legendes/gandalf.md) (obsidienne de la table d'enchantement, du coffre de l'Ender et de la balise).
-- Son entrepôt se vide d'environ 8 % par heure tant qu'un joueur est connecté : la demande en pierre revient toujours.
+- **D'autres artisans puisent dans son stock** : [Frère Anselme](frere-anselme.md) (pierres taillées de l'alambic), [Doc Brown](../legendes/doc-brown.md) (pierres taillées et roche pour leviers, répéteurs, pistons, distributeurs, observateurs, comparateurs…), [Gandalf](../legendes/gandalf.md) (obsidienne de la table d'enchantement, du coffre de l'Ender et de la balise, sans le mod Iron's Spells).
+- Son entrepôt se vide d'environ 8 % de sa capacité par heure tant qu'un joueur est connecté, sans descendre sous le quart de celle-ci : la demande en pierre revient toujours.
 - Vous pouvez **travailler pour Brennan** : +10 % sur vos ventes de pierre, −15 % sur vos achats chez lui.
 
 ??? spoiler "Son rôle dans la suite de l'histoire"

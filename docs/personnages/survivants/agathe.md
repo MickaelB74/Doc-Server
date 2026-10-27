@@ -77,7 +77,7 @@ Un bâtiment de type **Atelier**, libre ou réservé à Agathe (nom proposé : `
 
 ## Ce qu'elle rachète
 
-Les prix sont ceux d'un **lot complet** (16 pour la laine, 32 pour la ficelle, les fleurs et le cactus), au prix plein (entrepôt rempli à moins de 40 %). Au menu **Entrepôt**, vous pouvez lui racheter son stock au double de ce prix.
+Les prix sont ceux d'un **lot complet** (16 pour la laine, 32 pour la ficelle, les fleurs et le cactus), au prix plein (entrepôt rempli à moins de 40 %). Au menu **Entrepôt**, vous vous servez **gratuitement** dans son stock, qui fait partie de la réserve de la ville (clic : un lot, ++shift++ + clic : une pile) ; ce que vous y prenez, et ce que vous en fabriquez, est marqué non revendable.
 
 | Ressource (nom affiché) | Lot | Prix plein du lot | Entrepôt de base |
 |---|---|---|---|
@@ -217,7 +217,7 @@ Pour lui faire gagner de l'expérience : lui vendre laine, ficelle et fleurs (1 
 - **Elle puise dans les stocks d'autres artisans** : les bûches de [Bastien](bastien.md) (lits, bannières, métier à tisser, tableau), les poches d'encre de [Martin](martin.md) (teinture noire) et le papier d'[Isabeau](isabeau.md) (motif de bannière).
 - **Utile pour vos bâtiments** : chaque habitation exige un lit et la mairie une bannière. Ses bannières et ses tapis sont aussi des décorations qui rapportent des points de détail (voir [Les bâtiments](../../guide/batiments.md)).
 - Certains messages automatiques du jeu restent au masculin (« Agathe est arrivé dans la ville ! », « Agathe est passé Apprenti »), et ses rangs s'affichent toujours au masculin.
-- Son entrepôt se vide d'environ 8 % par heure tant qu'un joueur est connecté : la demande en laine et en fleurs revient toujours.
+- Son entrepôt se vide d'environ 8 % de sa capacité par heure tant qu'un joueur est connecté, sans descendre sous le quart de celle-ci : la demande en laine et en fleurs revient toujours.
 - Vous pouvez **travailler pour Agathe** : +10 % sur vos ventes chez elle, −15 % sur vos achats chez elle.
 
 ??? spoiler "Son rôle dans la suite de l'histoire"

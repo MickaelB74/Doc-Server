@@ -80,7 +80,7 @@ Un bâtiment de type **Atelier**, libre ou réservé à Doc Brown (nom proposé 
 
 ## Ce qu'il rachète
 
-Les prix sont ceux d'un **lot complet**, au prix plein (entrepôt rempli à moins de 40 %). Attention, le quartz se vend **par 32**, le reste par 16. Au menu **Entrepôt**, vous pouvez lui racheter son stock au double de ce prix.
+Les prix sont ceux d'un **lot complet**, au prix plein (entrepôt rempli à moins de 40 %). Attention, le quartz se vend **par 32**, le reste par 16. Au menu **Entrepôt**, vous vous servez **gratuitement** dans son stock, qui fait partie de la réserve de la ville (clic : un lot, ++shift++ + clic : une pile) ; ce que vous y prenez, et ce que vous en fabriquez, est marqué non revendable.
 
 | Ressource | Lot | Prix plein du lot | Entrepôt de base |
 |---|---|---|---|
@@ -172,7 +172,7 @@ Deux quêtes renouvelables par joueur, à accepter dans son menu **Quêtes**. Le
 
 !!! note "Quantités par rang"
 
-    Les quantités ci-dessus sont calculées d'après la règle du jeu : quantité de base × coefficient du rang (×1 ; ×1,5 ; ×2 ; ×2,5 ; ×3), arrondie. Quand le calcul tombe sur une demie, la valeur en jeu peut différer d'une unité. <span class="vm-badge vm-badge--orange">à vérifier</span>
+    Quantité de base × coefficient du rang (×1 ; ×1,5 ; ×2 ; ×2,5 ; ×3), arrondie à l'unité la plus proche (une demie est arrondie vers le haut).
 
 ## Ses récits
 
@@ -206,5 +206,5 @@ Pour lui faire gagner de l'expérience : lui vendre quartz, slime ou poudre à c
 - **Pas de TNT sans Léon** : tant que [Léon](../survivants/leon.md) n'est pas installé, ou si son stock de sable est vide, la TNT reste en rupture.
 - **Les Ailes du Doc** : des élytres à 1 500 coins au rang Maître, une tous les deux jours au plus. Leur achat devrait aussi valider son récit « Pas besoin de routes », qui demande d'avoir des élytres. <span class="vm-badge vm-badge--orange">à vérifier</span>
 - Ses quêtes spéciales vous envoient chasser les **phantoms** et les **creepers**, qui fournissent membranes et poudre à canon.
-- Son entrepôt se vide d'environ 8 % par heure tant qu'un joueur est connecté.
+- Son entrepôt se vide d'environ 8 % de sa capacité par heure tant qu'un joueur est connecté, sans descendre sous le quart de celle-ci.
 - Vous pouvez **travailler pour le Doc** (un seul employeur à la fois) : +10 % sur vos ventes, −15 % sur vos achats chez lui.

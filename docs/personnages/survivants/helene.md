@@ -76,7 +76,7 @@ Un bâtiment de type **Atelier**, libre ou réservé à Hélène (nom proposé :
 
 ## Ce qu'elle rachète
 
-Les prix sont ceux d'un **lot complet**, au prix plein (entrepôt rempli à moins de 40 %). La taille du lot **varie selon la récolte** : 32 pour la plupart, 8 pour les citrouilles et les pommes, 64 pour les tranches de pastèque. Au menu **Entrepôt**, vous pouvez lui racheter son stock au double de ce prix.
+Les prix sont ceux d'un **lot complet**, au prix plein (entrepôt rempli à moins de 40 %). La taille du lot **varie selon la récolte** : 32 pour la plupart, 8 pour les citrouilles et les pommes, 64 pour les tranches de pastèque. Au menu **Entrepôt**, vous vous servez **gratuitement** dans son stock, qui fait partie de la réserve de la ville (clic : un lot, ++shift++ + clic : une pile) ; ce que vous y prenez, et ce que vous en fabriquez, est marqué non revendable.
 
 | Ressource (nom affiché) | Lot | Prix plein du lot | Entrepôt de base |
 |---|---|---|---|
@@ -201,7 +201,7 @@ Pour lui faire gagner de l'expérience : lui vendre des récoltes (1 XP par lot 
 
 ## Bon à savoir
 
-- **Au chapitre II**, la quête « Le grenier » demande : « Constituez une réserve de 384 blé dans le stock d'Hélène. » Il faut donc lui vendre du blé. Son entrepôt se vide d'environ 8 % par heure tant qu'un joueur est connecté (environ 170 blés par heure avec l'entrepôt de base), et ses bottes de foin puisent aussi dans ce blé. La quête est acquise dès que le seuil est atteint, même si le stock baisse ensuite.
+- **Au chapitre II**, la quête « Le grenier » demande : « Constituez une réserve de 384 blé dans le stock d'Hélène. » Il faut donc lui vendre du blé. Son entrepôt se vide d'environ 3 % de sa capacité par heure tant qu'un joueur est connecté (environ 60 blés par heure avec l'entrepôt de base, sans descendre sous le quart de sa capacité), les habitants de la ville y prennent leurs repas à chaque aube, et ses bottes de foin puisent aussi dans ce blé. La quête est acquise dès que le seuil est atteint, même si le stock baisse ensuite.
 - **Elle fournit la taverne** : [Rosalie](rosalie.md) prend dans son stock le blé, les pommes de terre, les betteraves, les carottes, les citrouilles, les cannes à sucre et les fèves de cacao. Un entrepôt d'Hélène vide met une bonne partie de la carte de la taverne en rupture.
 - **D'autres artisans puisent dans son stock** : [Frère Anselme](frere-anselme.md) (tranches de pastèque, cannes à sucre et carottes pour ses potions), [Béatrice](beatrice.md) (pommes, carottes et tranches de pastèque pour ses objets dorés), [Doc Brown](../legendes/doc-brown.md) (blé pour la cible).
 - À l'inverse, elle **dépend** de [Bastien](bastien.md) (bûches du composteur), de [Godefroy](godefroy.md) (charbon de la citrouille-lanterne) et de [Thorvald](thorvald.md) (fer de la Houe d'abondance).

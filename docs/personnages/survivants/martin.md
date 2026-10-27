@@ -76,7 +76,7 @@ Un bâtiment de type **Atelier**, libre ou réservé à Martin (nom proposé : `
 
 ## Ce qu'il rachète
 
-Les prix sont ceux d'un **lot complet**, au prix plein (entrepôt rempli à moins de 40 %). La taille du lot **varie selon la prise** : 16 pour la plupart, 8 pour les poissons tropicaux, les poissons-globes et l'encre lumineuse, 64 pour les algues. Au menu **Entrepôt**, vous pouvez lui racheter son stock au double de ce prix.
+Les prix sont ceux d'un **lot complet**, au prix plein (entrepôt rempli à moins de 40 %). La taille du lot **varie selon la prise** : 16 pour la plupart, 8 pour les poissons tropicaux, les poissons-globes et l'encre lumineuse, 64 pour les algues. Au menu **Entrepôt**, vous vous servez **gratuitement** dans son stock, qui fait partie de la réserve de la ville (clic : un lot, ++shift++ + clic : une pile) ; ce que vous y prenez, et ce que vous en fabriquez, est marqué non revendable.
 
 | Ressource (nom affiché) | Lot | Prix plein du lot | Entrepôt de base |
 |---|---|---|---|
@@ -187,5 +187,5 @@ Pour lui faire gagner de l'expérience : lui vendre vos prises (1 XP par lot + 1
 - **Il dépend** de [Bastien](bastien.md) (bûches de chêne du bateau) et de [Thorvald](thorvald.md) (fer des seaux de poisson). Tant que Thorvald n'a pas rejoint la ville, ses seaux sont en rupture.
 - **D'autres artisans puisent dans son stock** : [Agathe](agathe.md) (poches d'encre pour la teinture noire), [Frère Anselme](frere-anselme.md) (poissons-globes pour la potion de respiration aquatique), [Isabeau](isabeau.md) (poches d'encre pour le livre et plume), [Jack Sparrow](../legendes/jack-sparrow.md) (poches d'encre pour la prismarine sombre).
 - Son récit « Pêche au trésor » et ses cannes enchantées vont de pair : plus la Chance de la mer est élevée, plus les trésors remontent souvent.
-- Son entrepôt se vide d'environ 8 % par heure tant qu'un joueur est connecté : la demande en poisson revient toujours.
+- Son entrepôt se vide d'environ 8 % de sa capacité par heure tant qu'un joueur est connecté, sans descendre sous le quart de celle-ci : la demande en poisson revient toujours.
 - Vous pouvez **travailler pour Martin** : +10 % sur ce que vous lui vendez, −15 % sur vos achats chez lui.

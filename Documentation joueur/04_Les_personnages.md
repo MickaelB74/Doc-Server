@@ -8,7 +8,7 @@ Valmont ne se rebâtit pas seule : il lui faut ses **artisans**. Chaque personna
 |---|---|---|
 | 👑 | **Alderic, le maire** | Le guide de la ville. Il est là dès le départ et ne quitte jamais Valmont. Quêtes de la cité, charte, caisse, bâtiments, agrandissement |
 | ⚒ | **Les survivants de Valmont** (14) | Les artisans de l'ancienne ville. Les retrouver fait partie de la **trame principale** : chaque chapitre vous en fait chercher un ou plusieurs |
-| ★ | **Les légendes de passage** (7) | Des voyageurs célèbres attirés par la renommée de Valmont. Leur recrutement est **facultatif** (quêtes bonus ★). Ils ouvrent des marchés que les survivants ne couvrent pas |
+| ★ | **Les légendes de passage** (16) | Des voyageurs célèbres attirés par la renommée de Valmont. Leur recrutement est **facultatif** (quêtes bonus ★). Ils ouvrent des marchés que les survivants ne couvrent pas |
 
 Chaque artisan correspond à **un métier médiéval** et à **un pan de Minecraft** : le bois, les cultures, la pierre, la mine, la forge, l'élevage… Il rachète les ressources de son domaine et vend ses propres fabrications.
 

@@ -76,7 +76,7 @@ Un bâtiment de type **Atelier**, libre ou réservé à Thorvald (nom proposé :
 
 ## Ce qu'il rachète
 
-Les prix sont ceux d'un **lot complet**, dont la taille dépend de la ressource, au prix plein (entrepôt rempli à moins de 40 %). Les fragments de netherite se vendent un par un. Au menu **Entrepôt**, vous pouvez lui racheter son stock au double de ce prix.
+Les prix sont ceux d'un **lot complet**, dont la taille dépend de la ressource, au prix plein (entrepôt rempli à moins de 40 %). Les fragments de netherite se vendent un par un. Au menu **Entrepôt**, vous vous servez **gratuitement** dans son stock, qui fait partie de la réserve de la ville (clic : un lot, ++shift++ + clic : une pile) ; ce que vous y prenez, et ce que vous en fabriquez, est marqué non revendable.
 
 | Ressource (nom affiché) | Lot | Prix plein du lot | Entrepôt de base |
 |---|---|---|---|
@@ -215,8 +215,8 @@ Pour lui faire gagner de l'expérience : lui vendre des lingots ou des fragments
 
 - **Au chapitre V**, la quête « L'arsenal » demande : « Constituez une réserve de 192 lingots de fer chez Thorvald. » Vendez-lui vos lingots de fer : la quête est acquise dès que son stock atteint 192, même s'il baisse ensuite. D'ici là, chaque achat qui consomme son fer (chez lui ou chez un autre artisan) fait baisser la réserve.
 - **Il puise dans les stocks d'autres artisans** : les diamants de [Godefroy](godefroy.md) (tout l'équipement en diamant et la Lame de Valmont), les bûches de [Bastien](bastien.md) (bouclier, table de forgeron), le silex de [Roland](roland.md) (briquet) et l'or de [Béatrice](beatrice.md) (cloche, lingot de netherite). Tant que l'un de ces stocks est vide, les articles concernés sont en rupture.
-- **Son fer alimente toute la ville** : Hache du charbonnier de [Bastien](bastien.md), Houe d'abondance d'[Hélène](helene.md), tailleur de pierre de [Brennan](brennan.md), seaux de poisson de [Martin](martin.md), selle et armure de cheval d'[Edmond](edmond.md), arbalète de [Roland](roland.md), boussole et carte d'[Isabeau](isabeau.md), pistons, entonnoir et crafteur de [Doc Brown](../legendes/doc-brown.md), boussole de récupération de [Gandalf](../legendes/gandalf.md). [Béatrice](beatrice.md) prend aussi son cuivre pour sa longue-vue.
-- Son entrepôt se vide d'environ 8 % par heure tant qu'un joueur est connecté : la demande en lingots revient toujours.
+- **Son fer alimente toute la ville** : Hache du charbonnier de [Bastien](bastien.md), Houe d'abondance d'[Hélène](helene.md), tailleur de pierre de [Brennan](brennan.md), seaux de poisson de [Martin](martin.md), selle et armure de cheval d'[Edmond](edmond.md), arbalète de [Roland](roland.md), boussole et carte d'[Isabeau](isabeau.md), pistons, entonnoir et crafteur de [Doc Brown](../legendes/doc-brown.md), boussole de récupération de [Gandalf](../legendes/gandalf.md) (sans le mod Iron's Spells). [Béatrice](beatrice.md) prend aussi son cuivre pour sa longue-vue.
+- Son entrepôt se vide d'environ 8 % de sa capacité par heure tant qu'un joueur est connecté, sans descendre sous le quart de celle-ci : la demande en lingots revient toujours.
 - Vous pouvez **travailler pour Thorvald** : +10 % sur vos ventes de lingots, −15 % sur vos achats chez lui.
 
 ??? spoiler "Son rôle dans la suite de l'histoire"

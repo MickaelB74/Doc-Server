@@ -31,7 +31,9 @@ nav = [
   { "Accueil" = "index.md" },
   { "Le serveur" = [
     "serveur/index.md",
+    { "Installer le modpack" = "serveur/modpack.md" },
     { "Mods et plugins" = "serveur/mods-et-plugins.md" },
+    { "Liste des mods" = "serveur/liste-des-mods.md" },
     { "Les règles d'or" = "serveur/regles.md" },
   ] },
   { "L'histoire" = [
@@ -51,6 +53,7 @@ nav = [
       { "Les habitants" = "guide/habitants.md" },
       { "La garde" = "guide/garde.md" },
       { "Les sièges" = "guide/sieges.md" },
+      { "Les raids" = "guide/raids.md" },
     ] },
     { "À l'écran" = [
       { "Les interfaces" = "guide/interfaces.md" },
@@ -80,13 +83,22 @@ nav = [
       { "Béatrice" = "personnages/survivants/beatrice.md" },
     ] },
     { "Les légendes ★" = [
+      { "Robinson Crusoé" = "personnages/legendes/robinson-crusoe.md" },
       { "Robin des Bois" = "personnages/legendes/robin-des-bois.md" },
+      { "Capitaine Achab" = "personnages/legendes/capitaine-achab.md" },
       { "Jack Sparrow" = "personnages/legendes/jack-sparrow.md" },
+      { "Obélix" = "personnages/legendes/obelix.md" },
+      { "Miyamoto Musashi" = "personnages/legendes/miyamoto-musashi.md" },
+      { "Gambrinus" = "personnages/legendes/gambrinus.md" },
       { "Indiana Jones" = "personnages/legendes/indiana-jones.md" },
-      { "Doc Brown" = "personnages/legendes/doc-brown.md" },
+      { "Geppetto" = "personnages/legendes/geppetto.md" },
       { "Gandalf" = "personnages/legendes/gandalf.md" },
+      { "Doc Brown" = "personnages/legendes/doc-brown.md" },
+      { "Ragnar" = "personnages/legendes/ragnar.md" },
+      { "Jeanne d'Arc" = "personnages/legendes/jeanne-d-arc.md" },
       { "Geralt de Riv" = "personnages/legendes/geralt-de-riv.md" },
       { "Harold" = "personnages/legendes/harold.md" },
+      { "Hercule" = "personnages/legendes/hercule.md" },
     ] },
   ] },
   { "Aide-mémoire" = [
